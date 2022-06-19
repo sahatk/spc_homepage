@@ -1,0 +1,96 @@
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box{
+    position: fixed; top:0; left: 0; right:0;
+    width:100%; height: 70px;
+    margin:auto;
+    box-sizing: border-box;
+    padding:10px;
+    z-index: 1000;    
+    background-color: transparent;
+    /* background-color: #fda;  */
+}
+
+#header_box .container{
+    display: flex; justify-content:space-between;
+    width:100%; max-width: 1600px; min-width: 300px;
+    height: 50px;
+    margin:auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+.container h1 {width: 150px; height: 50px;}
+.container h1 a {
+    width: 150px;
+    height: 50px;
+}
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px; 
+} /*logo */
+
+/*navigation*/
+.navigation{width:auto; height:auto;}
+.navigation h2{width: 0; height: 0; overflow: hidden;} /* 안보이게*/
+.navigation ul{
+    
+    display: flex; gap:90px; align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+.navigation li {
+    width: auto; height: auto;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navigation li:last-child {
+    width: 30px; height: 30px;
+    background: url('https://api.iconify.design/ant-design/global-outlined.svg?width=50&height=50') no-repeat center center / contain;
+}/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box1 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#section_box1{
+    position: relative;
+    display: flex; justify-content: center;
+    align-items: center;
+    width: 100%; height: 920px;
+    margin:auto;
+    background-image: url(../../img/main_img/section_box1/main_bg_wrap/main_slide_01.jpg);
+}
+
+#section_box1 .container{
+    width: 700px;
+    height: 240px;
+    color: #fff;
+}
+
+
+#section_box1 .container .solid{
+    width: 50px; margin-top: 10px;
+    border-top: 2px solid #fff;
+}
+
+/*Happy Sincerity*/
+#section_box1 .container p:first-child{
+    font-size: var(--font-content_03);
+}
+
+/*SPC그룹과 함께*/
+#section_box1 .container p:nth-child(3){
+    text-transform: uppercase;
+    font-size: var(--font-title_01);
+}
+
+/*세상은 더 행복해집니다.*/
+#section_box1 .container p:nth-child(4){
+    font-size: var(--font-title_01);
+}
+
+
