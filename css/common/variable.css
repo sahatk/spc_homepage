@@ -29,6 +29,7 @@
 
   /* Font-size styles */
   /* base size: content_03 (16px) */
+  --font-title_00: 4rem;
   --font-title_01: 3rem;
   --font-title_02: 2.5rem;
   --font-title_03: 2.25rem;

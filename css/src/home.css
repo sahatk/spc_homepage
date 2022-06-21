@@ -1,131 +1,176 @@
 /*header/////////////////////////////////////////////////////////////////////////////////////////////*/
-#header_box{ 
-    position: fixed; top:0; left: 0; right:0;
-    width:100%; height: 70px;
-    margin:auto;
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    margin: auto;
     box-sizing: border-box;
-    padding:10px;
-    z-index: 1000;    
+    padding: 10px;
+    z-index: 1000;
     background-color: transparent;
     /* background-color: #fda;  */
 }
 
 /* header_box안의 컨테이너*/
-#header_box .container{ 
-    display: flex; justify-content:space-between;
-    width:100%; max-width: 1600px; min-width: 300px;
+#header_box .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: 1600px;
+    min-width: 300px;
     height: 50px;
-    margin:auto;
+    margin: auto;
     background-color: transparent;
     /* background-color:rgb(126, 199, 148);     */
 }
 
 /*logo */
-#header_box .container h1 {width: 150px; height: 50px;}
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
 #header_box .container a {
     width: 150px;
     height: 50px;
 }
+
 .logo_img {
     width: 150px;
     height: 50px;
     background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
     background-repeat: no-repeat;
-    background-size: 150px 50px; 
-} /*logo */
+    background-size: 150px 50px;
+}
+
+/*logo */
 /*/////////////////////*/
 /*navigation*/
-#header_box .navigation{width:auto; height:auto;}
-#header_box .navigation h2{width: 0; height: 0; overflow: hidden;} /* 안보이게*/
-#header_box .navigation ul{
-    
-    display: flex; gap:90px; align-items: center;
+#header_box .navigation {
+    width: auto;
+    height: auto;
+}
+
+#header_box .navigation h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 안보이게*/
+#header_box .navigation ul {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
     height: 100%;
     list-style-type: none;
 }
+
 #header_box .navigation li {
-    width: auto; height: auto;
+    width: auto;
+    height: auto;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
+
 #header_box .navigation li:last-child {
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
     background: url('https://api.iconify.design/ant-design/global-outlined.svg?width=50&height=50') no-repeat center center / contain;
-}/*navigation*/
+}
+
+/*navigation*/
 
 /*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*section_box1 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#section_box1{
+#section_box1 {
     position: relative;
-    width: 100%; height: 920px;
+    width: 100%;
+    height: 920px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding:10px;
+    padding: 10px;
     background-image: url(../../img/main_img/section_box1/main_bg_wrap/main_slide_01.jpg);
 }
 
-#section_box1 .container{
-    display: flex; justify-content:space-between; align-items: center;
-    width:100%;  min-width: 300px;
+#section_box1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    min-width: 300px;
     height: inherit;
-    margin:auto;
+    margin: auto;
+    overflow: hidden;
 }
 
 /*제목 텍스트 */
-#section_box1 .main_title_text{
-   
+#section_box1 .main_title_text {
+
     color: #fff;
     font-weight: 700;
 }
 
 
 /*Happy Sincerity*/
-#section_box1 .main_title_text p:first-child{
+#section_box1 .main_title_text p:first-child {
     float: left;
     font-size: var(--font-content_03);
     font-weight: 300;
 }
 
 /* 화이트 라인*/
-#section_box1 .main_title_text .solid{
+#section_box1 .main_title_text .solid {
     float: left;
-    width: 50px; margin : 14px 0 0 10px;
-    border-bottom : 2px solid #fff;
+    width: 50px;
+    margin: 14px 0 0 10px;
+    border-bottom: 2px solid #fff;
 }
 
 /*SPC그룹과 함께*/
-#section_box1 .main_title_text p:nth-child(3){
+#section_box1 .main_title_text p:nth-child(3) {
     clear: both;
     text-transform: uppercase;
     font-size: var(--font-title_01);
 }
 
 /*세상은 더 행복해집니다.*/
-#section_box1 .main_title_text p:nth-child(4){
+#section_box1 .main_title_text p:nth-child(4) {
     font-size: var(--font-title_01);
 }
 
 
 
 /*prev_button*/
-.prev_button_wrap{
+.prev_button_wrap {
     width: 80px;
     height: 40px;
 }
+
+.prev_button_wrap:hover p {
+    color: #000000;
+}
+
 .prev_button_wrap .prev_button {
     vertical-align: center;
     float: left;
-    width:40px;
+    width: 40px;
     height: 40px;
-    background-image: url(../../img/main_img/common/prev_btn.png);
-    background-repeat: no-repeat;
-    background-position-y:center;
-    background-position-x:center;
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
+
+.prev_button_wrap .prev_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+
 .prev_button_wrap p {
     float: right;
     width: 40px;
@@ -134,25 +179,37 @@
     color: #fff;
     font-size: 15px;
     font-weight: 700;
-    line-height: 40px; 
-}/*prev_button*/
+    line-height: 40px;
+}
+
+
+
+/*prev_button*/
 
 
 /*next_button*/
-.next_button_wrap{
+.next_button_wrap {
     width: 80px;
     height: 40px;
 }
+
+.next_button_wrap:hover p {
+    color: #000000;
+}
+
 .next_button_wrap .next_button {
     vertical-align: center;
     float: right;
-    width:40px;
+    width: 40px;
     height: 40px;
-    background-image: url(../../img/main_img/common/next_btn.png);
-    background-repeat: no-repeat;
-    background-position-y:center;
-    background-position-x:center;
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
+
+.next_button_wrap .next_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+
+
 .next_button_wrap p {
     float: left;
     width: 40px;
@@ -161,26 +218,36 @@
     color: #fff;
     font-size: 15px;
     font-weight: 700;
-    line-height: 40px; 
-}/*next_button*/
+    line-height: 40px;
+}
+
+/*next_button*/
 
 /*sns wrap*/
-#section_box1 .navigation {width: auto; height: auto;}
+#section_box1 .navigation {
+    width: auto;
+    height: auto;
+}
 
-#section_box1 .navigation ul{
+#section_box1 .navigation ul {
     position: absolute;
-    bottom:0; left:0;
+    bottom: 0;
+    left: 0;
     margin-left: 30px;
     margin-bottom: 50px;
-    width:70px;
+    width: 70px;
     height: 300px;
 }
 
 /* sns 네비게이션 h2 안보이게*/
-#section_box1 .navigation h2{width: 0; height: 0; overflow: hidden;} 
+#section_box1 .navigation h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
 
 /*happy-point icon*/
-#section_box1 .navigation li:nth-child(1){
+#section_box1 .navigation li:nth-child(1) {
     background-image: url(../../img/main_img/section_box1/main_sns/happy_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -190,7 +257,7 @@
 }
 
 /*instagram icon*/
-#section_box1 .navigation li:nth-child(2){
+#section_box1 .navigation li:nth-child(2) {
     background-image: url(../../img/main_img/section_box1/main_sns/instagram_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -200,7 +267,7 @@
 }
 
 /*facebook icon*/
-#section_box1 .navigation li:nth-child(3){
+#section_box1 .navigation li:nth-child(3) {
     background-image: url(../../img/main_img/section_box1/main_sns/facebook_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -210,7 +277,7 @@
 }
 
 /*youtube icon*/
-#section_box1 .navigation li:nth-child(4){
+#section_box1 .navigation li:nth-child(4) {
     background-image: url(../../img/main_img/section_box1/main_sns/youtube_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -218,6 +285,7 @@
     width: 70px;
     height: 70px;
 }
+
 /*sns wrap*/
 
 /*section_box1 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -226,195 +294,532 @@
 
 /*section_box2 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#section_box2{
-    position: relative;
-    width: 100%; height: 800px;
+#section_box2 {
+    /* position: relative; */
+    width: 100%;
+    height: 900px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding:10px;
+    padding: 10px;
     background-color: #f8f8f8;
+    /* background-color: transparent; */
 }
 
-#section_box2 .container{
-    position: relative;
-    
-    width:100%;  max-width: 1600px; min-width: 300px;
-    height: inherit;
-    margin:auto;
+#section_box2 .container {
+    /* position: relative; */
+
+    width: 1440px;
+    max-width: 1600px;
+    min-width: 300px;
+    height: 700px;
+    margin: auto;
     background-color: #fda;
+    /* background-color: transparent; */
 }
 
 /*SPC GROUP TEXT BOX*/
-.main_group_text{
-    width:100%;
+.main_group_text {
+    width: 100%;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: var(--font-title_01);
+    font-size: var(--font-title_00);
 }
 
-.main_group_text h2{
+.main_group_text h2 {
     width: 100%;
     height: auto;
     margin-bottom: 0.2rem;
-    text-indent: 1rem;
-    margin-left : 100px;
+
 }
 
 
-.main_group_text p{
+.main_group_text p {
     width: 100%;
     height: auto;
     margin-bottom: 0.2rem;
-    text-indent: 1rem;
-    font-size: var(--font-content_04);
+
+    font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 300;
-    margin-left : 100px;
-    
-}/*SPC GROUP TEXT BOX*/
+
+
+}
+
+/*SPC GROUP TEXT BOX*/
 
 
 /* CARD 박스 크기 및 위치 설정 */
-.main_group_card{
-    display: flex; justify-content: center; align-items: center;
-    width: 100%; height: auto;
-    margin-top: 1rem; box-sizing: border-box;
-    
+.main_group_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+
 }
 
-.main_group_card ul{
-    display: flex; justify-content: center; align-items: center;
-    width: 100%; height: 550px;
+.main_group_card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
     background-color: #dff;
-    
+    /* background-color: transparent; */
+
     flex-wrap: wrap;
 }
 
-.main_group_card li{
-    display:flex; align-items: center; justify-content: center;
-    width: 320px; height: 440px;
+.main_group_card li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 440px;
     box-sizing: border-box;
-    margin:1rem;
+    margin: 1rem;
     border-radius: 40px;
     background-color: var(--color-white);
+    box-shadow: 5px 5px 10px #4b4b4b;
 }
 
-.main_group_card li .outline{
+.main_group_card li .outline {
     position: relative;
-    width: 300px; height: 400px;
-        
-}/* CARD 박스 크기 및 위치 설정 */
+    width: 300px;
+    height: 400px;
+
+}
+
+/* CARD 박스 크기 및 위치 설정 */
 
 
 
 /* CARD 제목 */
-.main_group_card .card_title_01{
+.main_group_card .card_title_01 {
     position: absolute;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     margin: 0px 0px 0px 30px;
-    color:#23afe3;
+    color: #23afe3;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.main_group_card .card_title_02{
+.main_group_card .card_title_02 {
     position: absolute;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     margin: 0px 0px 0px 30px;
-    color:#23afe3;
+    color: #23afe3;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.main_group_card .card_title_03{
+.main_group_card .card_title_03 {
     position: absolute;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     margin: 0px 0px 0px 30px;
-    color:#23afe3;
+    color: #23afe3;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.main_group_card .card_title_04{
+.main_group_card .card_title_04 {
     position: absolute;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     margin: 0px 0px 0px 30px;
-    color:#23afe3;
+    color: #23afe3;
     font-weight: 700;
     text-transform: uppercase;
-}/* CARD 제목 */
+}
+
+/* CARD 제목 */
 
 /* CARD 이미지 */
 .main_group_card .outline .card_image_01 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_01.png);
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .main_group_card .outline .card_image_02 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_02.png);
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .main_group_card .outline .card_image_03 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_03.png);
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .main_group_card .outline .card_image_04 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_04.png);
     background-position: center;
-    background-repeat:no-repeat;
-}/* CARD 이미지 */
+    background-repeat: no-repeat;
+}
+
+/* CARD 이미지 */
 
 
 
 /* CARD 설명 */
-.main_group_card .card_text_01{
+.main_group_card .card_text_01 {
     position: absolute;
     width: 300px;
-    
-    bottom:0; left:0;
+
+    bottom: 0;
+    left: 0;
     margin: 0px 0px 30px 40px;
     font-weight: 700;
 }
 
-.main_group_card .card_text_02{
+.main_group_card .card_text_02 {
     position: absolute;
     width: 300px;
-    
-    bottom:0; left:0;
+
+    bottom: 0;
+    left: 0;
     margin: 0px 0px 30px 40px;
     font-weight: 700;
 }
 
-.main_group_card .card_text_03{
+.main_group_card .card_text_03 {
     position: absolute;
     width: 300px;
-    
-    bottom:0; left:0;
+
+    bottom: 0;
+    left: 0;
     margin: 0px 0px 10px 40px;
     font-weight: 700;
 }
 
-.main_group_card .card_text_04{
+.main_group_card .card_text_04 {
     position: absolute;
     width: 300px;
-    
-    bottom:0; left:0;
+
+    bottom: 0;
+    left: 0;
     margin: 0px 0px 10px 40px;
     font-weight: 700;
-}/* CARD 설명 */
+}
+
+/* CARD 설명 */
+
+/*section_box2 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box3 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#section_box3 {
+
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+#section_box3 .container {
+
+
+    width: 1440px;
+    max-width: 1600px;
+    min-width: 300px;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #c4c4c4;
+}
+
+/*타이틀과 탭메뉴 wrap*/
+.main_brand_wrap_01 { 
+    width: 1440px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+
+/*원으로 된 카드 wrap*/
+.main_brand_wrap_02 { 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:1300px;
+    height: 300px;
+    margin-top:1rem;
+    margin: 0 auto;
+    background-color: #b0acac;
+}
+
+/*view_all 버튼 wrap*/
+.main_brand_wrap_03 {
+    display: flex;
+    justify-content: center;
+    width:1300px;
+    height: 100px;
+    margin-top:1rem;
+    margin: 0 auto;
+    background-color: #fda;
+
+}
+
+/*SPC BRAND TEXT BOX*/
+.main_brand_text {
+    width: 30%;
+    height: 150px;
+    float: left;
+
+
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-title_00);
+
+}
+
+.main_brand_text h2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+}
+
+
+.main_brand_text p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+    font-size: var(--font-content_03);
+    color: #7d7d7d;
+    font-weight: 300;
+
+
+}
+
+/*SPC BRAND TEXT BOX*/
+
+/*SPC BRAND TAB BOX*/
+
+.main_brand_tab {
+    width: 70%;
+    float: right;
+    background-color: #c4c4c4;
+
+
+}
+
+.main_brand_tab ul {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    list-style-type: none;
+
+}
+
+.main_brand_tab li {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+
+
+}
+
+/*탭 메뉴 글자(베이커리,외식,카페,서비스) */
+.main_brand_tab li p {
+    width: 250px;
+    margin-top:10px;
+
+
+    text-align: center;
+    font-weight: 700;
+
+}
+
+/* SPC BRAND 탭 아이콘 이미지 크기 및 위치 조정*/
+.main_brand_tab .tab_icon_01 {
+    width: 250px;
+    height: 50px;
+
+    background-image: url(../../img/main_img/section_box3/main_tab_wrap/bread_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_tab .tab_icon_02 {
+    width: 250px;
+    height: 50px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/main_tab_wrap/dinner_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_tab .tab_icon_03 {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/main_tab_wrap/cafe_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_tab .tab_icon_04 {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/main_tab_wrap/service_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}/* SPC BRAND 탭 아이콘 이미지 크기 및 위치 조정*/
+/*SPC BRAND TAB BOX*/
+
+
+/*SPC BRAND CARD*/
+
+.main_brand_card {
+    width:1200px;
+    height: 300px;
+}
+
+.main_brand_card ul {
+    display: flex;
+    width:1200px;
+    height: 300px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main_brand_card li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.main_brand_card li .card_image_01{
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/brand_wrap/bread/bread_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_card li .card_image_02{
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/brand_wrap/bread/bread_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_card li .card_image_03{
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/brand_wrap/bread/bread_03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_card li .card_image_04{
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/brand_wrap/bread/bread_04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_brand_card li .card_image_05{
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-image: url(../../img/main_img/section_box3/brand_wrap/bread/bread_05.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*prev_button*/
+
+.main_brand_wrap_02 .prev_button {
+    position: absolute;
+    top: 50%; left : 0;
+    transform: translate(0%,-50%);
+    width: 50px;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+}
+
+.main_brand_wrap_02 .prev_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+
+
+
+/*prev_button*/
+
+/*next_button*/
+
+.main_brand_wrap_02 .next_button {
+    position: absolute;
+    top: 50%; right : 0;
+    transform: translate(0%,-50%);
+    width: 50px;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+}
+
+.main_brand_wrap_02 .next_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+
+/*next_button*/
 
 
 
