@@ -1080,25 +1080,11 @@
     padding: 20px;
 }
 
-/*SPC 해피포인트 구매하러 가기 버튼*/
-.buy{
-    width: 200px;
-    height: 50px;
+/*SPC 해피포인트 구매하러 가기 버튼 위치 조정*/
+.main_happypoint_card .buy{
     margin: 0 auto;
-    border-radius: 40px;
-    background-color: #7c7c7c29;
-    text-align: center;
   }
-
-.buy button{
-    width: 200px;
-    height: 50px;
-    border-radius: 40px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 600;
-    text-transform: uppercase;
-  } /*SPC 해피포인트 구매하러 가기 버튼*/
+/*SPC 해피포인트 구매하러 가기 버튼 위치 조정*/
  
   /* SPC 해피포인트 CARD 설명 */
 
@@ -1288,5 +1274,41 @@
 }
 
 /* SPC NEWS CARD 이미지 */
+
+/* SPC NEWS CARD text */
+
+/*SPC NEWS CARD 설명 부분 */
+.main_news_card .card_text_01{
+    padding: 0px 10px 10px;
+}
+
+.main_news_card .card_text_01 p {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}/*SPC NEWS CARD 설명 부분 */
+
+
+/*SPC NEWS CARD 날짜 부분 */
+.main_news_card .card_text_01 b {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}/*SPC NEWS CARD 날짜 부분 */
+
+/*SPC NEWS CARD 날짜 VIEW MORE 위치 조정 */
+.main_news_card .card_text_wrap_02 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}/*SPC NEWS CARD 날짜 VIEW MORE 위치 조정 */
+
+/* SPC NEWS CARD text */
 
 
