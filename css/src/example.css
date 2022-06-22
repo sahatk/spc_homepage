@@ -1,56 +1,5 @@
 
 
-#section_box4{
-    position: relative;
-    width: 100%; height: 900px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding:10px;
-    background-color: #e8e8e8;
-}
-
-#section_box4 .container{
-    display: flex; justify-content:space-between; align-items: center;
-    width:1440px;  max-width: 1600px; min-width: 300px;
-    height: inherit;
-    margin:auto;
-    background-color: #8cda98;
-}
-
-#section_box5{
-    position: relative;
-    width: 100%; height: 900px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding:10px;
-    background-color: #f8f8f8;
-}
-
-#section_box5 .container{
-    display: flex; justify-content:space-between; align-items: center;
-    width:1440px; max-width: 1600px; min-width: 300px;
-    height: inherit;
-    margin:auto;
-    background-color: #fda;
-}
-
-#section_box6{
-    position: relative;
-    width: 100%; height: 900px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding:10px;
-    background-color: #e8e8e8;
-}
-
-#section_box6 .container{
-    display: flex; justify-content:space-between; align-items: center;
-    width:1440px;   max-width: 1600px; min-width: 300px;
-    height: inherit;
-    margin:auto;
-    background-color: #8cda98;
-}
-
 #section_box7{
     position: relative;
     width: 100%; height: 900px;

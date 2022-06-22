@@ -18,8 +18,8 @@
 #header_box .container {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
-    max-width: 1600px;
+    width: 1700px;
+    max-width: 1920px;
     min-width: 300px;
     height: 50px;
     margin: auto;
@@ -103,9 +103,10 @@
 
 #section_box1 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 1440px;
+    /* width: 100%; */
     min-width: 300px;
     height: inherit;
     margin: auto;
@@ -150,16 +151,18 @@
 
 
 /*prev_button*/
-.prev_button_wrap {
+#section_box1 .prev_button_wrap {
+    position: absolute;
+    top:50%; left: 0; transform: translate(50%,-50%);
     width: 80px;
     height: 40px;
 }
 
-.prev_button_wrap:hover p {
+#section_box1 .prev_button_wrap:hover p {
     color: #000000;
 }
 
-.prev_button_wrap .prev_button {
+#section_box1 .prev_button_wrap .prev_button {
     vertical-align: center;
     float: left;
     width: 40px;
@@ -167,11 +170,11 @@
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
 
-.prev_button_wrap .prev_button:hover {
+#section_box1 .prev_button_wrap .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
 }
 
-.prev_button_wrap p {
+#section_box1 .prev_button_wrap p {
     float: right;
     width: 40px;
     height: 40px;
@@ -188,16 +191,18 @@
 
 
 /*next_button*/
-.next_button_wrap {
+#section_box1 .next_button_wrap {
+    position: absolute;
+    top:50%; right: 0; transform: translate(-50%,-50%);
     width: 80px;
     height: 40px;
 }
 
-.next_button_wrap:hover p {
+#section_box1 .next_button_wrap:hover p {
     color: #000000;
 }
 
-.next_button_wrap .next_button {
+#section_box1 .next_button_wrap .next_button {
     vertical-align: center;
     float: right;
     width: 40px;
@@ -205,12 +210,12 @@
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
 
-.next_button_wrap .next_button:hover {
+#section_box1 .next_button_wrap .next_button:hover {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
 }
 
 
-.next_button_wrap p {
+#section_box1 .next_button_wrap p {
     float: left;
     width: 40px;
     height: 40px;
@@ -309,7 +314,8 @@
     /* position: relative; */
 
     width: 1440px;
-    max-width: 1600px;
+    /* width: 100%; */
+    max-width: 1920px;
     min-width: 300px;
     height: 700px;
     margin: auto;
@@ -352,7 +358,7 @@
 /*SPC GROUP TEXT BOX*/
 
 
-/* CARD 박스 크기 및 위치 설정 */
+/* SPC GROUP CARD 박스 크기 및 위치 설정 */
 .main_group_card {
     display: flex;
     justify-content: center;
@@ -396,11 +402,11 @@
 
 }
 
-/* CARD 박스 크기 및 위치 설정 */
+/* SPC GROUP CARD 박스 크기 및 위치 설정 */
 
 
 
-/* CARD 제목 */
+/* SPC GROUP CARD 제목 */
 .main_group_card .card_title_01 {
     position: absolute;
     top: 0;
@@ -441,9 +447,9 @@
     text-transform: uppercase;
 }
 
-/* CARD 제목 */
+/* SPC GROUP CARD 제목 */
 
-/* CARD 이미지 */
+/* SPC GROUP CARD 이미지 */
 .main_group_card .outline .card_image_01 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_01.png);
@@ -472,11 +478,11 @@
     background-repeat: no-repeat;
 }
 
-/* CARD 이미지 */
+/* SPC GROUP CARD 이미지 */
 
 
 
-/* CARD 설명 */
+/* SPC GROUP CARD 설명 */
 .main_group_card .card_text_01 {
     position: absolute;
     width: 300px;
@@ -517,7 +523,7 @@
     font-weight: 700;
 }
 
-/* CARD 설명 */
+/* SPC GROUP CARD 설명 */
 
 /*section_box2 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -527,44 +533,90 @@
 
 
 #section_box3 {
-
+    
+    display: flex; align-items: center;
     width: 100%;
-    height: 800px;
+    height: 900px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #e2e2e2;
+    background-color: #efefef;
 }
 
 #section_box3 .container {
-
-
+    position: relative;
     width: 1440px;
-    max-width: 1600px;
+    /* width: 100%; */
+    max-width: 1920px;
     min-width: 300px;
-    height: 700px;
+    height: 800px;
     margin: auto;
     overflow: hidden;
     background-color: #c4c4c4;
 }
 
-/*타이틀과 탭메뉴 wrap*/
-.main_brand_wrap_01 { 
+/*SPC BRAND prev_button*/
+
+#section_box3 .prev_button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
+    z-index: 1000;
+}
+
+#section_box3 .prev_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    z-index: 1000;
+
+}
+
+
+
+/*SPC BRAND prev_button*/
+
+/*SPC BRAND next_button*/
+
+#section_box3 .next_button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
+    z-index: 1000;
+}
+
+#section_box3 .next_button:hover {
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    z-index: 1000;
+
+}
+
+/*SPC BRAND next_button*/
+
+/*SPC BRAND 타이틀과 탭메뉴 wrap*/
+.main_brand_wrap_01 {
     width: 1440px;
     height: 150px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-   
+
 }
 
 /*원으로 된 카드 wrap*/
-.main_brand_wrap_02 { 
+.main_brand_wrap_02 {
     display: flex;
     justify-content: center;
     position: relative;
-    width:1300px;
+    /* width:1440px; */
+    width:100%;
     height: 300px;
-    margin-top:1rem;
+    margin-top: 1rem;
     margin: 0 auto;
     background-color: #b0acac;
 }
@@ -573,9 +625,10 @@
 .main_brand_wrap_03 {
     display: flex;
     justify-content: center;
-    width:1300px;
+    /* width: 1300px; */
+    width: 100%;
     height: 100px;
-    margin-top:1rem;
+    margin-top: 1rem;
     margin: 0 auto;
     background-color: #fda;
 
@@ -650,7 +703,7 @@
 /*탭 메뉴 글자(베이커리,외식,카페,서비스) */
 .main_brand_tab li p {
     width: 250px;
-    margin-top:10px;
+    margin-top: 10px;
 
 
     text-align: center;
@@ -698,20 +751,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}/* SPC BRAND 탭 아이콘 이미지 크기 및 위치 조정*/
+}
+
+/* SPC BRAND 탭 아이콘 이미지 크기 및 위치 조정*/
 /*SPC BRAND TAB BOX*/
 
 
 /*SPC BRAND CARD*/
 
 .main_brand_card {
-    width:1200px;
+    width: 1200px;
     height: 300px;
 }
 
 .main_brand_card ul {
     display: flex;
-    width:1200px;
+    width: 1200px;
     height: 300px;
     gap: 10px;
     align-items: center;
@@ -730,7 +785,7 @@
     background-color: var(--color-white);
 }
 
-.main_brand_card li .card_image_01{
+.main_brand_card li .card_image_01 {
     width: 220px;
     height: 220px;
 
@@ -741,7 +796,7 @@
     background-size: contain;
 }
 
-.main_brand_card li .card_image_02{
+.main_brand_card li .card_image_02 {
     width: 220px;
     height: 220px;
 
@@ -752,7 +807,7 @@
     background-size: contain;
 }
 
-.main_brand_card li .card_image_03{
+.main_brand_card li .card_image_03 {
     width: 220px;
     height: 220px;
 
@@ -763,7 +818,7 @@
     background-size: contain;
 }
 
-.main_brand_card li .card_image_04{
+.main_brand_card li .card_image_04 {
     width: 220px;
     height: 220px;
 
@@ -774,7 +829,7 @@
     background-size: contain;
 }
 
-.main_brand_card li .card_image_05{
+.main_brand_card li .card_image_05 {
     width: 220px;
     height: 220px;
 
@@ -785,41 +840,453 @@
     background-size: contain;
 }
 
-/*prev_button*/
 
-.main_brand_wrap_02 .prev_button {
+
+/*section_box3 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box4 (banner) /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box4 {
+
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(../../img/main_img/section_box4/main-banner.jpg);
+}
+
+/*section_box4 (banner) /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box5 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box5 {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+#section_box5 .container {
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 900px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #c4c4c4;
+}
+
+/*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
+.main_happypoint_wrap_01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+
+}
+
+/*SPC 해피포인트 TEXT BOX*/
+.main_happypoint_wrap_01 .main_happypoint_text {
+    width: 50%;
+    height: 150px;
+    float: left;
+
+
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-title_00);
+
+}
+
+.main_happypoint_wrap_01 .main_happypoint_text h2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+}
+
+
+.main_happypoint_wrap_01 .main_happypoint_text p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+    font-size: var(--font-content_03);
+    color: #7d7d7d;
+    font-weight: 300;
+
+
+}/*SPC 해피포인트 TEXT BOX*/
+
+/*SPC 해피포인트 VIEW_ALL BOX*/
+.main_happypoint_wrap_01 .main_view_all {
+    margin-right: 1rem;
+}/*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
+
+
+/* CARD 박스 크기 및 위치 설정 */
+.main_happypoint_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+
+}
+
+.main_happypoint_card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #dff;
+    /* background-color: transparent; */
+
+    flex-wrap: wrap;
+}
+
+.main_happypoint_card li {
+    display: flex;
+    align-items: center;
+
+    width: 250px;
+    height: 400px;
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: 40px;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.main_happypoint_card li .outline {
+    position: relative;
+    width: 250px;
+    height: 400px;
+
+}
+
+/* CARD 박스 크기 및 위치 설정 */
+
+/* SPC 해피포인트 CARD 이미지 */
+.main_happypoint_card .outline .card_image_01 {
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box5/point_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_happypoint_card .outline .card_image_02 {
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box5/point_bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_happypoint_card .outline .card_image_03 {
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box5/point_bg_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_happypoint_card .outline .card_image_04 {
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box5/point_bg_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_happypoint_card .outline .card_image_05 {
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box5/point_bg_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* SPC 해피포인트 CARD 이미지 */
+
+
+
+/* SPC 해피포인트 CARD 설명 */
+.main_happypoint_card .card_text_01 {
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+    
+}
+
+.main_happypoint_card .card_text_02 {
     position: absolute;
-    top: 50%; left : 0;
-    transform: translate(0%,-50%);
-    width: 50px;
-    height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+    width: 300px;
+
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 30px 40px;
+    font-weight: 700;
 }
 
-.main_brand_wrap_02 .prev_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
-}
-
-
-
-/*prev_button*/
-
-/*next_button*/
-
-.main_brand_wrap_02 .next_button {
+.main_happypoint_card .card_text_03 {
     position: absolute;
-    top: 50%; right : 0;
-    transform: translate(0%,-50%);
-    width: 50px;
+    width: 300px;
+
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 10px 40px;
+    font-weight: 700;
+}
+
+.main_happypoint_card .card_text_04 {
+    position: absolute;
+    width: 300px;
+
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 10px 40px;
+    font-weight: 700;
+}
+
+.main_happypoint_card .card_text_01 p {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+/*SPC 해피포인트 구매하러 가기 버튼*/
+.buy{
+    width: 200px;
     height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: #7c7c7c29;
+    text-align: center;
+  }
+
+.buy button{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+  } /*SPC 해피포인트 구매하러 가기 버튼*/
+ 
+  /* SPC 해피포인트 CARD 설명 */
+
+/*section_box5 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box6 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+  #section_box6{
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #D1EBFA;
 }
 
-.main_brand_wrap_02 .next_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+#section_box6 .container{
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 900px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #8cda98;
 }
 
-/*next_button*/
+/*SPC NEWS 타이틀과 VIEW ALL wrap*/
+.main_news_wrap_01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #d1ebfa;
 
+}
+
+/*SPC NEWS TEXT BOX*/
+.main_news_wrap_01 .main_news_text {
+    width: 50%;
+    height: 150px;
+    float: left;
+
+
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-title_00);
+
+}
+
+.main_news_wrap_01 .main_news_text h2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+}
+
+
+.main_news_wrap_01 .main_news_text p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+    font-size: var(--font-content_03);
+    color: #7d7d7d;
+    font-weight: 300;
+
+
+}/*SPC NEWS TEXT BOX*/
+
+/*SPC NEWS VIEW_ALL BOX*/
+.main_news_wrap_01 .main_news_view {
+    display: flex;
+    overflow: hidden;
+    margin-right: 1rem;
+    gap: 40px;
+}
+
+.main_news_view .main_view_left{
+    float: left;
+    margin: 1rem;
+}
+
+.main_news_view .main_view_right{
+    float: left;
+    margin: 1rem;
+}
+
+.main_news_view .main_view_all{
+    float: left;
+    margin: 1rem;
+}
+/*SPC NEWS VIEW_ALL BOX*/
+
+/* SPC NEWS CARD 박스 크기 및 위치 설정 */
+.main_news_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+
+}
+
+.main_news_card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #dff;
+    /* background-color: transparent; */
+
+    flex-wrap: wrap;
+}
+
+.main_news_card li {
+    display: flex;
+    align-items: center;
+
+    width: 440px;
+    height: 380px;
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: 40px;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.main_news_card li .outline {
+    position: relative;
+    width: 440px;
+    height: 380px;
+
+}
+
+/* SPC NEWS CARD 박스 크기 및 위치 설정 */
+
+/* SPC NEWS CARD 이미지 */
+.main_news_card .outline .card_image_01 {
+    width: 440px;
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box6/news_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.main_news_card .outline .card_image_02 {
+    width: 440px;
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box6/news_bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_news_card .outline .card_image_03 {
+    width: 440px;
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box6/news_bg_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_news_card .outline .card_image_04 {
+    width: 440px;
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url(../../img/main_img/section_box6/news_bg_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SPC NEWS CARD 이미지 */
 
 
