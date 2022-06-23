@@ -49,19 +49,19 @@
 /*logo */
 /*/////////////////////*/
 /*navigation*/
-#header_box .navigation {
+#header_box .header_nav {
     width: auto;
     height: auto;
 }
 
-#header_box .navigation h2 {
+#header_box .header_nav h2 {
     width: 0;
     height: 0;
     overflow: hidden;
 }
 
 /* 안보이게*/
-#header_box .navigation ul {
+#header_box .header_nav ul {
 
     display: flex;
     gap: 90px;
@@ -70,15 +70,16 @@
     list-style-type: none;
 }
 
-#header_box .navigation li {
+#header_box .header_nav li {
     width: auto;
     height: auto;
     color: #fff;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
 
-#header_box .navigation li:last-child {
+#header_box .header_nav li:last-child {
     width: 30px;
     height: 30px;
     background: url('https://api.iconify.design/ant-design/global-outlined.svg?width=50&height=50') no-repeat center center / contain;
