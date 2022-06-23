@@ -320,7 +320,7 @@
     min-width: 300px;
     height: 700px;
     margin: auto;
-    background-color: #fda;
+    background-color: #f8f8f8;
     /* background-color: transparent; */
 }
 
@@ -363,7 +363,7 @@
 /* SPC GROUP CARD 박스 크기 및 위치 설정 */
 .main_group_card {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
@@ -374,12 +374,12 @@
 
 .main_group_card ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 550px;
-    background-color: #dff;
-    /* background-color: transparent; */
+    /* background-color: #dff; */
+    background-color: transparent;
 
     flex-wrap: wrap;
 }
@@ -391,7 +391,6 @@
     width: 320px;
     height: 440px;
     box-sizing: border-box;
-    margin: 1rem;
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 5px 5px 10px #4b4b4b;
@@ -542,7 +541,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #efefef;
+    background-color: #e2e2e8;
 }
 
 #section_box3 .container {
@@ -554,7 +553,8 @@
     height: 800px;
     margin: auto;
     overflow: hidden;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4; */
+    background-color: transparent;
 }
 
 /*SPC BRAND prev_button*/
@@ -620,7 +620,8 @@
     height: 300px;
     margin-top: 1rem;
     margin: 0 auto;
-    background-color: #b0acac;
+    /* background-color: #b0acac; */
+    background-color: transparent;
 }
 
 /*view_all 버튼 wrap*/
@@ -632,7 +633,8 @@
     height: 100px;
     margin-top: 1rem;
     margin: 0 auto;
-    background-color: #fda;
+    /* background-color: #fda; */
+    background-color: transparent;
 
 }
 
@@ -868,22 +870,24 @@
 
 #section_box5 {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #e2e2e2;
+    background-color: #f8f8f8;
 }
 
 #section_box5 .container {
-    width: 1440px;
+    width: 1500px;
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
-    height: 900px;
+    height: 800px;
     margin: auto;
     overflow: hidden;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4; */
+    background-color: transparent;
+    box-sizing: border-box;
 }
 
 /*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
@@ -942,36 +946,29 @@
 
 /* CARD 박스 크기 및 위치 설정 */
 .main_happypoint_card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
     margin-top: 1rem;
     box-sizing: border-box;
-
 }
 
 .main_happypoint_card ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 600px;
-    background-color: #dff;
-    /* background-color: transparent; */
-
+    width: 1440px;
+    height: 450px;
+    /* background-color: #dff; */
+    background-color: transparent;
     flex-wrap: wrap;
 }
 
 .main_happypoint_card li {
     display: flex;
     align-items: center;
-
     width: 250px;
     height: 400px;
     box-sizing: border-box;
-    margin: 1rem;
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 5px 5px 10px #4b4b4b;
@@ -1100,7 +1097,7 @@
 
 #section_box6{
     width: 100%;
-    height: 1000px;
+    height: 900px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
@@ -1108,14 +1105,15 @@
 }
 
 #section_box6 .container{
-    width: 1440px;
+    width: 1500px;
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
-    height: 900px;
+    height: 800px;
     margin: auto;
     overflow: hidden;
-    background-color: #8cda98;
+    /* background-color: #8cda98; */
+    background-color: transparent;
 }
 
 /*SPC NEWS 타이틀과 VIEW ALL wrap*/
@@ -1127,7 +1125,9 @@
     height: 150px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: #d1ebfa;
+    /* background-color: #d1ebfa; */
+    background-color: transparent;
+
 
 }
 
@@ -1195,8 +1195,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 500px;
     margin-top: 1rem;
     box-sizing: border-box;
 
@@ -1204,12 +1204,12 @@
 
 .main_news_card ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 600px;
-    background-color: #dff;
-    /* background-color: transparent; */
+    /* background-color: #dff; */
+    background-color: transparent;
 
     flex-wrap: wrap;
 }
@@ -1221,7 +1221,6 @@
     width: 440px;
     height: 380px;
     box-sizing: border-box;
-    margin: 1rem;
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 5px 5px 10px #4b4b4b;
@@ -1325,11 +1324,11 @@
 
 #section_box7{
     width: 100%;
-    height: 900px;
+    height: 800px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #e2e2e2;
+    background-color: #e7e7e7;
 }
 
 #section_box7 .container{
@@ -1337,10 +1336,11 @@
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
-    height: 800px;
+    height: 750px;
     margin: auto;
     overflow: hidden;
-    background-color: #8c94da;
+    /* background-color: #8c94da; */
+    background-color: transparent;
 }
 
 /*SPC MAGAZINE 타이틀과 VIEW ALL wrap*/
@@ -1353,14 +1353,18 @@
     height: 150px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: transparent;
+
 
 }
 /*main_magazine_wrap_02*/
 .main_magazine_wrap_02{
-    width: 1440px;
-    height: 500px;
-    background-color: #fff;
+    width: 1450px;
+    height: 350px;
+    /* background-color: #fff; */
+    background-color: transparent;
+
 }
 /*main_magazine_wrap_02*/
 
@@ -1418,10 +1422,10 @@
 
 .main_magazine_card ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 350px;
     background-color: #fff;
     /* background-color: transparent; */
 
@@ -1432,17 +1436,16 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     box-sizing: border-box;
-    margin: 1rem;
     background-color: var(--color-white);
 }
 
 /* SPC MAGAZINE CARD li before 세로 회색 실선 */
-.main_magazine_card li::after {
+/* .main_magazine_card li::after {
     position:absolute; top:0; bottom:0; right: 0;
-    margin-right: -5px;
+    margin-right: -2px;
     display:block;
     content: ""; 
     width: 1px; height: 100%;
@@ -1450,44 +1453,45 @@
 
 }
 
-.main_magazine_card li:last-child:after {display: none;}
+.main_magazine_card li:last-child:after {display: none;} */
 
 .main_magazine_card li .outline {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    border-right:1px solid gray;
 
 }
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 
 /* SPC MAGAZINE CARD 이미지 */
 .main_magazine_card .outline .card_image_01 {
-    width: 300px;
-    height: 230px;
+    width: 350px;
+    height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     
 }
 .main_magazine_card .outline .card_image_02 {
-    width: 300px;
-    height: 230px;
+    width: 350px;
+    height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_02.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     
 }
 .main_magazine_card .outline .card_image_03 {
-    width: 300px;
-    height: 230px;
+    width: 350px;
+    height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_03.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     
 }
 .main_magazine_card .outline .card_image_04 {
-    width: 300px;
-    height: 230px;
+    width: 350px;
+    height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_04.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -1523,7 +1527,7 @@
     width: 100%; height: 900px;
     margin: 0 auto;
     
-    background-color: #7d7d7d;
+    background-color: #ffffff;
     z-index: 2;
     
 }
@@ -1547,8 +1551,8 @@
     height: 700px;
     margin: auto;
     overflow:hidden;
-    /* background-color: transparent; */
-    background-color: #8c94da;
+    background-color: transparent;
+    /* background-color: #8c94da; */
 }
 
 .main_youtube_wrap_01 {
@@ -1558,9 +1562,8 @@
     width: 1440px;
     height: 150px;
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #d1ebfa;
-
+    background-color: transparent;
+    /* background-color: #d1ebfa; */
 }
 
 
@@ -1569,9 +1572,8 @@
     align-items: center;
     width: 33.3333333%;
     height: 450px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #8cda98;
+    background-color: transparent;
+    /* background-color: #8cda98; */
     float: left;
 }
 
@@ -1580,9 +1582,8 @@
     align-items: center;
     width: 66.6666666%;
     height: 450px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #23afe3;
+    background-color: transparent;
+    /* background-color: #23afe3; */
     float: right;
 }
 
@@ -1662,8 +1663,8 @@
     align-items: center;
     width: 1200px;
     height: 450px;
-    background-color: #dff;
-    /* background-color: transparent; */
+    /* background-color: #dff; */
+    background-color: transparent;
 
     flex-wrap: wrap;
 }
@@ -1757,3 +1758,302 @@
 
 
 /* SPC YOUTUBE CARD text */
+
+/*section_box8 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box9 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+#section_box9{
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background:linear-gradient(#ffffff,#d1ebfa);
+}
+
+#section_box9 .container{
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+    /* background-color: #8cda98; */
+    background-color: transparent;
+}
+
+/*SPC SNS 타이틀과 VIEW ALL wrap*/
+.main_sns_wrap_01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: #d1ebfa; */
+    background-color: transparent;
+
+}
+
+/*SPC SNS TEXT BOX*/
+.main_sns_wrap_01 .main_sns_text {
+    width: 50%;
+    height: 150px;
+    float: left;
+
+
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-title_00);
+
+}
+
+.main_sns_wrap_01 .main_sns_text h2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+}
+
+
+.main_sns_wrap_01 .main_sns_text p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+
+    font-size: var(--font-content_03);
+    color: #7d7d7d;
+    font-weight: 400;
+    font-size:20px;
+
+
+}/*SPC SNS TEXT BOX*/
+
+/*SPC SNS VIEW_ALL BOX*/
+.main_sns_wrap_01 .main_sns_view {
+    display: flex;
+    overflow: hidden;
+    margin-right: 1rem;
+    gap: 40px;
+}
+
+.main_sns_view .main_view_left{
+    float: left;
+    margin: 1rem;
+}
+
+.main_sns_view .main_view_right{
+    float: left;
+    margin: 1rem;
+}
+
+.main_sns_view .main_view_all{
+    float: left;
+    margin: 1rem;
+}
+/*SPC SNS VIEW_ALL BOX*/
+
+/* SPC SNS CARD 박스 크기 및 위치 설정 */
+.main_sns_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+
+}
+
+.main_sns_card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    /* background-color: #dff; */
+    background-color: transparent;
+
+    flex-wrap: wrap;
+}
+
+.main_sns_card li {
+    display: flex;
+    align-items: center;
+
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 0.5rem;
+    border-radius: 15px;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.main_sns_card li .outline {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+/* SPC SNS CARD 박스 크기 및 위치 설정 */
+
+/* SPC SNS CARD 이미지 */
+.main_sns_card .outline .card_image_01 {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../../img/main_img/section_box9/sns_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.main_sns_card .outline .card_image_02 {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../../img/main_img/section_box9/sns_bg_02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_sns_card .outline .card_image_03 {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../../img/main_img/section_box9/sns_bg_03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_sns_card .outline .card_image_04 {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../../img/main_img/section_box9/sns_bg_04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_sns_card .outline .card_image_05 {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../../img/main_img/section_box9/sns_bg_05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SPC SNS CARD 이미지 */
+
+/*section_box9 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer_box{
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #D1EBFA;
+}
+
+/*SPC Footer icon 및 prev,next 버튼*/
+.main_footer_wrap_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-bottom:2rem;
+    background-color: #23afe3;
+
+}
+
+.main_footer_wrap_01 .main_footer_icon{ 
+    display: flex; justify-content: space-around; 
+    width:100%;
+    height: 150px;
+
+    background-color: #ffffff;
+}
+.main_footer_icon ul{
+    display: flex; align-items: center;
+    width: 100%;
+    
+}
+
+.main_footer_icon .prev_button{
+    width: 8%;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
+}
+
+
+.main_footer_icon .next_button{
+    width: 8%;
+    height: 50px;
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
+}
+
+.main_footer_icon .icon_01{
+    width: 16.8%;
+    height: 150px;
+    background-image: url(../../img/main_img/footer_box/footer_icon_box/SAMLIP.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_footer_icon .icon_02{
+    width: 16.8%;
+    height: 150px;
+    background-image: url(../../img/main_img/footer_box/footer_icon_box/PACK.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_footer_icon .icon_03{
+    width: 16.8%;
+    height: 150px;
+    background-image: url(../../img/main_img/footer_box/footer_icon_box/LOGITICS.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.main_footer_icon .icon_04{
+    width: 16.8%;
+    height: 150px;
+    background-image: url(../../img/main_img/footer_box/footer_icon_box/GFS.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*SPC Footer icon 및 prev,next 버튼*/
+
+.main_footer_wrap_02 {
+    width: 100%;
+    height: 600px;
+    background-color: #8c94da;
+    border-top: 2px solid #d3d3d3;
+
+
+}
+
+/*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
