@@ -79,10 +79,22 @@
     text-transform: uppercase;
 }
 
+#header_box .header_nav li:hover {
+    color:#000000;
+    cursor: pointer;
+}
+
 #header_box .header_nav li:last-child {
     width: 30px;
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon.png) no-repeat center center / contain;
+}
+
+#header_box .header_nav li:last-child:hover {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
+    cursor: pointer;
 }
 
 /*navigation*/
@@ -161,6 +173,7 @@
 
 #section_box1 .prev_button_wrap:hover p {
     color: #000000;
+    cursor: pointer;
 }
 
 #section_box1 .prev_button_wrap .prev_button {
@@ -173,6 +186,7 @@
 
 #section_box1 .prev_button_wrap .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    cursor: pointer;
 }
 
 #section_box1 .prev_button_wrap p {
@@ -201,6 +215,7 @@
 
 #section_box1 .next_button_wrap:hover p {
     color: #000000;
+    cursor: pointer;
 }
 
 #section_box1 .next_button_wrap .next_button {
@@ -213,6 +228,7 @@
 
 #section_box1 .next_button_wrap .next_button:hover {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    cursor: pointer;
 }
 
 
@@ -573,6 +589,7 @@
 #section_box3 .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
     z-index: 1000;
+    cursor: pointer;
 
 }
 
@@ -596,6 +613,7 @@
 #section_box3 .next_button:hover {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
     z-index: 1000;
+    cursor: pointer;
 
 }
 
@@ -2006,6 +2024,7 @@
 
 .main_footer_icon .prev_button:hover{
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    cursor: pointer;
 }
 
 
@@ -2017,6 +2036,7 @@
 
 .main_footer_icon .next_button:hover{
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    cursor: pointer;
 }
 
 .main_footer_icon .icon_01{
@@ -2145,6 +2165,7 @@
     background-size: contain;
     background-position: center;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .main_footer_icon_wrap li:nth-child(2) {
@@ -2166,6 +2187,7 @@
     background-size: contain;
     background-position: center;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .main_footer_icon_wrap li:nth-child(3) {
@@ -2189,6 +2211,7 @@
     background-position: center;
     font-weight: 700;
     margin-top:20px;
+    cursor: pointer;
 }
 
 .main_footer_icon_wrap li .icon_text_facebook{
@@ -2217,7 +2240,7 @@
     background-size: contain;
     background-position: center;
     font-weight: 700;
-    
+    cursor: pointer;
 }
 
 .main_footer_icon_wrap .icon_text {

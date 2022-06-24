@@ -44,6 +44,7 @@
   background-color: #1e2432;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
+  cursor: pointer;
 }
 
 .main_view_all p{
@@ -66,6 +67,7 @@
 .main_view_left:hover{
   background-color: #1e2432;
   color:#fff;
+  cursor: pointer;
 }
 
 .main_view_left .prev_button{
@@ -78,6 +80,7 @@
   width: 100px;
   height: 100px;
   background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white') no-repeat center center / contain;
+  cursor: pointer;
 }
 /*main_view_left 버튼*/
 
@@ -91,7 +94,8 @@
 }
 .main_view_right:hover{
   background-color: #1e2432;
-  color:#fff
+  color:#fff;
+  cursor: pointer;
 }
 .main_view_right .next_button{
   width: 100px;
@@ -102,6 +106,7 @@
   width: 100px;
   height: 100px;
   background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white') no-repeat center center / contain;
+  cursor: pointer;
 }
 /*main_view_right 버튼*/
 
@@ -115,6 +120,11 @@
   text-align: center;
 }
 
+.buy:hover{
+  background-color: #1e2432;
+  cursor: pointer;
+}
+
 .buy button{
   width: 200px;
   height: 50px;
@@ -123,6 +133,11 @@
   line-height: 50px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.buy button:hover{
+  color:#fff;
+  cursor: pointer;
 } 
 /* SPC 해피포인트 구매하러 가기 버튼*/
 
@@ -136,6 +151,11 @@
   text-align: center;
 }
 
+.view_more:hover{
+  background-color: #1e2432;
+  cursor: pointer;
+}
+
 .view_more button{
   width: 180px;
   height: 50px;
@@ -145,6 +165,11 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+} 
+
+.view_more button:hover{
+  color:#fff;
+  cursor: pointer;
 } 
 
 /*main_footer_FAMILY_SITE 버튼*/
