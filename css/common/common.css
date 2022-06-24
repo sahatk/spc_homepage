@@ -39,6 +39,13 @@
   text-align: center;
 }
 
+.main_view_all:hover{
+  color:#fff;
+  background-color: #1e2432;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
 .main_view_all p{
   font-size: 30px;
   font-weight: 700;
@@ -55,10 +62,22 @@
   background-color: #fff;
   text-align: center;
 }
+
+.main_view_left:hover{
+  background-color: #1e2432;
+  color:#fff;
+}
+
 .main_view_left .prev_button{
   width: 100px;
   height: 100px;
   background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+
+.main_view_left .prev_button:hover{
+  width: 100px;
+  height: 100px;
+  background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white') no-repeat center center / contain;
 }
 /*main_view_left 버튼*/
 
@@ -70,10 +89,19 @@
   background-color: #fff;
   text-align: center;
 }
+.main_view_right:hover{
+  background-color: #1e2432;
+  color:#fff
+}
 .main_view_right .next_button{
   width: 100px;
   height: 100px;
   background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+}
+.main_view_right .next_button:hover{
+  width: 100px;
+  height: 100px;
+  background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white') no-repeat center center / contain;
 }
 /*main_view_right 버튼*/
 
@@ -118,3 +146,35 @@
   font-size: 20px;
   text-transform: uppercase;
 } 
+
+/*main_footer_FAMILY_SITE 버튼*/
+.main_family_site{
+  display: flex; justify-content: space-between; align-items: center;
+  width: 230px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  padding-left: 30px;
+  
+}
+
+.main_family_site p{
+  width: 130px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.main_family_site .top_arrow{
+  width: 10px;
+  height: 10px;
+  padding-left: 60px;
+  background-image: url(../../img/main_img/footer_box/footer_dropdown.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/*main_footer_FAMILY_SITE 버튼*/
