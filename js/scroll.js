@@ -20,7 +20,6 @@ function headerbarToggle() {
       el.style = style1;
     });
     headerLi[6].style = global_black;
-
   } else {
     headerBox.style.backgroundColor = 'transparent';
     headerLi.forEach(el => {

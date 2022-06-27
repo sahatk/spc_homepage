@@ -184,7 +184,7 @@
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
 
-#section_box1 .prev_button_wrap .prev_button:hover {
+#section_box1 .prev_button_wrap:hover .prev_button {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
     cursor: pointer;
 }
@@ -226,7 +226,7 @@
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
 }
 
-#section_box1 .next_button_wrap .next_button:hover {
+#section_box1 .next_button_wrap:hover .next_button {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
     cursor: pointer;
 }
@@ -583,12 +583,12 @@
     width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
-    z-index: 1000;
+    z-index: 100;
 }
 
 #section_box3 .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
-    z-index: 1000;
+    z-index: 100;
     cursor: pointer;
 
 }
@@ -607,12 +607,12 @@
     width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
-    z-index: 1000;
+    z-index: 100;
 }
 
 #section_box3 .next_button:hover {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
-    z-index: 1000;
+    z-index: 100;
     cursor: pointer;
 
 }
@@ -1379,7 +1379,7 @@
 }
 /*main_magazine_wrap_02*/
 .main_magazine_wrap_02{
-    width: 1450px;
+    width: 1440px;
     height: 350px;
     /* background-color: #fff; */
     background-color: transparent;
@@ -1429,10 +1429,7 @@
 
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 .main_magazine_card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    width: 1438px;
     height: auto;
     margin-top: 1rem;
     box-sizing: border-box;
@@ -1440,14 +1437,11 @@
 }
 
 .main_magazine_card ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    width: 1438px;
     height: 350px;
     background-color: #fff;
     /* background-color: transparent; */
-
+    
     flex-wrap: wrap;
 }
 
@@ -1455,11 +1449,26 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 350px;
+    float: left;
+    width: 340px;
     height: 350px;
     box-sizing: border-box;
     background-color: var(--color-white);
 }
+
+.main_magazine_card .card_line_right {
+    width: 13px;
+    height: 350px;
+    border-right: 1px solid #7d7d7d;
+}
+
+.main_magazine_card .card_line_left {
+    width: 13px;
+    height: 350px;
+    border-left: 1px solid #7d7d7d;
+}
+
+
 
 /* SPC MAGAZINE CARD li before 세로 회색 실선 */
 /* .main_magazine_card li::after {
@@ -1476,45 +1485,45 @@
 
 .main_magazine_card li .outline {
     position: relative;
-    width: 350px;
+    width: 340px;
     height: 350px;
-    border-right:1px solid gray;
+   
 
 }
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 
 /* SPC MAGAZINE CARD 이미지 */
 .main_magazine_card .outline .card_image_01 {
-    width: 350px;
+    width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_01.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     
 }
 .main_magazine_card .outline .card_image_02 {
-    width: 350px;
+    width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_02.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     
 }
 .main_magazine_card .outline .card_image_03 {
-    width: 350px;
+    width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_03.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     
 }
 .main_magazine_card .outline .card_image_04 {
-    width: 350px;
+    width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_04.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: cover;
+    clear: both;
 }
 /* SPC MAGAZINE CARD 이미지 */
 
@@ -2004,7 +2013,7 @@
 
 .main_footer_wrap_01 .main_footer_icon{ 
     display: flex; justify-content: space-around; 
-    width:100%;
+    width:1100px;
     height: 150px;
 
     /* background-color: #ffffff; */
@@ -2017,7 +2026,7 @@
 }
 
 .main_footer_icon .prev_button{
-    width: 8%;
+    width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
 }
@@ -2029,7 +2038,7 @@
 
 
 .main_footer_icon .next_button{
-    width: 8%;
+    width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
 }
@@ -2040,7 +2049,7 @@
 }
 
 .main_footer_icon .icon_01{
-    width: 16.8%;
+    width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/SAMLIP.png);
     background-repeat: no-repeat;
@@ -2049,7 +2058,7 @@
 }
 
 .main_footer_icon .icon_02{
-    width: 16.8%;
+    width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/PACK.png);
     background-repeat: no-repeat;
@@ -2058,7 +2067,7 @@
 }
 
 .main_footer_icon .icon_03{
-    width: 16.8%;
+    width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/LOGITICS.png);
     background-repeat: no-repeat;
@@ -2068,7 +2077,7 @@
 
 
 .main_footer_icon .icon_04{
-    width: 16.8%;
+    width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/GFS.png);
     background-repeat: no-repeat;
@@ -2079,8 +2088,9 @@
 
 /*FOOTER_WRAP_02 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
 .main_footer_wrap_02 {
-    display: flex; justify-content: space-between;
-    width:1500px;
+    display: flex; justify-content: center;
+    gap:60px;
+    width:100%;
     height: 200px;
 }
 
