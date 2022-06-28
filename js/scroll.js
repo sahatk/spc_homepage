@@ -1,7 +1,6 @@
 
 
 var prevScrollpos = window.pageYOffset;
-console.log("first Y offset :" + prevScrollpos);
 window.onscroll = headerbarToggle;
 function headerbarToggle() {
   let style1 = `color:black;`;
@@ -13,7 +12,6 @@ function headerbarToggle() {
   const headerUl = headerNavigation.querySelector("ul");
   const headerLi = headerUl.querySelectorAll("li");
   const currentScrollpos = window.pageYOffset;
-  console.log(headerLi);
   if (prevScrollpos < currentScrollpos) {
     headerBox.style.backgroundColor = 'white';
     headerLi.forEach(function(el){

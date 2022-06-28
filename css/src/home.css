@@ -586,6 +586,12 @@
     z-index: 100;
 }
 
+#section_box3 .prev_button:hover:disabled{
+    
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
+    
+}
+
 #section_box3 .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
     z-index: 100;
@@ -608,6 +614,12 @@
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
     z-index: 100;
+}
+
+#section_box3 .next_button:hover:disabled{
+    
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
+    
 }
 
 #section_box3 .next_button:hover {
@@ -719,8 +731,13 @@
     width: 250px;
     height: 150px;
     background-color: #fff;
-
-
+}
+.main_brand_tab li button{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    margin: 0; padding: 0;
 }
 
 /*탭 메뉴 글자(베이커리,외식,카페,서비스) */
@@ -728,14 +745,23 @@
     width: 250px;
     margin-top: 10px;
 
-
+    font-size: 16px;
     text-align: center;
+    color: #dedede;
+    font-weight: 700;
+
+}
+
+.main_brand_tab .action{
+    color: #000000;
+    font-size: 16px;
     font-weight: 700;
 
 }
 
 /* SPC BRAND 탭 아이콘 이미지 크기 및 위치 조정*/
-.main_brand_tab .tab_icon_01 {
+
+.main_brand_tab .tab_icon_00 {
     width: 250px;
     height: 50px;
 
@@ -745,7 +771,7 @@
     background-size: contain;
 }
 
-.main_brand_tab .tab_icon_02 {
+.main_brand_tab .tab_icon_01 {
     width: 250px;
     height: 50px;
 
@@ -756,7 +782,7 @@
     background-size: contain;
 }
 
-.main_brand_tab .tab_icon_03 {
+.main_brand_tab .tab_icon_02 {
     width: 250px;
     height: 50px;
     text-align: center;
@@ -766,7 +792,7 @@
     background-size: contain;
 }
 
-.main_brand_tab .tab_icon_04 {
+.main_brand_tab .tab_icon_03 {
     width: 250px;
     height: 50px;
     text-align: center;
@@ -791,9 +817,9 @@
     display: flex;
     width: 1200px;
     height: 300px;
-    gap: 10px;
+    gap: 60px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -808,7 +834,17 @@
     background-color: var(--color-white);
 }
 
-.main_brand_card li .card_image_01 {
+.main_brand_card li .image {
+    width: 220px;
+    height: 220px;
+
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* .main_brand_card li .card_image_01 {
     width: 220px;
     height: 220px;
 
@@ -861,7 +897,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
+} */
 
 
 
