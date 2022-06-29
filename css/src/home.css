@@ -80,7 +80,7 @@
 }
 
 #header_box .header_nav li:hover {
-    color:#000000;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -166,7 +166,9 @@
 /*prev_button*/
 #section_box1 .prev_button_wrap {
     position: absolute;
-    top:50%; left: 0; transform: translate(50%,-50%);
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
     width: 80px;
     height: 40px;
 }
@@ -208,7 +210,9 @@
 /*next_button*/
 #section_box1 .next_button_wrap {
     position: absolute;
-    top:50%; right: 0; transform: translate(-50%,-50%);
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
     width: 80px;
     height: 40px;
 }
@@ -368,7 +372,7 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
 }
@@ -408,9 +412,17 @@
     height: 440px;
     box-sizing: border-box;
     border-radius: 40px;
-    background-color: var(--color-white);
+    /* background-image: url(/img/main_img/section_box2/group_bg_01_hover.jpg); */
     box-shadow: 5px 5px 10px #4b4b4b;
 }
+
+.main_group_card .bg {
+    background-image: url(/img/main_img/section_box2/group_bg_01_hover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .main_group_card li .outline {
     position: relative;
@@ -424,7 +436,7 @@
 
 
 /* SPC GROUP CARD 제목 */
-.main_group_card .card_title_01 {
+.main_group_card .card_title {
     position: absolute;
     top: 0;
     left: 0;
@@ -434,39 +446,24 @@
     text-transform: uppercase;
 }
 
-.main_group_card .card_title_02 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px 0px 0px 30px;
-    color: #23afe3;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.main_group_card .card_title_03 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px 0px 0px 30px;
-    color: #23afe3;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.main_group_card .card_title_04 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px 0px 0px 30px;
-    color: #23afe3;
-    font-weight: 700;
-    text-transform: uppercase;
+.main_group_card .none{
+    display: none;
 }
 
 /* SPC GROUP CARD 제목 */
 
 /* SPC GROUP CARD 이미지 */
+
+.main_group_card .outline .card_image {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main_group_card .outline .none {
+   display: none;
+}
+
 .main_group_card .outline .card_image_01 {
     height: 400px;
     background-image: url(../../img/main_img/section_box2/group_bg_01.png);
@@ -500,7 +497,22 @@
 
 
 /* SPC GROUP CARD 설명 */
-.main_group_card .card_text_01 {
+.main_group_card .card_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 260px;
+    font-weight: 700;
+    word-break: keep-all;
+    padding: 0 0 0 30px;
+}
+
+.main_group_card .none {
+    display: none;
+}
+
+/* .main_group_card .card_text_01 {
     position: absolute;
     width: 300px;
 
@@ -508,6 +520,7 @@
     left: 0;
     margin: 0px 0px 30px 40px;
     font-weight: 700;
+    word-break: keep-all;
 }
 
 .main_group_card .card_text_02 {
@@ -538,7 +551,7 @@
     left: 0;
     margin: 0px 0px 10px 40px;
     font-weight: 700;
-}
+} */
 
 /* SPC GROUP CARD 설명 */
 
@@ -550,8 +563,9 @@
 
 
 #section_box3 {
-    
-    display: flex; align-items: center;
+
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 900px;
     margin: 0 auto;
@@ -586,10 +600,10 @@
     z-index: 100;
 }
 
-#section_box3 .prev_button:hover:disabled{
-    
+#section_box3 .prev_button:hover:disabled {
+
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
-    
+
 }
 
 #section_box3 .prev_button:hover {
@@ -616,10 +630,10 @@
     z-index: 100;
 }
 
-#section_box3 .next_button:hover:disabled{
-    
+#section_box3 .next_button:hover:disabled {
+
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
-    
+
 }
 
 #section_box3 .next_button:hover {
@@ -646,7 +660,7 @@
     justify-content: center;
     position: relative;
     /* width:1440px; */
-    width:100%;
+    width: 100%;
     height: 300px;
     margin-top: 1rem;
     margin: 0 auto;
@@ -698,7 +712,7 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
 }
@@ -732,12 +746,14 @@
     height: 150px;
     background-color: #fff;
 }
-.main_brand_tab li button{
+
+.main_brand_tab li button {
     display: flex;
     align-items: center;
     width: 250px;
     height: 150px;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*탭 메뉴 글자(베이커리,외식,카페,서비스) */
@@ -752,7 +768,7 @@
 
 }
 
-.main_brand_tab .action{
+.main_brand_tab .action {
     color: #000000;
     font-size: 16px;
     font-weight: 700;
@@ -988,15 +1004,19 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
-}/*SPC 해피포인트 TEXT BOX*/
+}
+
+/*SPC 해피포인트 TEXT BOX*/
 
 /*SPC 해피포인트 VIEW_ALL BOX*/
 .main_happypoint_wrap_01 .main_view_all {
     margin-right: 1rem;
-}/*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
+}
+
+/*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
 
 
 /* CARD 박스 크기 및 위치 설정 */
@@ -1083,6 +1103,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 /* SPC 해피포인트 CARD 이미지 */
 
 
@@ -1092,7 +1113,7 @@
     width: 250px;
     height: 150px;
     margin: 0 auto;
-    
+
 }
 
 .main_happypoint_card .card_text_02 {
@@ -1137,12 +1158,13 @@
 }
 
 /*SPC 해피포인트 구매하러 가기 버튼 위치 조정*/
-.main_happypoint_card .buy{
+.main_happypoint_card .buy {
     margin: 0 auto;
-  }
+}
+
 /*SPC 해피포인트 구매하러 가기 버튼 위치 조정*/
- 
-  /* SPC 해피포인트 CARD 설명 */
+
+/* SPC 해피포인트 CARD 설명 */
 
 /*section_box5 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1150,7 +1172,7 @@
 
 /*section_box6 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#section_box6{
+#section_box6 {
     width: 100%;
     height: 900px;
     margin: 0 auto;
@@ -1159,7 +1181,7 @@
     background-color: #D1EBFA;
 }
 
-#section_box6 .container{
+#section_box6 .container {
     width: 1500px;
     /* width: 100%; */
     max-width: 1920px;
@@ -1216,10 +1238,12 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
-}/*SPC NEWS TEXT BOX*/
+}
+
+/*SPC NEWS TEXT BOX*/
 
 /*SPC NEWS VIEW_ALL BOX*/
 .main_news_wrap_01 .main_news_view {
@@ -1229,20 +1253,21 @@
     gap: 40px;
 }
 
-.main_news_view .main_view_left{
+.main_news_view .main_view_left {
     float: left;
     margin: 1rem;
 }
 
-.main_news_view .main_view_right{
+.main_news_view .main_view_right {
     float: left;
     margin: 1rem;
 }
 
-.main_news_view .main_view_all{
+.main_news_view .main_view_all {
     float: left;
     margin: 1rem;
 }
+
 /*SPC NEWS VIEW_ALL BOX*/
 
 /* SPC NEWS CARD 박스 크기 및 위치 설정 */
@@ -1276,6 +1301,7 @@
     width: 440px;
     height: 380px;
     box-sizing: border-box;
+    margin-bottom: 2rem;
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 5px 5px 10px #4b4b4b;
@@ -1291,6 +1317,16 @@
 /* SPC NEWS CARD 박스 크기 및 위치 설정 */
 
 /* SPC NEWS CARD 이미지 */
+.main_news_card .outline .card_image {
+    width: 440px;
+    height: 250px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 .main_news_card .outline .card_image_01 {
     width: 440px;
     height: 250px;
@@ -1299,7 +1335,7 @@
     background-image: url(../../img/main_img/section_box6/news_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    
+
 }
 
 .main_news_card .outline .card_image_02 {
@@ -1337,7 +1373,7 @@
 /* SPC NEWS CARD text */
 
 /*SPC NEWS CARD 설명 부분 */
-.main_news_card .card_text_01{
+.main_news_card .card_text_01 {
     padding: 0px 10px 10px;
 }
 
@@ -1350,7 +1386,9 @@
     font-size: 20px;
     font-weight: 700;
     padding: 20px;
-}/*SPC NEWS CARD 설명 부분 */
+}
+
+/*SPC NEWS CARD 설명 부분 */
 
 
 /*SPC NEWS CARD 날짜 부분 */
@@ -1359,15 +1397,19 @@
     height: 50px;
     text-align: center;
     line-height: 50px;
-    color:#7d7d7d;
-}/*SPC NEWS CARD 날짜 부분 */
+    color: #7d7d7d;
+}
+
+/*SPC NEWS CARD 날짜 부분 */
 
 /*SPC NEWS CARD 날짜 VIEW MORE 위치 조정 */
 .main_news_card .card_text_wrap_02 {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-}/*SPC NEWS CARD 날짜 VIEW MORE 위치 조정 */
+}
+
+/*SPC NEWS CARD 날짜 VIEW MORE 위치 조정 */
 
 /* SPC NEWS CARD text */
 
@@ -1377,7 +1419,7 @@
 
 /*section_box7 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#section_box7{
+#section_box7 {
     width: 100%;
     height: 800px;
     margin: 0 auto;
@@ -1386,7 +1428,7 @@
     background-color: #e7e7e7;
 }
 
-#section_box7 .container{
+#section_box7 .container {
     width: 1440px;
     /* width: 100%; */
     max-width: 1920px;
@@ -1413,14 +1455,16 @@
 
 
 }
+
 /*main_magazine_wrap_02*/
-.main_magazine_wrap_02{
+.main_magazine_wrap_02 {
     width: 1440px;
     height: 350px;
     /* background-color: #fff; */
     background-color: transparent;
 
 }
+
 /*main_magazine_wrap_02*/
 
 /*SPC MAGAZINE TEXT BOX*/
@@ -1453,15 +1497,19 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
-}/*SPC MAGAZINE TEXT BOX*/
+}
+
+/*SPC MAGAZINE TEXT BOX*/
 
 /*SPC MAGAZINE VIEW_ALL BOX*/
 .main_magazine_wrap_01 .main_view_all {
     margin-right: 1rem;
-}/*SPC MAGAZINE 타이틀과 VIEW ALL wrap*/
+}
+
+/*SPC MAGAZINE 타이틀과 VIEW ALL wrap*/
 
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 .main_magazine_card {
@@ -1477,7 +1525,7 @@
     height: 350px;
     background-color: #fff;
     /* background-color: transparent; */
-    
+
     flex-wrap: wrap;
 }
 
@@ -1523,9 +1571,10 @@
     position: relative;
     width: 340px;
     height: 350px;
-   
+
 
 }
+
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 
 /* SPC MAGAZINE CARD 이미지 */
@@ -1535,24 +1584,27 @@
     background-image: url(../../img/main_img/section_box7/magazine_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
 .main_magazine_card .outline .card_image_02 {
     width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
 .main_magazine_card .outline .card_image_03 {
     width: 340px;
     height: 280px;
     background-image: url(../../img/main_img/section_box7/magazine_bg_03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
 .main_magazine_card .outline .card_image_04 {
     width: 340px;
     height: 280px;
@@ -1561,18 +1613,19 @@
     background-size: cover;
     clear: both;
 }
+
 /* SPC MAGAZINE CARD 이미지 */
 
 /* SPC MAGAZINE CARD 날짜 */
-.main_magazine_card .card_text_01{
+.main_magazine_card .card_text_01 {
     display: flex;
     align-items: center;
     height: 70px;
 }
 
-.main_magazine_card b{
+.main_magazine_card b {
     font-size: 18px;
-    color:#7d7d7d;
+    color: #7d7d7d;
 }
 
 
@@ -1585,36 +1638,38 @@
 
 /*section_box8 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#section_box8{
+#section_box8 {
     position: relative;
-    display: flex; align-items: center;
-    width: 100%; height: 900px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 900px;
     margin: 0 auto;
-    
+
     background-color: #ffffff;
     z-index: 2;
-    
+
 }
 
 /*황토색 YOUTUBE_bg 박스*/
-#section_box8 .youtube_box_bg{
-    position:absolute;
-    width:750px;
-    height:900px;
+#section_box8 .youtube_box_bg {
+    position: absolute;
+    width: 750px;
+    height: 900px;
     background-color: #fff0c3;
-    border-bottom-right-radius:70px;
+    border-bottom-right-radius: 70px;
     z-index: -1;
-   
+
 }
 
-#section_box8 .container{
+#section_box8 .container {
     width: 1800px;
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
     height: 700px;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
     background-color: transparent;
     /* background-color: #8c94da; */
 }
@@ -1631,7 +1686,7 @@
 }
 
 
-.main_youtube_wrap_02{
+.main_youtube_wrap_02 {
     display: flex;
     align-items: center;
     width: 33.3333333%;
@@ -1641,7 +1696,7 @@
     float: left;
 }
 
-.main_youtube_wrap_03{
+.main_youtube_wrap_03 {
     display: flex;
     align-items: center;
     width: 66.6666666%;
@@ -1656,7 +1711,7 @@
     width: 50%;
     height: 150px;
     float: left;
-    margin-left:11rem;
+    margin-left: 11rem;
 
     color: #000000;
     font-weight: 700;
@@ -1681,28 +1736,30 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
-}/*SPC YOUTUBE TEXT BOX*/
+}
+
+/*SPC YOUTUBE TEXT BOX*/
 
 /*SPC YOUTUBE VIEW_ALL BOX*/
 .main_youtube_wrap_02 .main_youtube_view {
-    margin-left:11rem;
+    margin-left: 11rem;
 }
 
-.main_youtube_view .main_view_all{
+.main_youtube_view .main_view_all {
     margin-bottom: 4rem;
 }
 
-.main_youtube_view .main_view_left{
+.main_youtube_view .main_view_left {
     float: right;
-    margin-left:8rem;
-    
-    
+    margin-left: 8rem;
+
+
 }
 
-.main_youtube_view .main_view_right{
+.main_youtube_view .main_view_right {
     float: right;
     margin-left: 3rem;
 }
@@ -1713,7 +1770,7 @@
 /* SPC YOUTUBE CARD 박스 크기 및 위치 설정 */
 .main_youtube_card {
     display: flex;
-    
+
     align-items: center;
     width: 1200px;
     height: 450px;
@@ -1764,7 +1821,7 @@
     background-image: url(../../img/main_img/section_box8/youtube_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    
+
 }
 
 .main_youtube_card .outline .card_image_02 {
@@ -1793,7 +1850,7 @@
 
 /*SPC YOUTUBE CARD 설명 부분 */
 
-.main_youtube_card .card_text_01{
+.main_youtube_card .card_text_01 {
     padding: 0px 10px 10px;
 }
 
@@ -1806,17 +1863,20 @@
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
-}/*SPC YOUTUBE CARD 설명 부분 */
+}
+
+/*SPC YOUTUBE CARD 설명 부분 */
 
 
 /*SPC YOUTUBE CARD 날짜 부분 */
 .main_youtube_card .card_text_01 b {
-    color:#7d7d7d;
+    color: #7d7d7d;
 }
 
-.main_youtube_card .card_text_wrap_02{
+.main_youtube_card .card_text_wrap_02 {
     padding-left: 10px;
 }
+
 /*SPC YOUTUBE CARD 날짜 부분 */
 
 
@@ -1832,16 +1892,16 @@
 
 
 
-#section_box9{
+#section_box9 {
     width: 100%;
     height: 750px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background:linear-gradient(#ffffff,#d1ebfa);
+    background: linear-gradient(#ffffff, #d1ebfa);
 }
 
-#section_box9 .container{
+#section_box9 .container {
     width: 1440px;
     /* width: 100%; */
     max-width: 1920px;
@@ -1897,10 +1957,12 @@
     font-size: var(--font-content_03);
     color: #7d7d7d;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
 
 
-}/*SPC SNS TEXT BOX*/
+}
+
+/*SPC SNS TEXT BOX*/
 
 /*SPC SNS VIEW_ALL BOX*/
 .main_sns_wrap_01 .main_sns_view {
@@ -1910,20 +1972,21 @@
     gap: 40px;
 }
 
-.main_sns_view .main_view_left{
+.main_sns_view .main_view_left {
     float: left;
     margin: 1rem;
 }
 
-.main_sns_view .main_view_right{
+.main_sns_view .main_view_right {
     float: left;
     margin: 1rem;
 }
 
-.main_sns_view .main_view_all{
+.main_sns_view .main_view_all {
     float: left;
     margin: 1rem;
 }
+
 /*SPC SNS VIEW_ALL BOX*/
 
 /* SPC SNS CARD 박스 크기 및 위치 설정 */
@@ -1980,7 +2043,7 @@
     background-image: url(../../img/main_img/section_box9/sns_bg_01.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    
+
 }
 
 .main_sns_card .outline .card_image_02 {
@@ -2027,7 +2090,7 @@
 
 /*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#footer_box{
+#footer_box {
     width: 100%;
     height: 500px;
     margin: 0 auto;
@@ -2047,44 +2110,47 @@
     border-bottom: 2px solid #d3d3d3;
 }
 
-.main_footer_wrap_01 .main_footer_icon{ 
-    display: flex; justify-content: space-around; 
-    width:1100px;
+.main_footer_wrap_01 .main_footer_icon {
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
     height: 150px;
 
     /* background-color: #ffffff; */
     background-color: transparent;
 }
-.main_footer_icon ul{
-    display: flex; align-items: center;
+
+.main_footer_icon ul {
+    display: flex;
+    align-items: center;
     width: 100%;
-    
+
 }
 
-.main_footer_icon .prev_button{
+.main_footer_icon .prev_button {
     width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
 }
 
-.main_footer_icon .prev_button:hover{
+.main_footer_icon .prev_button:hover {
     background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
     cursor: pointer;
 }
 
 
-.main_footer_icon .next_button{
+.main_footer_icon .next_button {
     width: 50px;
     height: 50px;
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
 }
 
-.main_footer_icon .next_button:hover{
+.main_footer_icon .next_button:hover {
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
     cursor: pointer;
 }
 
-.main_footer_icon .icon_01{
+.main_footer_icon .icon_01 {
     width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/SAMLIP.png);
@@ -2093,7 +2159,7 @@
     background-size: contain;
 }
 
-.main_footer_icon .icon_02{
+.main_footer_icon .icon_02 {
     width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/PACK.png);
@@ -2102,7 +2168,7 @@
     background-size: contain;
 }
 
-.main_footer_icon .icon_03{
+.main_footer_icon .icon_03 {
     width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/LOGITICS.png);
@@ -2112,27 +2178,32 @@
 }
 
 
-.main_footer_icon .icon_04{
+.main_footer_icon .icon_04 {
     width: 200px;
     height: 150px;
     background-image: url(../../img/main_img/footer_box/footer_icon_box/GFS.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}/*SPC Footer icon 및 prev,next 버튼*/
+}
+
+/*SPC Footer icon 및 prev,next 버튼*/
 /*FOOTER_WRAP_01 : SPC Footer icon 및 prev,next 버튼*/
 
 /*FOOTER_WRAP_02 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
 .main_footer_wrap_02 {
-    display: flex; justify-content: center;
-    gap:60px;
-    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
     height: 200px;
 }
 
 /*SPC Footer logo*/
 .main_footer_logo {
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 200px;
     /* background-color: #8c94da; */
@@ -2157,34 +2228,36 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}/*SPC Footer logo*/
+}
+
+/*SPC Footer logo*/
 
 /* SPC Footer 주소 및 정보*/
-.main_footer_info{
+.main_footer_info {
     margin-top: 50px;
 }
 
 .main_footer_info ul {
-    width:600px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
-    gap:10px;
+    gap: 10px;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.main_footer_info ul li:first-child{
-    color:#23afe3;
+.main_footer_info ul li:first-child {
+    color: #23afe3;
 }
 
 
 .main_footer_icon_wrap {
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .main_footer_icon_wrap ul {
     display: flex;
-    gap:40px;
+    gap: 40px;
 }
 
 .main_footer_icon_wrap li {
@@ -2202,7 +2275,7 @@
     background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(1):hover{
+.main_footer_icon_wrap li:nth-child(1):hover {
     width: 80px;
     height: 80px;
     padding-right: 20px;
@@ -2224,7 +2297,7 @@
     background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(2):hover{
+.main_footer_icon_wrap li:nth-child(2):hover {
     width: 80px;
     height: 80px;
     padding-right: 20px;
@@ -2244,10 +2317,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.main_footer_icon_wrap li:nth-child(3):hover{
+.main_footer_icon_wrap li:nth-child(3):hover {
     width: 80px;
     height: 40px;
     padding-right: 20px;
@@ -2256,11 +2329,11 @@
     background-size: contain;
     background-position: center;
     font-weight: 700;
-    margin-top:20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-.main_footer_icon_wrap li .icon_text_facebook{
+.main_footer_icon_wrap li .icon_text_facebook {
     width: 100px;
     text-align: center;
     text-transform: capitalize;
@@ -2277,7 +2350,7 @@
     background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(4):hover{
+.main_footer_icon_wrap li:nth-child(4):hover {
     width: 80px;
     height: 80px;
     padding-right: 20px;
@@ -2294,23 +2367,29 @@
     text-align: center;
     margin-top: 80px;
 
-    
+
     text-transform: capitalize;
-    
-}/* SPC Footer 주소 및 정보*/
+
+}
+
+/* SPC Footer 주소 및 정보*/
 /*FOOTER_WRAP_02 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
 
 
 /*FOOTER_WRAP_03 : FAMILY SITE 버튼 */
 .main_footer_wrap_03 {
-    display: flex; align-items: center;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100px;
     /* background-color: #23afe3; */
     background-color: transparent;
 }
-.main_footer_wrap_03 .main_family_site{
-    margin-left:990px;
-}/*FAMILY SITE 버튼 */
+
+.main_footer_wrap_03 .main_family_site {
+    margin-left: 990px;
+}
+
+/*FAMILY SITE 버튼 */
 
 /*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

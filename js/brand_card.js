@@ -38,7 +38,7 @@
         const imagePath = `${sourcePath.img}${obj.path}/${obj.filename}`;
 
         return `<div class="image" style=background-image:url(${imagePath});>
-                <span class="blind">파리바게트 image</span>
+                <span class="blind">image</span>
                 </div>`;
     };
 

@@ -1,0 +1,30 @@
+[
+  {
+    "key": 1,
+    "title": "spc way",
+    "content": "최고의 품질과 <br> 고객중심 창의적 도전으로 <br> 세상을 행복하게 합니다.",
+    "filename": "group_bg_01.png",
+    "hoverfilename": "group_bg_01_hover.jpg"
+  },
+  {
+    "key": 2,
+    "title": "global spc",
+    "content": "국경을 초월하여 행복의 맛을 <br> 더 넓은 세상에 전하고 있습니다.",
+    "filename": "group_bg_02.png",
+    "hoverfilename": "group_bg_02_hover.jpg"
+  },
+  {
+    "key": 3,
+    "title": "spc history",
+    "content": "spc그룹은 1945년 이래 <br> 고객과 함께 해온 <br> 종합식품기업입니다.",
+    "filename": "group_bg_03.png",
+    "hoverfilename": "group_bg_03_hover.jpg"
+  },
+  {
+    "key": 4,
+    "title": "spc 정도경영",
+    "content": "spc 전 임직원은 공정하고 <br> 투명한기업 경영을 위해 <br> 최선의 노력을 다하고 있습니다.",
+    "filename": "group_bg_04.png",
+    "hoverfilename": "group_bg_04_hover.jpg"
+  }
+ ]
