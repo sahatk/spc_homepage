@@ -133,7 +133,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-    background-image: url(../../img/main_img/section_box1/main_bg_wrap/main_slide_01.jpg);
+    /* background-image: url(../../img/main_img/section_box1/main_bg_wrap/main_slide_01.jpg); */
 }
 
 #section_box1 .container {
