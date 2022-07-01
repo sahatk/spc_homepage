@@ -13,7 +13,7 @@
     mainBgSlide.style.backgroundImage = `url(${images[0]})`;
 
  
-    const currentImage = 0;
+    let currentImage;
 
     function nextSlideshow() {
         if(currentImage <= images.length){
