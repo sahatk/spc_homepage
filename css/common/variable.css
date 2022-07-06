@@ -8,6 +8,7 @@
   --color-black:#171717;
   --color-deepGray: #555;
   --color-primary:#aaf;
+  --color-sky:#23AFE3;
   --color-sample: #adf;
 
   --color-primary_01: rgba(26, 93, 84, 1);
@@ -23,6 +24,7 @@
   --color-yellow_01: rgba(255, 189, 85, 1);
   --color-yellow_02: rgba(247, 233, 211, 1);
   --color-white_02: rgba(239, 239, 239, 1);
+
 
   /* Font-family styles */
   --font-set: 'Noto Sans KR', sans-serif;
