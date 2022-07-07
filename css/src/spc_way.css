@@ -242,11 +242,6 @@
     padding: 10px 30px;
 } /*상미당 설명*/
 
-.sangmidang_text .font_40{
-    font-size: 50px;
-    font-weight: 700;
-}
-
 .sangmidang_text p{
     width: 880px;
     height: 300px;
@@ -289,12 +284,6 @@
     background-color: red;
 }
 
-.spc_way_text_box_01 .font_85{
-    font-size: 85px;
-    font-weight: 700;
-    color:var(--color-sky);
-}
-
 .spc_way_text_box_01 .spc_way_text_wrap_02 {
     font-size: 38px;
     font-weight: 700;
@@ -317,7 +306,6 @@
     margin-top: 50px;
     background-color: red;
     box-sizing: border-box;
-    padding : 0 30px;
 }
 
 .spc_way_text_box_02 .spc_way_text_wrap_04{
@@ -327,31 +315,199 @@
     margin-bottom: 30px;
 }
 
-.spc_way_text_box_02 .font_85{
+.spc_way_text_box_02 .spc_way_text_wrap_05{
     font-size: 24px;
     font-weight: 700;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.spc_way_text_box_02 span{
+    padding-right: 10px;
+}
+
+/*section_box4///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box5///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box5 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-image: url(/img/spc_way_img/section_box5/spc-way3-bg.jpg);
+    /* background-color: transparent; */
+} /*bg*/
+
+#section_box5 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 400px;
+    margin: auto;
+    /* background-color: #6e6969; */
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+#section_box5 .spc_way_text_wrap_06 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+} /* 77년전 마음이 지금까지도 이어져, .... */
+
+.spc_way_text_wrap_06 .font_85{
+    font-size: 85px;
+    font-weight: 700;
     color:var(--color-sky);
-    padding-right: 15px;
+} /*77*/
+
+#section_box5 .spc_way_text_wrap_07 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #fff;
+}/*여전히 SPC인들의 DNA로 생생하게 남아 제품 하나하나에 열정과 정성을 다하는 힘이 되고 있습니다.*/
+
+/*section_box5///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box6///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#section_box6 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #666;
+    /* background-color: transparent; */
 }
 
-.spc_way_text_box_02 .pr_30{
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 30px;
+#section_box6 .container {
+    width: 1440px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 1150px;
+    margin: 0 auto;
+    background-color: #dddddd;
+    /* background-color: transparent; */
 }
 
+/*카드 */
+#section_box6 .card_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1340px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #5f7e6b;
+} /*카드 박스 */
 
+#section_box6 .card_box .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 610px;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #4b4b4b;
+} /*카드 */
 
+.card_box .card .outline{
+    
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: red;
+    text-align: center;
+} /* 카드 안쪽 박스*/
 
+#section_box6 .card .card_title{
+    width: 120px;
+    height: 40px;
+    margin: 30px auto;
+    background-color: #1ca3df;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+} /*경영철학, 비전*/
 
+#section_box6 .card .card_text_01{
+    text-transform: uppercase;
+} /*카드 텍스트*/
 
+#section_box6 .card_ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+} /*카드 */
 
+/* 트리 */
+#section_box6 .tree_box {
+    width: 1440px;
+    height: 710px;
+    margin: 40px auto;
+    background-color: #53599c;
+}/*트리 박스*/
 
+#section_box6 .tree_text_wrap{
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+} /* 트리 텍스트*/
 
+#section_box6 .tree_title{
+    width: 120px;
+    height: 40px;
+    background-color: #1ca3df;
+    border-radius: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+    margin-bottom: 30px;
+} /* 트리 제목*/
 
+#section_box6 .tree_text_wrap .tree_text_01{
+    text-transform: uppercase;
+    text-align: center;
+} /* 트리 설명01*/
 
+#section_box6 .tree_text_wrap .tree_text_02{
+    text-transform: uppercase;
+    text-align: center;
+} /* 트리 설명02*/
 
-
+#section_box6 .tree_box .tree_arrow_image {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(/img/spc_way_img/section_box6/spc-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+} /* 트리 화살표 이미지*/
 
 
 

@@ -204,3 +204,53 @@
   background-position: center;
 }
 /*main_footer_FAMILY_SITE 버튼*/
+
+.font_18{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font_18_b{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.font_24{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.font_20{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.font_50{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.font_85 {
+  font-size: 85px;
+  font-weight: 700;
+}
+
+
+
+.color_sky{
+  color:var(--color-sky);
+  font-weight: inherit;
+}
+
+
+.pr_30{
+  padding-left: 30px !important;
+}
+
+.pr_25{
+  padding-left: 25px !important;
+}
+
+.mb_15{
+  margin-bottom: 15px;
+}
