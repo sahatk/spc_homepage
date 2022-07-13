@@ -123,51 +123,45 @@
     height: 300px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 10px;
-    background-color: #f8f8f8;
+    margin-top: 80px;
     /* background-color: transparent; */
 }
 
 #section_box1 .container {
     /* position: relative; */
-
+    display: flex; align-items: center;
     width: 1440px;
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
-    height: 250px;
+    height: 300px;
     margin: auto;
-    background-color: #f8f8f8;
     /* background-color: transparent; */
 }
 
 /*SPC_WAY_text_wrap*/
 #section_box1 .spc_way_text_wrap_01 {
     width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    padding-top:50px;
+    height: 250px;
+    padding: 50px 0;
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: var(--font-title_00);
+    font-size: 64px;
+    box-sizing: border-box;
 }
 
 #section_box1 .spc_way_text_wrap_01 h2 {
     width: 100%;
     height: auto;
-    margin-bottom: 0.2rem;
-
 }/*SPC WAY*/
 
 
 #section_box1 .spc_way_text_wrap_01 p {
     width: 100%;
     height: auto;
-    margin-bottom: 0.2rem;
-
-    font-size: var(--font-content_03);
-    color: #7d7d7d;
+    
+    color: #4b4b4b;
     font-weight: 400;
     font-size: 20px;
 }/*건강과 행복 추구로 전 세계인에게 사랑받는 spc그룹이 되겠습니다.*/
@@ -245,7 +239,7 @@
 .sangmidang_text p{
     width: 880px;
     height: 300px;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 2;
 }
@@ -285,7 +279,7 @@
 }
 
 .spc_way_text_box_01 .spc_way_text_wrap_02 {
-    font-size: 38px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 30px;
@@ -475,9 +469,10 @@
 }/*트리 박스*/
 
 #section_box6 .tree_box .tree_wrap_01{
+    display: flex; justify-content: center;
     width: 100%;
-    height: 200px;
-    padding-top: 50px;
+    height: 320px;
+    padding-bottom: 20px;
 } /* 트리 텍스트*/
 
 #section_box6 .tree_box .tree_title{
@@ -492,15 +487,43 @@
     margin-bottom: 30px;
 } /* 트리 제목*/
 
-#section_box6 .tree_wrap_01 .tree_text_01{
-    text-transform: uppercase;
-    text-align: center;
-} /* 트리 설명01*/
+.tree_box .tree_wrap_01 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 610px;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #4b4b4b;
+} /* tree 카드 */
 
-#section_box6 .tree_wrap_01 .tree_text_02{
-    text-transform: uppercase;
+.tree_box .tree_wrap_01 .outline{
+    
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
     text-align: center;
-} /* 트리 설명02*/
+    /* background-color: red; */
+    background-color: transparent;
+} /* tree 카드 안쪽 박스*/
+
+.tree_box .tree_wrap_01 .card_title{
+    width: 120px;
+    height: 40px;
+    margin: 30px auto;
+    background-color: #1ca3df;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+} /* tree 핵심가치*/
+
+.tree_box .card .card_text_01{
+    text-transform: uppercase;
+} /* tree 카드 텍스트*/
+
 
 #section_box6 .tree_box .tree_arrow_image {
     width: 1000px;
@@ -520,17 +543,21 @@
 
 .tree_box .tree_wrap_02 .card_ul{
     display: flex;
-    gap: 190px;
+    gap: 110px;
     justify-content: center;
 }
 
 .tree_box .tree_wrap_02 .card {
-    width: 310px;
+    width: 390px;
     height: 160px;
     background-color: #fff;
     border-radius: 30px;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.tree_box .tree_wrap_02 .outline{
+    width: 380px;
 }
 
 .tree_wrap_02 .card span{

@@ -119,6 +119,10 @@
 #header_box:hover .sub_menu li a {margin-top:10px; color:#666;}
 #header_box:hover .sub_menu li a:hover {color: #23afe3;}
 #header_box:hover .sub_menu li a:hover:before {width:100%; left:0;}
+#header_box:hover .main_li:last-child {width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
+    cursor: pointer;}
 /*navigation*/
 
 /*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

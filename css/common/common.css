@@ -205,19 +205,11 @@
 }
 /*main_footer_FAMILY_SITE 버튼*/
 
-.font_14{
-  font-size: 14px;
-  font-weight: 400;
-}
 
-.font_18{
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font_18_b{
-  font-size: 18px;
-  font-weight: 500;
+/* font-size  64px bold(페이지 제목 사이즈), 50px bold , 24px bold, 24px medium, 20px bold, 18px medium */
+.font_50{
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .font_24{
@@ -230,15 +222,16 @@
   font-weight: 700;
 }
 
-.font_50{
-  font-size: 50px;
-  font-weight: 700;
+.font_18{
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.font_85 {
-  font-size: 85px;
-  font-weight: 700;
-}
+
+
+
+
+
 
 
 
@@ -258,4 +251,12 @@
 
 .mb_15{
   margin-bottom: 15px;
+}
+
+.mb_30{
+  margin-bottom: 30px;
+}
+
+.mb_40{
+  margin-bottom: 40px;
 }
