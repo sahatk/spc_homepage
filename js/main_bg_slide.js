@@ -13,29 +13,30 @@
     mainBgSlide.style.backgroundImage = `url(${images[0]})`;
 
  
-    let currentImage;
-
+    let currentImage = 0;
     function nextSlideshow() {
-        if(currentImage <= images.length){
+        if(currentImage < images.length-1){
             nextImage = currentImage+1;
             const mainBgSlide = document.querySelector('#section_box1');
             mainBgSlide.style.backgroundImage = `url(${images[nextImage]})`; 
         } else{
-            mainBgSlide.style.backgroundImage = `url(${images[3]})`;
+            currentImage = currentImage-5;
+
         }
         return currentImage = currentImage+1; 
     }
     
 
     function prevSlideshow() {
-        if (currentImage > 0) {
+        if ( 0 < currentImage && currentImage <= 4 ) {
             prevImage = currentImage-1;
             const mainBgSlide = document.querySelector('#section_box1');
-            mainBgSlide.style.backgroundImage = `url(${images[prevImage]})`; 
-            return currentImage-1;
+            mainBgSlide.style.backgroundImage = `url(${images[prevImage]})`;
+            return currentImage = currentImage-1;
         } else{
-            mainBgSlide.style.backgroundImage = `url(${images[0]})`;
+            return currentImage = currentImage+4;
         }
+        
     }
 
 

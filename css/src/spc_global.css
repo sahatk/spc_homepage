@@ -124,7 +124,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 80px;
-    background-color: blue;
+    /* background-color: blue; */
     /* background-color: transparent; */
 }
 
@@ -137,24 +137,415 @@
     min-width: 300px;
     height: 300px;
     margin: auto;
-    background-color: red;
+    /* background-color: red; */
     /* background-color: transparent; */
 }
 
-/*SPC_WAY_text_wrap*/
-#section_box1 .spc_way_text_wrap_01 {
+/*SPC_BUSINESS_WRAP_01*/
+#section_box1 .spc_global_wrap_01 {
     width: 100%;
     height: 250px;
     padding: 50px 0;
     color: #000000;
     font-weight: 700;
-    background-color: #ddd;
     text-transform: uppercase;
     font-size: 64px;
     box-sizing: border-box;
+    /* background-color: #ddd; */
 }
 
-#section_box1 .spc_way_text_wrap_01 h2 {
+#section_box1 .spc_global_wrap_01 h2 {
     width: 100%;
     height: 150px;
-}/*SPC WAY*/
+}/*SPC_BUSINESS_WRAP_01*/
+
+/*section_box1///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box2///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box2 {
+    /* position: relative; */
+    display: flex; align-items: center;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* background-color: green; */
+    /* background-color: transparent; */
+}
+
+#section_box2 .container {
+    /* position: relative; */
+    
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 300px;
+    margin: auto;
+    /* background-color: yellow; */
+    /* background-color: transparent; */
+}
+/*SPC_BUSINESS_WRAP_02*/
+#section_box2 .spc_global_wrap_02 {
+    display: flex; 
+    width: 1440px;
+    height: 300px;
+}
+
+#section_box2 .spc_global_wrap_02 .spc_global_text_01{
+    width: 700px;
+    height: 150px;
+} /*SPC그룹이 운영하는 베이커리 브랜드 '파리바게뜨'는*/
+
+.spc_global_wrap_02 .spc_global_text_01 p{
+    text-transform: uppercase;
+}  /*SPC그룹이 운영하는 베이커리 브랜드 '파리바게뜨'는*/
+
+#section_box2 .spc_global_wrap_02 .spc_global_text_02{
+    width: 740px;
+    height: 300px;
+} /*2004년 9월 중국 상하이에 첫 매장 ... */
+
+.spc_global_wrap_02 .spc_global_text_02 p{
+    text-transform: uppercase;
+} /*2004년 9월 중국 상하이에 첫 매장 ... */ /*SPC_BUSINESS_WRAP_02*/
+
+/*section_box2///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@keyframes fade {
+    0% {
+      background-color: green;
+    }
+    50%{
+      background-color: greenyellow;
+    }
+    100% {
+      background-color: yellowgreen
+    }
+  }
+
+#section_box3 {
+    /* position: relative; */
+    display: flex; align-items: center;
+    width: 100%;
+    height: 860px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* background-color: transparent; */
+}
+
+#section_box3 .container {
+    /* position: relative; */
+    
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 860px;
+    margin: auto;
+    animation: fade 5s infinite;
+    /* background-color: transparent; */
+}
+
+#section_box3 .container .map_image {
+    width: 1440px;
+    height: 860px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../../img/spc_global_img/global-map.png');
+}
+
+/*section_box3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box4///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box4 {
+    /* position: relative; */
+    display: flex; align-items: center;
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* background-color: green; */
+    /* background-color: transparent; */
+}
+
+#section_box4 .container {
+    /* position: relative; */
+    
+    width: 1440px;
+    /* width: 100%; */
+    max-width: 1920px;
+    min-width: 300px;
+    height: 1000px;
+    margin: auto;
+    /* background-color: yellowgreen; */
+    /* background-color: transparent; */
+}
+
+#section_box4 .container .spc_global_card{
+    display: flex; align-items: center;
+    width: 1440px;
+    height: 1000px;
+    box-sizing: border-box;
+    padding: 0 100px; 
+}
+
+#section_box4 .card_ul {
+    display: flex; gap:80px;
+}
+
+#section_box4 .card {
+    display: flex; align-items: center; justify-content: center;
+    width: 250px;
+    height: 620px;
+   
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 30px;
+}
+
+#section_box4 .card_ul p{
+    color: #ffffff;
+}
+
+#section_box4 .card_01{
+    background-image: url(../../img/spc_global_img/global-china.png);
+}
+#section_box4 .card_02{
+    background-image: url(../../img/spc_global_img/global-north-america.png);
+}
+#section_box4 .card_03{
+    background-image: url(../../img/spc_global_img/global-south-eastasia.png);
+}
+#section_box4 .card_04{
+    background-image: url(../../img/spc_global_img/global-france.jpg);
+}
+
+/*section_box4///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer_box {
+    width: 100%;
+    height: 324px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/*FOOTER_WRAP_01 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
+.main_footer_wrap_01 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    height: 200px;
+}
+
+/*SPC Footer logo*/
+.main_footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 200px;
+    /* background-color: #8c94da; */
+    background-color: transparent;
+}
+
+.main_footer_logo h1 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.main_footer_logo a {
+    width: 100px;
+    height: 100px;
+}
+
+.main_footer_logo .footer_logo {
+    width: 100px;
+    height: 100px;
+    background-image: url(../../img/main_img/footer_box/footer_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*SPC Footer logo*/
+
+/* SPC Footer 주소 및 정보*/
+.main_footer_info {
+    margin-top: 50px;
+}
+
+.main_footer_info ul {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.main_footer_info ul li:first-child {
+    color: #23afe3;
+}
+
+
+.main_footer_icon_wrap {
+    margin-top: 50px;
+}
+
+.main_footer_icon_wrap ul {
+    display: flex;
+    gap: 40px;
+}
+
+.main_footer_icon_wrap li {
+    width: 100px;
+    height: 100px;
+}
+
+.main_footer_icon_wrap li:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_happy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main_footer_icon_wrap li:nth-child(1):hover {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_happy_hov.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main_footer_icon_wrap li:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_insta.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main_footer_icon_wrap li:nth-child(2):hover {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_insta_hov.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main_footer_icon_wrap li:nth-child(3) {
+    width: 80px;
+    height: 40px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.main_footer_icon_wrap li:nth-child(3):hover {
+    width: 80px;
+    height: 40px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_facebook_hov.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.main_footer_icon_wrap li .icon_text_facebook {
+    width: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+
+.main_footer_icon_wrap li:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_youtube.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main_footer_icon_wrap li:nth-child(4):hover {
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+    background-image: url(../../img/main_img/footer_box/footer_sns_youtube_hov.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main_footer_icon_wrap .icon_text {
+    width: 100px;
+    text-align: center;
+    margin-top: 80px;
+
+
+    text-transform: capitalize;
+
+}
+
+/* SPC Footer 주소 및 정보*/
+/*FOOTER_WRAP_01 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
+
+
+/*FOOTER_WRAP_02 : FAMILY SITE 버튼 */
+.main_footer_wrap_02 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* background-color: #23afe3; */
+    background-color: transparent;
+}
+
+.main_footer_wrap_02 .main_family_site {
+    margin-left: 990px;
+}
+
+/*FAMILY SITE 버튼 */
+
+/*footer_box//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
