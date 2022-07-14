@@ -2270,7 +2270,7 @@
 }
 
 .main_footer_info ul {
-    width: 600px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
