@@ -196,7 +196,7 @@
 }
 
 #section_box2 .spc_global_wrap_02 .spc_global_text_01{
-    width: 700px;
+    width: 740px;
     height: 150px;
 } /*SPC그룹이 운영하는 베이커리 브랜드 '파리바게뜨'는*/
 
@@ -205,12 +205,13 @@
 }  /*SPC그룹이 운영하는 베이커리 브랜드 '파리바게뜨'는*/
 
 #section_box2 .spc_global_wrap_02 .spc_global_text_02{
-    width: 740px;
+    width: 700px;
     height: 300px;
 } /*2004년 9월 중국 상하이에 첫 매장 ... */
 
 .spc_global_wrap_02 .spc_global_text_02 p{
     text-transform: uppercase;
+    line-height: 40px;
 } /*2004년 9월 중국 상하이에 첫 매장 ... */ /*SPC_BUSINESS_WRAP_02*/
 
 /*section_box2///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
