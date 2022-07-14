@@ -761,6 +761,10 @@
     cursor: pointer;
 }
 
+.main_footer_icon_wrap li:hover .font_18 {
+    font-weight: 700;
+}
+
 .main_footer_icon_wrap .icon_text {
     width: 100px;
     text-align: center;

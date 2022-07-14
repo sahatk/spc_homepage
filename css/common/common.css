@@ -176,7 +176,7 @@
 /*main_footer_FAMILY_SITE 버튼*/
 .main_family_site{
   display: flex; justify-content: space-between; align-items: center;
-  width: 230px;
+  width: 200px;
   height: 60px;
   border-radius: 40px;
   background-color: #fff;
@@ -225,6 +225,11 @@
 .font_18{
   font-size: 18px;
   font-weight: 400;
+}
+
+.font_18_b{
+  font-size: 18px;
+  font-weight: 700;
 }
 
 

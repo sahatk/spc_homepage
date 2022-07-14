@@ -2315,7 +2315,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -2337,7 +2336,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -2360,7 +2358,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-weight: 700;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -2390,9 +2387,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-weight: 700;
     cursor: pointer;
 }
+
+.main_footer_icon_wrap li:hover .font_18 {
+    font-weight: 700;
+}
+
 
 .main_footer_icon_wrap .icon_text {
     width: 100px;
