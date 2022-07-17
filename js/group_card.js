@@ -55,27 +55,65 @@
     // // li 마우스 오버시 효과
     const fnHover = function () {
         const card = elItems.querySelectorAll(".card");
-        const cardTitle = elItemsUl.querySelector(".card_title");
-        const cardText = elItemsUl.querySelector(".card_text");
-        const cardImage = elItemsUl.querySelector(".card_image");
+        const cardTitle = elItemsUl.querySelectorAll(".card_title");
+        const cardText = elItemsUl.querySelectorAll(".card_text");
+        const cardImage = elItemsUl.querySelectorAll(".card_image");
+        
     
         Array.from(card).map(function(el,index){
+            let CardBg = `bg_0${index+1}`;
+            console.log(CardBg);
             el.addEventListener("mouseenter", function() {
-                cardTitle.classList.add('none');
-                cardText.classList.add('none');
-                cardImage.classList.add('none');
-                card[index].classList.add('bg');
+                cardTitle[index].classList.add('none');
+                cardText[index].classList.add('none');
+                cardImage[index].classList.add('none');
+                card[index].classList.add(CardBg);
             });
         });
 
         Array.from(card).map(function(el,index){
+            let CardBg = `bg_0${index+1}`;
+            console.log(CardBg);
             el.addEventListener("mouseleave", function() {
-                cardTitle.classList.remove('none');
-                cardText.classList.remove('none');
-                cardImage.classList.remove('none');
-                card[index].classList.remove('bg');
+                cardTitle[index].classList.remove('none');
+                cardText[index].classList.remove('none');
+                cardImage[index].classList.remove('none');
+                card[index].classList.remove(CardBg);
             });
         });
+
+        // Array.from(card).forEach((el,idx)=>{ //인디케이터아이템 li들 각각 클릭했을때 실행
+        //     el.addEventListener('mouseenter', function(){
+        //         e.preventDefault();
+        //         cardTitle.forEach((e)=>{
+        //             e.classList.add('none');
+        //         });
+        //         cardText.forEach((e)=>{
+        //             e.classList.add('none');
+        //         });
+        //         cardImage.forEach((e)=>{
+        //             e.classList.add('none');
+        //         });
+        //         card[idx].classList.add('bg'); 
+        //     });
+        // });
+
+        // Array.from(card).forEach((el,idx)=>{ //인디케이터아이템 li들 각각 클릭했을때 실행
+        //     el.addEventListener('mouseleave', function(e){
+        //         e.preventDefault();
+        //         cardTitle.forEach((e)=>{
+        //             e.classList.remove('none');
+        //         });
+        //         cardText.forEach((e)=>{
+        //             e.classList.remove('none');
+        //         });
+        //         cardImage.forEach((e)=>{
+        //             e.classList.remove('none');
+        //         });
+        //         card[idx].classList.remove('bg'); 
+        //     });
+        // });
+
 
         
     };
