@@ -64,7 +64,7 @@
                 makeLi.style.transform = `translateX(${position}px)`;
                 imageIndex = imageIndex - 1;
             }
-            if(imageIndex == 2) {
+            if(imageIndex === 2) {
                 prevBtn.setAttribute('disabled', 'true');
             }
         }
@@ -76,7 +76,7 @@
                 makeLi.style.transform = `translateX(${position}px)`;
                 imageIndex = imageIndex + 1;
             }
-            if(imageIndex == 2) {
+            if(imageIndex === 2) {
                 nextBtn.setAttribute('disabled', 'true');
             }
         }
