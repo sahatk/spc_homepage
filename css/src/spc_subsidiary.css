@@ -286,6 +286,7 @@
     width: 400px;
     margin: 0 auto;
     padding-top: 20px;
+    color: #7d7d7d;
 } /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트_02 */
 
 #section_box1 .subsidiary_card_text_wrap .view_more{

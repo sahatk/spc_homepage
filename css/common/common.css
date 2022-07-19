@@ -217,10 +217,22 @@
   font-weight: 700;
 }
 
+.font_24_thin{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
 .font_20{
   font-size: 20px;
   font-weight: 700;
 }
+
+.font_20_thin{
+  font-size: 20px;
+  font-weight: 700;
+}
+
 
 .font_18{
   font-size: 18px;
