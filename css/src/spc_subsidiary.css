@@ -1,3 +1,14 @@
+/*sky_area //////////////////////////////////////////////////////////////////////////////////////////*/
+#sky_area {
+    background-color: #d1ebfa; 
+    position: absolute; z-index: 50;
+    left:0;
+    top: 0;
+    width: 28.5%;
+    height: 3300px;
+}
+
+
 /*header/////////////////////////////////////////////////////////////////////////////////////////////*/
 #header_box {
     position: fixed;
@@ -115,4 +126,262 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*section_box1///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*category_box///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#category_box{
+    position: fixed; left:10%; top:20%; z-index: 50;
+    width: 420px; height: 510px;
+    /* background-color: #ccc; */
+} /*카테고리 전체 박스*/
+
+#category_box .category_title{
+    height: 60px;
+    margin-bottom: 30px;
+}/*카테고리 title : SPC 계열사*/
+
+#category_box .category_menu{
+    width: 420px; height: 420px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px #ddd;
+} /*카테고리 메뉴 박스 */
+
+#category_box .category_ul{
+    width: 380px; 
+    height: 380px;
+    padding: 25px 30px;
+    /* background-color: #ccc; */
+} /*카테고리 메뉴 ul */
+
+#category_box .category_li_title a{
+    width: 320px; height: 60px; text-transform: uppercase;
+    position: relative;
+    display: flex; align-items: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    cursor: pointer;
+} /*카테고리 메뉴 li 타이틀 : ALL SUBSIDIARY */
+
+#category_box .category_li a{
+    width: 320px; height: 60px;
+    position: relative;
+    display: flex; align-items: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+} /*카테고리 메뉴 li 들 */
+
+#category_box .category_li a:hover{
+    color: #23afe3;
+    transition: all 0.5s ease;
+} /*카테고리 메뉴 li 들 hover */
+
+
+#category_box .category_li_title a::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: url('https://api.iconify.design/akar-icons/chevron-right.svg') no-repeat center center / contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-25px;
+} /*카테고리 메뉴 li 타이틀 button(>) */
+
+#category_box .category_li a::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: url('https://api.iconify.design/akar-icons/plus.svg') no-repeat center center / contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-20px;
+} /*카테고리 메뉴 li들 button(+) */
+
+/*category_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box1/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box1{
+    position: relative; z-index: 1;
+    width: 1920px; height: 3300px;
+    /* background-color: #ccc; */
+} /*section_box1*/
+
+#section_box1 .subsidiary_box{
+    position: absolute; left:700px; top:190px;
+    width: 930px; height: 3000px;
+    box-sizing: border-box;
+} /*계열사 전체 박스*/
+
+#section_box1 .subsidiary_box .subsidiary_card_box{
+    width: 930px; height: 1030px;
+    margin-bottom: 100px;
+    /* background-color:antiquewhite; */
+} /* 계열사 식품 박스 */
+
+#section_box1 .subsidiary_box .subsidiary_card_box_half{
+    width: 930px; height: 515px;
+    margin-bottom: 100px;
+    /* background-color:antiquewhite; */
+} /* 계열사 원료,IT,유통 박스 */
+
+#section_box1 .subsidiary_box .subsidiary_title {
+    display: flex; align-items: center;
+    width: 930px; height: 50px;
+    margin-bottom: 30px;
+    /* background-color: #fdf; */
+} /* 계열사 식품,원료,IT,유통 박스 안 타이틀 */
+
+#section_box1 .subsidiary_box p{
+    width: 400px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+} /* 계열사 식품,원료,IT,유통 박스 텍스트*/
+
+#section_box1 .subsidiary_box .subsidiary_title_logo{
+    width: 120px;
+    height: 40px;
+    background-color: #1ca3df;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+} /* 계열사 식품,원료,IT,유통 박스 로고*/
+
+#section_box1 .subsidiary_box .subsidiary_card_ul{
+    display: flex; gap: 30px;
+    width: 930px; height: 450px;
+    margin-bottom: 30px;
+    /* background-color: #ddf; */
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 박스*/
+
+#section_box1 .subsidiary_box .subsidiary_card_li{
+    width: 450px; height: 450px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px #ddd;
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 */
+
+#section_box1 .subsidiary_card_li .subsidiary_card_text_wrap{
+    position : relative;
+    width: 450px; height: 210px;
+    border-radius: 0px 0px 30px 30px ;
+    /* background-color: #fda; */
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트 wrap */
+
+#section_box1 .subsidiary_card_text_wrap .subsidiary_card_text_01{
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 40px;
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트_01 */
+
+#section_box1 .subsidiary_card_text_wrap .subsidiary_card_text_02{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트_02 */
+
+#section_box1 .subsidiary_card_text_wrap .view_more{
+    position: absolute; right : 20px; bottom: 20px;
+} /* 계열사 식품,원료,IT,유통 박스 > 카드 MORE VIEW BUTTON */
+
+
+
+
+
+
+
+
+/* ///////////////////계열사 카드 이미지 모음/////////////////////////*/
+
+/*식품*/
+#section_box1 .subsidiary_card_li .food_card_image_01{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/SPC삽립.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 식품 박스 > 카드 이미지_01 */
+
+#section_box1 .subsidiary_card_li .food_card_image_02{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/파리크라상.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 식품 박스 > 카드 이미지_02 */
+
+#section_box1 .subsidiary_card_li .food_card_image_03{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/비알코리아.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 식품 박스 > 카드 이미지_03 */
+/*식품*/
+
+
+/*원료*/
+#section_box1 .subsidiary_card_li .material_card_image_01{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/SPL.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 원료 박스 > 카드 이미지_01 */
+
+#section_box1 .subsidiary_card_li .material_card_image_02{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/SPC팩.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 원료 박스 > 카드 이미지_02 */
+/*원료*/
+
+/*IT/서비스*/
+#section_box1 .subsidiary_card_li .service_card_image_01{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/SPL.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 IT/서비스 박스 > 카드 이미지_01 */
+/*IT/서비스*/
+
+/*유통*/
+#section_box1 .subsidiary_card_li .distribution_card_image_01{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/GFS.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 유통 박스 > 카드 이미지_01 */
+
+#section_box1 .subsidiary_card_li .distribution_card_image_02{
+    width: 450px; height: 240px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: url(../../img/spc_subsidiary_img/타이거\ 인터내셔날.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 유통 박스 > 카드 이미지_02 */
+/*유통*/
+
+/* ///////////////////계열사 카드 이미지 모음/////////////////////////*/
+
+
