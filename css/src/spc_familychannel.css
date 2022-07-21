@@ -214,7 +214,7 @@
     background-position: 50% 50%;
 } /* media_hub_box 여성 이미지 */
 
-@media (min-width:1281px) {
+@media (min-width:1708px) {
     #media_hub_box .container .media_hub_box_image_01 {
         left: 14.7rem;
     } /* media_hub_box 여성 이미지 */
