@@ -12,17 +12,16 @@
     z-index: 1000;
     background-color: transparent;
     /* background-color: #fda;  */
-}
+} /* header 전체 박스*/
 
 #header_box:hover {
     background-color: #ffffff !important;
-}
+}  /* header 전체 박스 오버시*/
 
 #header_box:hover .main_li {
     color: #000000 !important;
-}
+} /* header 전체 박스 오버시, main_li 색상 변화*/
 
-/* header_box안의 컨테이너*/
 #header_box .container {
     display: flex;
     justify-content: space-around;
@@ -33,18 +32,18 @@
     margin: auto;
     background-color: transparent;
     /* background-color:rgb(126, 199, 148);     */
-}
+} /* header 위치 영역 박스 */
 
-/*logo */
+
 #header_box .container h1 {
     width: 150px;
     height: 50px;
-}
+} /* header logo */
 
 #header_box .container a {
     width: 150px;
     height: 50px;
-}
+} /* header logo 링크 */
 
 .logo_img {
     width: 150px;
@@ -52,21 +51,20 @@
     background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
     background-repeat: no-repeat;
     background-size: 150px 50px;
-}
+} /* header logo 이미지 */
 
-/*logo */
 /*/////////////////////*/
 /*navigation*/
 #header_box .header_nav {
     width: auto;
     height: auto;
-}
+} /* 내비게이션 바 전체 영역*/
 
 #header_box .header_nav h2 {
     width: 0;
     height: 0;
     overflow: hidden;
-}/* 안보이게*/
+}/* 내비게이션 바 소개 안보이게*/
 
 
 /*기본 header 영역*/
@@ -77,7 +75,7 @@
     align-items: center;
     height: 100%;
     list-style-type: none;
-}
+} /* 내비게이션 바 메인 메뉴 */
 
 #header_box .header_nav .main_li {
     width: auto;
@@ -86,25 +84,26 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-}
+} /* 내비게이션 바 메인 메뉴 li */
 
 .header_nav .main_li a:hover {
     color: #23afe3;
     cursor: pointer;
-}
+} /* 내비게이션 바 메인 메뉴 li 링크 오버시 */
 
 #header_box .header_nav .main_li:last-child {
     width: 30px;
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon.png) no-repeat center center / contain;
-}
+} /* 내비게이션 바 메인 메뉴 global 로고 */
 
 #header_box .header_nav .main_li:last-child:hover {
     width: 30px;
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
     cursor: pointer;
-}/*기본 header 영역*/
+} /* 내비게이션 바 메인 메뉴 global 로고 오버시 */
+/*기본 header 영역*/
 
 
 /* 오버시 header 영역*/
@@ -152,6 +151,7 @@
     margin: auto;
     overflow: hidden;
 }
+
 /*추가한 항목 슬라이드*/
 #section_box1 .indicators{
     position: absolute; z-index: 100;
