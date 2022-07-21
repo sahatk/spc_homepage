@@ -204,7 +204,7 @@
 } /* media_hub_box 위치 영역*/
 
 #media_hub_box .container .media_hub_box_image_01 {
-    position: absolute; left: 220px; top: -150px;
+    position: absolute; left: 13.5rem; top: -150px;
     width: 250px; height: 250px;
     background-image: url(../../img/spc_familychannel_img/media_hub/hub-img04.png);
     background-repeat: no-repeat;
@@ -233,6 +233,7 @@
     height: 100px;
     margin-top: 30px;
     text-transform: uppercase;
+    color: #7d7d7d;
 } /* media_hub_box 텍스트 */
 
 /*media_hub_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
