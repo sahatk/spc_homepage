@@ -206,43 +206,49 @@
 /*main_footer_FAMILY_SITE 버튼*/
 
 
-/* font-size  64px bold(페이지 제목 사이즈), 50px bold , 24px bold, 24px medium, 20px bold, 18px medium */
+/* font-size  65px bold(메인 제목), 50px bold(부 제목) , 24px bold(메인 텍스트), 24px medium, 20px bold(부 텍스트), 18px medium */
+.font_65{
+  font-size: 65px;
+  font-weight: 700;
+} /*메인 제목*/
+
 .font_50{
   font-size: 50px;
   font-weight: 700;
-}
+}/*부 제목*/
+
 
 .font_24{
   font-size: 24px;
   font-weight: 700;
-}
+} /*메인 텍스트*/
 
 .font_24_thin{
   font-size: 24px;
   font-weight: 400;
-}
+} /*메인 텍스트*/
 
 
 .font_20{
   font-size: 20px;
   font-weight: 700;
-}
+} /*부 텍스트*/
 
 .font_20_thin{
   font-size: 20px;
-  font-weight: 700;
-}
+  font-weight: 400;
+} /*부 텍스트*/
 
 
 .font_18{
   font-size: 18px;
   font-weight: 400;
-}
+} /*가장 작은 텍스트*/
 
 .font_18_b{
   font-size: 18px;
   font-weight: 700;
-}
+}/*가장 작은 텍스트*/
 
 
 
@@ -255,6 +261,10 @@
 .color_sky{
   color:var(--color-sky);
   font-weight: inherit;
+}
+
+.bg_sky{
+  background-color:var(--color-sky);
 }
 
 
