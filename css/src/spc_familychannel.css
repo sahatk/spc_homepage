@@ -203,11 +203,7 @@
     background-color: #fff;
 } /* media_hub_box 위치 영역*/
 
-@media (min-width:1919px) {
-    #media_hub_box .container .media_hub_box_image_01 {
-        left: 14.7rem;
-    } /* media_hub_box 여성 이미지 */
-}
+
 
 #media_hub_box .container .media_hub_box_image_01 {
     position: absolute; left: 13.5rem; top: -150px;
@@ -217,6 +213,12 @@
     background-size: cover;
     background-position: 50% 50%;
 } /* media_hub_box 여성 이미지 */
+
+@media (min-width:1281px) {
+    #media_hub_box .container .media_hub_box_image_01 {
+        left: 14.7rem;
+    } /* media_hub_box 여성 이미지 */
+}
 
 #media_hub_box .media_hub_box_image_02 {
     position: absolute; left: 900px; bottom: 1px;
