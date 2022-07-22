@@ -509,7 +509,7 @@
     box-sizing: border-box;
     border-radius: 40px;
     /* background-image: url(/img/main_img/section_box2/group_bg_01_hover.jpg); */
-    box-shadow: 5px 5px 10px #4b4b4b;
+    box-shadow: 0px 0px 13px #ccc;
 }
 
 /*SPC GROUP 카드 오버시 배경*/
@@ -1167,7 +1167,7 @@
     box-sizing: border-box;
     border-radius: 40px;
     background-color: var(--color-white);
-    box-shadow: 5px 5px 10px #4b4b4b;
+    box-shadow: 0px 0px 13px #ccc;
 }
 
 .main_happypoint_card li .outline {
@@ -1425,7 +1425,7 @@
     margin-bottom: 2rem;
     border-radius: 40px;
     background-color: var(--color-white);
-    box-shadow: 5px 5px 10px #4b4b4b;
+    box-shadow: 0px 0px 13px #ccc;
 }
 
 .main_news_card li .outline {
@@ -1921,7 +1921,7 @@
     margin: 1rem;
     border-radius: 40px;
     background-color: var(--color-white);
-    box-shadow: 5px 5px 10px #4b4b4b;
+    box-shadow: 0px 0px 13px #ccc;
 }
 
 .main_youtube_card li .outline {
@@ -2144,7 +2144,7 @@
     margin: 0.5rem;
     border-radius: 15px;
     background-color: var(--color-white);
-    box-shadow: 5px 5px 10px #4b4b4b;
+    box-shadow: 0px 0px 13px #ccc;
 }
 
 .main_sns_card li .outline {
