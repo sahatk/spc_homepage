@@ -658,6 +658,16 @@
 }/* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
 
 
+#section_box3 .container .magazine_link {
+    display: flex; align-items: center; justify-content: center;
+    width: 300px;
+    height: 63px;
+    border-radius: 30px;
+    box-shadow: 0 0 13px #ccc;
+    margin: 70px auto;
+}
+
+
 
 #section_box3 .circle_wrap{
     position: relative;
