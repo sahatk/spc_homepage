@@ -472,158 +472,158 @@
 } /*SPC BRAND 박스 카드 위치 영역 */
 
 #section_box3 .container .brand_card_li{
+    position: relative;
     display: flex;
     width: 500px; height: 150px;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 13px #ccc;
     box-sizing: border-box;
+    padding-left: 15px;
 } /*SPC BRAND 박스 카드 */
 
 /* ///////////////////////////// SPC BRAND 박스 카드 로고 이미지 모음 ///////////////////////////// */
 #section_box3 .container .logo_image_01{
     width: 120px; height: 150px;
-    margin-left:15px;
+    /* margin-left:15px; */
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_삼립.png);
 } /* 삼립 */
 
 #section_box3 .container .logo_image_02{
     width: 120px; height: 150px;
-    margin-left:15px;
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_파리바게뜨.png);
 } /* 파리바게뜨 */
 
 #section_box3 .container .logo_image_03{
     width: 120px; height: 150px;
-    margin-left:15px;
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_배스킨라빈스.png);
 } /* 배스킨라빈스 */
 
 #section_box3 .container .logo_image_04{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_던킨.png);
 } /* 던킨 */
 
 #section_box3 .container .logo_image_05{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_파리크라상.png);
 } /* 파리크라상 */
 
 #section_box3 .container .logo_image_06{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_패션5.png);
 } /* 패션5 */
 
 #section_box3 .container .logo_image_07{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_쉐이크쉑.png);
 } /* 쉐이크쉑 */
 
 #section_box3 .container .logo_image_08{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_에그슬롯.png);
 } /* 에그슬럿 */
 
 #section_box3 .container .logo_image_09{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_라그릴리아.png);
 } /* 라그릴리아 */
 
 #section_box3 .container .logo_image_10{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_파스쿠찌.png);
 } /* 파스쿠찌 */
 
 #section_box3 .container .logo_image_11{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_잠바주스.png);
 } /* 잠바주스 */
 
 #section_box3 .container .logo_image_12{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_리나스.png);
 } /* 리나스 */
 
 #section_box3 .container .logo_image_13{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_티트라.png);
 } /* 티트라 */
 
 #section_box3 .container .logo_image_14{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_피그인더가든.png);
 } /* 피그인더가든 */
 
 #section_box3 .container .logo_image_15{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_커피앳웍스.png);
 } /* 커피앳웍스 */
 
 #section_box3 .container .logo_image_16{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_시티델리.png);
 } /* 시티델리 */
 
 #section_box3 .container .logo_image_17{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_빚은.png);
 } /* 빚은 */
 
 #section_box3 .container .logo_image_18{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_디.퀸즈.png);
 } /* 디.퀸즈 */
 
 #section_box3 .container .logo_image_19{
     width: 120px; height: 150px;
-    margin-left:15px;
+
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/brand/brand_해피포인트.png);
 } /* 해피포인트 */
 /* ///////////////////////////// SPC BRAND 박스 카드 로고 이미지 모음 ///////////////////////////// */
 
 #section_box3 .container .logo_name{
-    display: flex; align-items: center; justify-content: center;
-    width: 130px; height: 150px;
+    display: flex; align-items: center;
+    height: 150px;
+    padding-left: 10px;
 } /*SPC BRAND 박스 카드 로고 이름 */
 
 #section_box3 .container .icon_box{
     display: flex; justify-content: center; align-items: center;
     width: 50px; height: 150px;
-    margin-right: 7px;
 } /*SPC BRAND 박스 카드 home ICON 박스 */
 
 #section_box3 .container .icon_box_none{
@@ -637,6 +637,34 @@
     border-radius: 30px;
     box-shadow: 0 0 13px #ccc;
 }  /*SPC BRAND 박스 카드 ICON 바깥 라인 박스 */
+
+#section_box3 .brand_card_li .icon_wrap_01{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 441px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 1개 일때 */
+
+#section_box3 .brand_card_li .icon_wrap_02{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 384px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 2개 일때 */
+
+#section_box3 .brand_card_li .icon_wrap_03{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 324px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 3개 일때 */
+
+#section_box3 .brand_card_li .icon_wrap_04{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 267px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 4개 일때 */
 
 
 #section_box3 .container .home_icon {
@@ -674,12 +702,12 @@
     display: flex; align-items: center; justify-content: center;
     width: 100%; height: 1000px;
     /* background-color: #c3c; */
-} /*SPC BRAND 박스 전체 영역*/
+} /*SPC 계열사 박스 전체 영역*/
 
 #section_box4 .container{
     width: 1600px; height: 900px;
     /* background-color: #ccc; */
-} /*SPC BRAND 박스 위치 영역*/
+} /*SPC 계열사 박스 위치 영역*/
 
 #section_box4 .container .subsidiary_title{
     width: 100%;
@@ -688,78 +716,108 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 140px;
-} /*SPC BRAND 박스 타이틀*/
+} /*SPC 계열사 박스 타이틀*/
 
 #section_box4 .container .subsidiary_card_box{
     width: 100%;
     height: 1140px;
     box-sizing: border-box;
     /* background-color: #fda; */
-} /*SPC BRAND 박스 카드 전체 영역 */
+} /*SPC 계열사 박스 카드 전체 영역 */
 
 #section_box4 .container .subsidiary_card_ul{
     display: flex; 
     width: 100%; height: 150px; gap: 50px;
     margin-bottom:15px;
-} /*SPC BRAND 박스 카드 위치 영역 */
+} /*SPC 계열사 박스 카드 위치 영역 */
 
 #section_box4 .container .subsidiary_card_li{
+    position: relative;
     display: flex;
     width: 500px; height: 150px;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 13px #ccc;
     box-sizing: border-box;
-} /*SPC BRAND 박스 카드 */
+    padding-left: 15px;
+} /*SPC 계열사 박스 카드 */
 
 
 #section_box4 .container .logo_name{
-    display: flex; align-items: center; justify-content: center;
-    width: 130px; height: 150px;
-} /*SPC BRAND 박스 카드 로고 이름 */
+    display: flex; align-items: center;
+    height: 150px;
+    padding-left: 10px;
+} /*SPC 계열사 박스 카드 로고 이름 */
 
 #section_box4 .container .icon_box{
     display: flex; justify-content: center; align-items: center;
     width: 50px; height: 150px;
-    margin-left:170px;
-} /*SPC BRAND 박스 카드 home ICON 박스 */
+} /*SPC 계열사 박스 카드 home ICON 박스 */
 
 #section_box4 .container .icon_box_none{
     display: none;
     width: 0; height: 0; 
-} /*SPC BRAND 박스 카드 home ICON 박스 보이지않게 none*/
+} /*SPC 계열사 박스 카드 home ICON 박스 보이지않게 none*/
 
 #section_box4 .subsidiary_card_li .outline{
     display: flex; justify-content: center; align-items: center;
     width: 50px; height: 50px;
     border-radius: 30px;
     box-shadow: 0 0 13px #ccc;
-}  /*SPC BRAND 박스 카드 ICON 바깥 라인 박스 */
+}  /*SPC 계열사 박스 카드 ICON 바깥 라인 박스 */
+
+#section_box4 .subsidiary_card_li .icon_wrap_01{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 441px;
+} /*SPC 계열사 박스 카드 ICON wrap -> icon 1개 일때 */
+
+#section_box4 .subsidiary_card_li .icon_wrap_02{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 384px;
+} /*SPC 계열사 박스 카드 ICON wrap -> icon 2개 일때 */
+
+#section_box4 .subsidiary_card_li .icon_wrap_03{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 324px;
+} /*SPC 계열사 박스 카드 ICON wrap -> icon 3개 일때 */
+
+#section_box4 .subsidiary_card_li .icon_wrap_04{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 267px;
+} /*SPC 계열사 박스 카드 ICON wrap -> icon 4개 일때 */
 
 
 #section_box4 .container .home_icon {
     width: 30px; height: 30px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/home_icon.png);
-} /*SPC BRAND 박스 카드 home ICON  */
+} /*SPC 계열사 박스 카드 home ICON  */
 
 #section_box4 .container .instagram_icon {
     width: 30px; height: 30px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/instagram_icon.png);
-} /*SPC BRAND 박스 카드 instagram ICON  */
+} /*SPC 계열사 박스 카드 instagram ICON  */
 
 #section_box4 .container .facebook_icon {
     width: 30px; height: 30px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/facebook_icon.png);
-} /*SPC BRAND 박스 카드 instagram ICON  */
+} /*SPC 계열사 박스 카드 instagram ICON  */
 
 #section_box4 .container .youtube_icon {
     width: 30px; height: 30px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/youtube_icon.png);
-} /*SPC BRAND 박스 카드 instagram ICON  */
+} /*SPC 계열사 박스 카드 instagram ICON  */
 
 /* ///////////////////////////// SPC 계열사 박스 카드 로고 이미지 모음 ///////////////////////////// */
 #section_box4 .container .logo_image_01{
@@ -817,3 +875,8 @@
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/subsidiary/subsidiary_타이거인터내셔날.png);
 } /* 타이거 인터내셔날 */
+
+/* ///////////////////////////// SPC 계열사 박스 카드 로고 이미지 모음 ///////////////////////////// */
+
+
+/*section_box4 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

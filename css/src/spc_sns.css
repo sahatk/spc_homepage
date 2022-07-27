@@ -779,7 +779,7 @@
     position: absolute;
     display: flex; gap:8px;
     box-sizing: border-box;
-    left: 326px;
+    left: 324px;
 } /*SPC BRAND 박스 카드 ICON wrap -> icon 3개 일때 */
 
 #section_box2 .brand_card_li .icon_wrap_04{
