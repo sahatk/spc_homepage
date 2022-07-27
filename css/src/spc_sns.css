@@ -1,0 +1,819 @@
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    opacity: 0.9;
+    /* background-color: #fda;  */
+}
+
+#header_box:hover .main_li {
+    color: #000000 !important;
+}
+
+/* header_box안의 컨테이너*/
+#header_box .container {
+    display: flex;
+    justify-content: space-around;
+    width: 1700px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
+#header_box .container a {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+}
+
+/*logo */
+/*/////////////////////*/
+/*navigation*/
+#header_box .header_nav {
+    width: auto;
+    height: auto;
+}
+
+#header_box .header_nav h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 안보이게*/
+
+
+/*기본 header 영역*/
+#header_box .header_nav .main_menu {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+#header_box .header_nav .main_li {
+    width: auto;
+    height: auto;
+    color: #000000 !important;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_nav .main_li a:hover {
+    color: #23afe3;
+    cursor: pointer;
+}
+
+#header_box .header_nav .main_li:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
+    cursor: pointer;
+}
+
+/*기본 header 영역*/
+
+
+/* 오버시 header 영역*/
+#header_box .menu_hover_box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    top: 80px;
+    height: 0;
+    border-top: 1px solid #dddddd;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    opacity: 0;
+}
+
+#header_box:hover .menu_hover_box {
+    height: 300px;
+    opacity: 1;
+}
+
+#header_box .sub_menu_box {
+    background: transparent;
+    height: 0;
+    bottom: -1px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    opacity: 0;
+    visibility: hidden
+}
+
+#header_box:hover .sub_menu_box {
+    opacity: 1;
+    visibility: visible;
+}
+
+#header_box .sub_menu {
+    padding-top: 60px;
+}
+
+#header_box .sub_menu li {
+    padding-bottom: 15px;
+}
+
+#header_box .sub_menu li a {
+    position: relative;
+    color: transparent;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+#header_box .sub_menu li a:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    background: #23afe3;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+#header_box:hover .sub_menu li a {
+    margin-top: 10px;
+    color: #666;
+}
+
+#header_box:hover .sub_menu li a:hover {
+    color: #23afe3;
+}
+
+#header_box:hover .sub_menu li a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*media_hub_box (MEDIA HUB 박스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#media_hub_box {
+    position: relative;
+    width: 100%;
+    height: 452px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #d9effa;
+} /*media_hub_box 전체 영역*/
+
+#media_hub_box .container {
+    position: relative;
+    width: 1600px;
+    height: 250px;
+    /* background-color: #fff; */
+} /* media_hub_box 위치 영역*/
+
+
+
+#media_hub_box .container .media_hub_box_image_01 {
+    position: absolute; left: 13.5rem; top: -150px;
+    width: 250px; height: 250px;
+    background-image: url(../../img/spc_familychannel_img/media_hub/hub-img04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} /* media_hub_box 여성 이미지 */
+
+@media (min-width:1708px) {
+    #media_hub_box .container .media_hub_box_image_01 {
+        left: 14.7rem;
+    } /* media_hub_box 여성 이미지 */
+}
+
+#media_hub_box .media_hub_box_image_02 {
+    position: absolute; left: 900px; bottom: 1px;
+    width: 105px;
+    height: 166px;
+    background-image: url(../../img/spc_familychannel_img/media_hub/hub-img03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+} /* media_hub_box 남성 이미지 */
+
+#media_hub_box .container .media_hub_title {
+    width: 100%;
+    height: 100px;
+    text-transform: uppercase;
+} /* media_hub_box 제목*/
+
+#media_hub_box .container .media_hub_text {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+} /* media_hub_box 텍스트 */
+
+/*media_hub_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*tab_menu_box (탭 메뉴 박스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#tab_menu_box {
+    width: 100%;
+    height: 72px;
+} /* 탭 메뉴 전체 영역*/
+
+#tab_menu_box .container {
+    width: 1600px;
+    height: 72px;
+    margin: 0 auto;
+    background-color: #fff;
+} /* 탭 메뉴 위치 영역*/
+
+#tab_menu_box .container .tab_menu_ul{
+    width: 100%; height: 72px;
+    display: flex; overflow: hidden;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+} /* 탭 메뉴 ul */
+
+#tab_menu_box .tab_menu_li a {
+    display: flex; justify-content: center; align-items: center;
+    width: 267px; height: 72px;
+    text-transform: uppercase;
+    border-right: 1px solid #d7d7d7;
+    margin-right: -1px;
+} /* 탭 메뉴 ul li 요소 */
+
+#tab_menu_box .tab_menu_li a:hover {
+    color : #ffffff;
+    background-color: var(--color-sky);
+
+} /* 탭 메뉴 ul li a 오버 */
+
+.tab_menu_ul .active{
+    color : var(--color-sky);
+    border-bottom: 2px solid var(--color-sky);
+} /* 탭 메뉴 현재 페이지 active 고정*/
+
+/*tab_menu_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box1 (SPC그룹 공식 SNS채널)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box1 {
+    display: flex; align-items: center;
+    width: 100%; height: 1500px;
+} /*SPC SNS 박스 전체 영역*/
+
+#section_box1 .container{
+    width: 1600px; height: 1300px;
+    margin: 0 auto;
+} /*SPC SNS 박스 위치 영역*/
+
+#section_box1 .container .sns_title{
+    width: 100%;
+    height: 100px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+} /*SPC SNS 박스 -> 타이틀*/
+
+#section_box1 .container .insta_title{
+    display: flex; align-items: center; justify-content: center;
+    width: 400px; height: 80px;
+    border-radius: 50px;
+    box-shadow: 0 0 13px #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/instagram/insta-bg.png);
+    margin: 0 auto;
+    margin-bottom: 100px;
+} /*SPC SNS 박스 -> 인스타그램 타이틀*/
+
+#section_box1 .container .insta_wrap{
+    display: flex; align-items: center;
+    color: #ffffff;
+    line-height: 20px;
+} /*SPC SNS 박스 -> 인스타그램 타이틀 -> 인스타그램 로고와 글씨 wrap*/
+
+#section_box1 .container .insta_icon{
+    width: 20px; height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_sns_img/instagram/instagram_logo.png);
+    margin-right:20px;
+    margin-top:2px;
+} /*SPC SNS 박스 -> 인스타그램 타이틀 -> 인스타그램 로고 아이콘*/
+
+#section_box1 .container .insta_card_box{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+} /*SPC SNS 박스 -> 인스타그램 카드 박스*/
+
+#section_box1 .container .insta_card_ul{
+    display: flex; gap: 25px;
+    width: 100%;
+    height: 300px;
+} /*SPC SNS 박스 -> 인스타그램 카드 박스 ul*/
+
+#section_box1 .container .insta_card_li{
+    width: 300px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 13px #ccc;
+} /*SPC SNS 박스 -> 인스타그램 카드 박스 li*/
+
+
+/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 모음 ////////////// */
+#section_box1 .container .insta_card_image_01{
+    width: 300px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/instagram/insta_card_image_01.jpg);
+}
+
+#section_box1 .container .insta_card_image_02{
+    width: 300px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/instagram/insta_card_image_02.jpg);
+}
+
+#section_box1 .container .insta_card_image_03{
+    width: 300px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/instagram/insta_card_image_03.jpg);
+}
+
+#section_box1 .container .insta_card_image_04{
+    width: 300px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/instagram/insta_card_image_04.jpg);
+}
+
+#section_box1 .container .insta_card_image_05{
+    width: 300px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/instagram/insta_card_image_05.jpg);
+}/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 모음 ////////////// */
+
+#section_box1 .container .facebook_title{
+    display: flex; align-items: center; justify-content: center;
+    width: 400px; height: 80px;
+    border-radius: 50px;
+    box-shadow: 0 0 13px #ccc;
+    background-color: #1877f2;
+    margin: 0 auto;
+    margin-bottom: 100px;
+} /*SPC SNS 박스 -> 페이스북 타이틀*/
+
+#section_box1 .container .facebook_wrap{
+    display: flex; align-items: center;
+    color: #ffffff;
+    line-height: 20px;
+} /*SPC SNS 박스 -> 페이스북 타이틀 -> 페이스북 로고와 글씨 wrap*/
+
+#section_box1 .container .facebook_icon{
+    width: 20px; height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_sns_img/facebook/facebook_logo.png);
+    margin-right:20px;
+} /*SPC SNS 박스 -> 페이스북 타이틀 -> 페이스북 로고 아이콘*/
+
+#section_box1 .container .facebook_card_box{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+} /*SPC SNS 박스 -> 페이스북 카드 박스*/
+
+#section_box1 .container .facebook_card_ul{
+    display: flex; gap: 50px;
+    width: 100%;
+    height: 300px;
+} /*SPC SNS 박스 -> 페이스북 카드 박스 ul*/
+
+#section_box1 .container .facebook_card_li{
+    width: 500px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 13px #ccc;
+} /*SPC SNS 박스 -> 페이스북 카드 박스 li*/
+
+/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 모음 ////////////// */
+#section_box1 .container .facebook_card_image_01{
+    width: 500px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_01.jpg);
+}
+
+#section_box1 .container .facebook_card_image_02{
+    width: 500px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_02.jpg);
+}
+
+#section_box1 .container .facebook_card_image_03{
+    width: 500px; height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_03.jpg);
+}/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 모음 ////////////// */
+
+/*section_box1 (SPC그룹 공식 SNS채널)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box2 (브랜드 공식 채널)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box2 {
+    display: flex;  justify-content: center;
+    width: 100%; height: 2100px;
+    /* background-color: #c3c; */
+} /*SPC BRAND 박스 전체 영역*/
+
+#section_box2 .container{
+    width: 1600px; height: 1885px;
+    /* background-color: #ccc; */
+} /*SPC BRAND 박스 위치 영역*/
+
+#section_box2 .container .brand_title{
+    width: 100%;
+    height: 100px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+} /*SPC BRAND 박스 타이틀*/
+
+#section_box2 .container .brand_text{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    color: #7d7d7d;
+} /*SPC BRAND 박스 타이틀 타이틀 설명(텍스트)*/
+
+#section_box2 .container .brand_card_box{
+    width: 100%;
+    height: 1635px;
+    box-sizing: border-box;
+    /* background-color: #fda; */
+} /*SPC BRAND 박스 카드 전체 영역 */
+
+#section_box2 .container .brand_card_ul{
+    display: flex;
+    width: 100%; height: 150px; gap: 50px;
+    margin-bottom:15px;
+} /*SPC BRAND 박스 카드 위치 영역 */
+
+#section_box2 .container .brand_card_li{
+    position: relative;
+    display: flex;
+    width: 500px; height: 150px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 13px #ccc;
+    box-sizing: border-box;
+    padding-left: 15px;
+} /*SPC BRAND 박스 카드 */
+
+/* ///////////////////////////// SPC BRAND 박스 카드 로고 이미지 모음 ///////////////////////////// */
+#section_box2 .container .logo_image_01{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_한상차림.png);
+} /* 한상차림 */
+
+#section_box2 .container .logo_image_02{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_삼립.png);
+} /* 삽립 */
+
+#section_box2 .container .logo_image_03{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_파리바게뜨.png);
+} /* 파리바게뜨 */
+
+#section_box2 .container .logo_image_04{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_배스킨라빈스.png);
+} /* 배스킨라빈스 */
+
+#section_box2 .container .logo_image_05{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_던킨.png);
+} /* 던킨 */
+
+#section_box2 .container .logo_image_06{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_파리크라상.png);
+} /* 파리크라상 */
+
+#section_box2 .container .logo_image_07{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_패션5.png);
+} /* 패션5 */
+
+#section_box2 .container .logo_image_08{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_쉐이크쉑.png);
+} /* 쉐이크쉑 */
+
+#section_box2 .container .logo_image_09{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_에그슬롯.png);
+} /* 에그슬럿 */
+
+#section_box2 .container .logo_image_10{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_라그릴리아.png);
+} /* 라그릴리아 */
+
+#section_box2 .container .logo_image_11{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_파스쿠찌.png);
+} /* 파스쿠찌 */
+
+#section_box2 .container .logo_image_12{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_잠바주스.png);
+} /* 잠바주스 */
+
+#section_box2 .container .logo_image_13{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_리나스.png);
+} /* 리나스 */
+
+#section_box2 .container .logo_image_14{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_티트라.png);
+} /* 티트라 */
+
+#section_box2 .container .logo_image_15{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_피그인더가든.png);
+} /* 피그인더가든 */
+
+#section_box2 .container .logo_image_16{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_커피앳웍스.png);
+} /* 커피앳웍스 */
+
+#section_box2 .container .logo_image_17{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_시티델리.png);
+} /* 시티델리 */
+
+#section_box2 .container .logo_image_18{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_빚은.png);
+} /* 빚은 */
+
+#section_box2 .container .logo_image_19{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_라뜰리에.png);
+} /* 라뜰리에 */
+
+#section_box2 .container .logo_image_20{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_디.퀸즈.png);
+} /* 디.퀸즈 */
+
+#section_box2 .container .logo_image_21{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_해피포인트.png);
+} /* 해피포인트 */
+
+#section_box2 .container .logo_image_22{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_샤니.png);
+} /* 샤니 */
+
+#section_box2 .container .logo_image_23{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_베이커팩토리.png);
+} /* 베이커리 팩토리 */
+
+#section_box2 .container .logo_image_24{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_퀸즈파크.png);
+} /* 퀸즈파크 */
+
+#section_box2 .container .logo_image_25{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_그릭슈바인.png);
+} /* 퀸즈파크 */
+
+#section_box2 .container .logo_image_26{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_스트릿.png);
+} /* 그릭슈바인 */
+
+#section_box2 .container .logo_image_27{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_더월드바인.png);
+} /* 스트릿 */
+
+#section_box2 .container .logo_image_28{
+    width: 120px; height: 150px;
+    
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    background-image: url(../../img/spc_sns_img/brand/brand_배라.png);
+} /* 베라 */
+/* ///////////////////////////// SPC BRAND 박스 카드 로고 이미지 모음 ///////////////////////////// */
+
+#section_box2 .container .logo_name{
+    display: flex; align-items: center;
+    height: 150px;
+    padding-left: 10px;
+} /*SPC BRAND 박스 카드 로고 이름 */
+
+#section_box2 .container .icon_box{
+    display: flex; justify-content: center; align-items: center;
+    width: 50px; height: 150px;
+} /*SPC BRAND 박스 카드 home ICON 박스 */
+
+#section_box2 .container .icon_box_none{
+    display: none;
+    width: 0; height: 0; 
+} /*SPC BRAND 박스 카드 home ICON 박스 보이지않게 none*/
+
+#section_box2 .brand_card_li .outline{
+    display: flex; justify-content: center; align-items: center;
+    width: 50px; height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 13px #ccc;
+}  /*SPC BRAND 박스 카드 ICON 바깥 라인 박스 */
+
+
+#section_box2 .brand_card_li .icon_wrap_01{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 441px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 1개 일때 */
+
+#section_box2 .brand_card_li .icon_wrap_02{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 384px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 2개 일때 */
+
+#section_box2 .brand_card_li .icon_wrap_03{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 326px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 3개 일때 */
+
+#section_box2 .brand_card_li .icon_wrap_04{
+    position: absolute;
+    display: flex; gap:8px;
+    box-sizing: border-box;
+    left: 267px;
+} /*SPC BRAND 박스 카드 ICON wrap -> icon 4개 일때 */
+
+#section_box2 .container .home_icon {
+    width: 30px; height: 30px;
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+    background-image: url(../../img/spc_familychannel_img/icon/home_icon.png);
+} /*SPC BRAND 박스 카드 home ICON  */
+
+#section_box2 .container .instagram_icon {
+    width: 30px; height: 30px;
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+    background-image: url(../../img/spc_familychannel_img/icon/instagram_icon.png);
+} /*SPC BRAND 박스 카드 instagram ICON  */
+
+#section_box2 .container .facebook_icon {
+    width: 30px; height: 30px;
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+    background-image: url(../../img/spc_familychannel_img/icon/facebook_icon.png);
+} /*SPC BRAND 박스 카드 instagram ICON  */
+
+#section_box2 .container .youtube_icon {
+    width: 30px; height: 30px;
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+    background-image: url(../../img/spc_familychannel_img/icon/youtube_icon.png);
+} /*SPC BRAND 박스 카드 instagram ICON  */
+
+
+/*section_box2 (브랜드 공식 채널)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
