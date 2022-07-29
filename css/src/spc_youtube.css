@@ -1,0 +1,515 @@
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    opacity: 0.9;
+    /* background-color: #fda;  */
+}
+
+#header_box:hover .main_li {
+    color: #000000 !important;
+}
+
+/* header_box안의 컨테이너*/
+#header_box .container {
+    display: flex;
+    justify-content: space-around;
+    width: 1700px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
+#header_box .container a {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+}
+
+/*logo */
+/*/////////////////////*/
+/*navigation*/
+#header_box .header_nav {
+    width: auto;
+    height: auto;
+}
+
+#header_box .header_nav h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 안보이게*/
+
+
+/*기본 header 영역*/
+#header_box .header_nav .main_menu {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+#header_box .header_nav .main_li {
+    width: auto;
+    height: auto;
+    color: #000000 !important;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_nav .main_li a:hover {
+    color: #23afe3;
+    cursor: pointer;
+}
+
+#header_box .header_nav .main_li:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
+    cursor: pointer;
+}
+
+/*기본 header 영역*/
+
+
+/* 오버시 header 영역*/
+#header_box .menu_hover_box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    top: 80px;
+    height: 0;
+    border-top: 1px solid #dddddd;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    opacity: 0;
+}
+
+#header_box:hover .menu_hover_box {
+    height: 300px;
+    opacity: 1;
+}
+
+#header_box .sub_menu_box {
+    background: transparent;
+    height: 0;
+    bottom: -1px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    opacity: 0;
+    visibility: hidden
+}
+
+#header_box:hover .sub_menu_box {
+    opacity: 1;
+    visibility: visible;
+}
+
+#header_box .sub_menu {
+    padding-top: 60px;
+}
+
+#header_box .sub_menu li {
+    padding-bottom: 15px;
+}
+
+#header_box .sub_menu li a {
+    position: relative;
+    color: transparent;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+#header_box .sub_menu li a:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    background: #23afe3;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+#header_box:hover .sub_menu li a {
+    margin-top: 10px;
+    color: #666;
+}
+
+#header_box:hover .sub_menu li a:hover {
+    color: #23afe3;
+}
+
+#header_box:hover .sub_menu li a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*media_hub_box (MEDIA HUB 박스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#media_hub_box {
+    position: relative;
+    width: 100%;
+    height: 452px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #d9effa;
+} /*media_hub_box 전체 영역*/
+
+#media_hub_box .container {
+    position: relative;
+    width: 1600px;
+    height: 250px;
+    /* background-color: #fff; */
+} /* media_hub_box 위치 영역*/
+
+
+
+#media_hub_box .container .media_hub_box_image_01 {
+    position: absolute; left: 13.5rem; top: -150px;
+    width: 250px; height: 250px;
+    background-image: url(../../img/spc_familychannel_img/media_hub/hub-img04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} /* media_hub_box 여성 이미지 */
+
+@media (min-width:1708px) {
+    #media_hub_box .container .media_hub_box_image_01 {
+        left: 14.7rem;
+    } /* media_hub_box 여성 이미지 */
+}
+
+#media_hub_box .media_hub_box_image_02 {
+    position: absolute; left: 900px; bottom: 1px;
+    width: 105px;
+    height: 166px;
+    background-image: url(../../img/spc_familychannel_img/media_hub/hub-img03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+} /* media_hub_box 남성 이미지 */
+
+#media_hub_box .container .media_hub_title {
+    width: 100%;
+    height: 100px;
+    text-transform: uppercase;
+} /* media_hub_box 제목*/
+
+#media_hub_box .container .media_hub_text {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+} /* media_hub_box 텍스트 */
+
+/*media_hub_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*tab_menu_box (탭 메뉴 박스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#tab_menu_box {
+    width: 100%;
+    height: 72px;
+} /* 탭 메뉴 전체 영역*/
+
+#tab_menu_box .container {
+    width: 1600px;
+    height: 72px;
+    margin: 0 auto;
+    background-color: #fff;
+} /* 탭 메뉴 위치 영역*/
+
+#tab_menu_box .container .tab_menu_ul{
+    width: 100%; height: 72px;
+    display: flex; overflow: hidden;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+} /* 탭 메뉴 ul */
+
+#tab_menu_box .tab_menu_li a {
+    display: flex; justify-content: center; align-items: center;
+    width: 267px; height: 72px;
+    text-transform: uppercase;
+    border-right: 1px solid #d7d7d7;
+    margin-right: -1px;
+} /* 탭 메뉴 ul li 요소 */
+
+#tab_menu_box .tab_menu_li a:hover {
+    color : #ffffff;
+    background-color: var(--color-sky);
+
+} /* 탭 메뉴 ul li a 오버 */
+
+.tab_menu_ul .active{
+    color : var(--color-sky);
+    border-bottom: 2px solid var(--color-sky);
+} /* 탭 메뉴 현재 페이지 active 고정*/
+
+/*tab_menu_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box1 (SPC YOUTUBE Channel 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box1 {
+    display: flex; align-items: center; 
+    width: 100%;
+    height: 900px;
+    /* background-color: #fda; */
+} /*SPC YOUTUBE Channel 박스 전체 영역*/
+
+#section_box1 .container{
+    width: 1600px;
+    height: 700px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+} /*SPC YOUTUBE Channel 박스 위치 영역*/
+
+#section_box1 .container .youtube_title{
+    width: 100%;
+    height: 100px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    margin-bottom: 90px;
+} /*SPC YOUTUBE Channel 박스 타이틀*/
+
+#section_box1 .container .youtube_card_box{
+    width: 100%;
+    height: 460px;
+    /* background-color: #fdf; */
+} /*SPC YOUTUBE Channel 박스 카드 전체 영역*/
+
+#section_box1 .container .youtube_card_ul{
+    width: 100%;
+    height: 460px;
+    display: flex; gap: 50px;
+    /* background-color: #3eb146; */
+} /*SPC YOUTUBE Channel 박스 카드 위치 영역*/
+
+#section_box1 .container .youtube_card_li{
+    width: 500px;
+    height: 460px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 13px #ccc;
+} /*SPC YOUTUBE Channel 박스 카드*/
+
+/*/////////////////////// SPC YOUTUBE Channel 박스 카드 이미지 모음 ////////////////////////*/
+#section_box1 .container .youtube_card_image_01 {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_01.jpg);
+} /*SPC YOUTUBE Channel 박스 카드 이미지 01*/
+
+#section_box1 .container .youtube_card_image_02 {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_02.jpg);
+} /*SPC YOUTUBE Channel 박스 카드 이미지 02*/
+
+#section_box1 .container .youtube_card_image_03 {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_03.jpg);
+} /*SPC YOUTUBE Channel 박스 카드 이미지 03*/
+/*/////////////////////// SPC YOUTUBE Channel 박스 카드 이미지 모음 ////////////////////////*/
+
+
+#section_box1 .youtube_card_text{
+    position: relative;
+    width: 100%; height: 160px;
+    box-sizing: border-box;
+    padding: 20px;
+} /*SPC YOUTUBE Channel 박스 카드 제목 영역 */
+
+#section_box1 .youtube_card_text p{
+    padding : 15px 0 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} /*SPC YOUTUBE Channel 박스 카드 제목 */
+
+
+#section_box1 .youtube_card_text .date_text{
+    position: absolute;
+    bottom:30px; left: 20px;
+    color: #7d7d7d;
+} /*SPC YOUTUBE Channel 박스 카드 날짜 */
+
+/*section_box1 (SPC YOUTUBE Channel 박스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box2 (SPC YOUTUBE 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box2 {
+    width: 100%; height: 2900px; display: flex; align-items: center; justify-content: center;
+} 
+/* SPC YOUTUBE 전체 영역*/
+
+#section_box2 .container{
+    width: 1600px; height: 2700px;
+}
+/* SPC YOUTUBE 위치 영역*/
+
+#section_box2 .container .youtube_total_box{
+    width: 100%; height: 2460px; margin-top: 100px;
+} /* SPC YOUTUBE 전체 박스 */
+
+#section_box2 .container .youtube_box {
+    display: flex;
+    width: 100%; height: 360px;
+} /* SPC YOUTUBE 하나의 박스 */
+
+#section_box2 .container .youtube_logo_box{
+    width: 300px; height: 360px;
+} /* SPC YOUTUBE 박스 -> logo 박스 */
+
+#section_box2 .container .youtube_logo{
+    width: 270px; height: 270px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box; padding-top: 50px;
+    margin: 0 auto;
+    box-shadow: 0 0 13px #ccc;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo*/
+
+#section_box2 .container .youtube_logo_image_01{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_01.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 01*/
+
+#section_box2 .youtube_logo p{
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo @이름 */
+
+#section_box2 .container .youtube_button_box{
+    display: flex; justify-content: space-between;
+    width: 200px; height: 90px; 
+    margin: 10px auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 */
+
+#section_box2 .container .youtube_button_prev{
+    width: 80px; height: 80px; border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 13px #ccc;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 -> 이전 버튼 */
+
+#section_box2 .container .youtube_button_next{
+    width: 80px; height: 80px; border-radius: 50%;
+    text-align: center;
+    background-color:#fff;
+    box-shadow: 0 0 13px #ccc;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 -> 다음 버튼 */
+
+#section_box2 .container .prev{
+    width: 80px; height: 80px; 
+    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain
+} /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 -> 다음 버튼 -> prev 화살표 이미지 */
+
+#section_box2 .container .next{
+    width: 80px; height: 80px;
+    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain
+} /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 -> 다음 버튼 -> next 화살표 이미지 */
+
+#section_box2 .container .youtube_card_box{
+    width: 1300px; height: 360px;
+} /* SPC YOUTUBE 박스 -> card 박스 */
+
+#section_box2 .container .youtube_card_ul{
+    display: flex; gap: 50px;
+    width: 1300px; height: 360px;
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_ul*/
+
+#section_box2 .container .youtube_card_li{
+    width: 400px; height: 360px;
+    border-radius: 30px;
+    box-shadow: 0 0 13px #ccc;
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li*/
+
+#section_box2 .container .youtube_card_image_01{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_01.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_01*/
+
+#section_box2 .container .youtube_card_text{
+    position: relative;
+    width: 100%; height: 110px;
+    box-sizing: border-box;
+    padding: 25px;
+} /*SPC YOUTUBE 박스 -> card 박스 -> 카드 제목 영역 */
+
+#section_box2 .youtube_card_text p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+} /*SPC YOUTUBE 박스 -> card 박스 -> 카드 제목 */
+
+#section_box2 .youtube_card_text .date_text{
+    position: absolute;
+    bottom:20px; left: 25px;
+    color: #7d7d7d;
+} /*SPC YOUTUBE 박스 -> card 박스 -> 카드 날짜 */
+
