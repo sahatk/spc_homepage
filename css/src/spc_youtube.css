@@ -377,6 +377,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-transform: uppercase;
 } /*SPC YOUTUBE Channel 박스 카드 제목 */
 
 
@@ -393,7 +394,7 @@
 /*section_box2 (SPC YOUTUBE 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #section_box2 {
-    width: 100%; height: 2900px; display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 2800px; display: flex; align-items: center; justify-content: center;
 } 
 /* SPC YOUTUBE 전체 영역*/
 
@@ -409,6 +410,7 @@
 #section_box2 .container .youtube_box {
     display: flex;
     width: 100%; height: 360px;
+    margin-bottom: 60px;
 } /* SPC YOUTUBE 하나의 박스 */
 
 #section_box2 .container .youtube_logo_box{
@@ -424,6 +426,8 @@
     box-shadow: 0 0 13px #ccc;
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo*/
 
+/* //////////////////////////// LOGO 이미지 모음 ////////////////////////////*/
+
 #section_box2 .container .youtube_logo_image_01{
     width: 120px; height: 120px;
     background-repeat: no-repeat;
@@ -433,11 +437,62 @@
     margin: 0 auto;
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 01*/
 
+#section_box2 .container .youtube_logo_image_02{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_02.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 02*/
+
+#section_box2 .container .youtube_logo_image_03{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_03.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 03*/
+
+#section_box2 .container .youtube_logo_image_04{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_04.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 04*/
+
+#section_box2 .container .youtube_logo_image_05{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_05.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 05*/
+
+#section_box2 .container .youtube_logo_image_06{
+    width: 120px; height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(../../img/spc_youtube_img/youtube_logo_06.png);
+    margin: 0 auto;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 06*/
+
+/* //////////////////////////// LOGO 이미지 모음 ////////////////////////////*/
+
 #section_box2 .youtube_logo p{
     padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo @이름 */
+
+#section_box2 .youtube_logo .SHAKESHACK{
+    padding-top: 15px;
+} /* SPC YOUTUBE 박스 -> logo 박스 -> logo @쉐이크쉑 만 */
 
 #section_box2 .container .youtube_button_box{
     display: flex; justify-content: space-between;
@@ -484,6 +539,7 @@
     box-shadow: 0 0 13px #ccc;
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li*/
 
+/* /////////////////////////////// 유튜브 카드 이미지 모음 ///////////////////////////////*/
 #section_box2 .container .youtube_card_image_01{
     width: 400px; height: 250px;
     border-radius: 30px 30px 0 0;
@@ -493,6 +549,160 @@
     background-image: url(../../img/spc_youtube_img/youtube_card_image_01.jpg);
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_01*/
 
+#section_box2 .container .youtube_card_image_02{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_02.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_02 */
+
+#section_box2 .container .youtube_card_image_03{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_03.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_03*/
+
+#section_box2 .container .youtube_card_image_04{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_04.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_04*/
+
+#section_box2 .container .youtube_card_image_05{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_05.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_05 */
+
+#section_box2 .container .youtube_card_image_06{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_06.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_06*/
+
+#section_box2 .container .youtube_card_image_07{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_07.webp);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_07*/
+
+#section_box2 .container .youtube_card_image_08{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_08.webp);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_08 */
+
+#section_box2 .container .youtube_card_image_09{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_09.webp);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_09*/
+
+#section_box2 .container .youtube_card_image_10{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_10.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_10*/
+
+#section_box2 .container .youtube_card_image_11{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_11.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_11 */
+
+#section_box2 .container .youtube_card_image_12{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_12.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_12*/
+
+#section_box2 .container .youtube_card_image_13{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_13.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_13*/
+
+#section_box2 .container .youtube_card_image_14{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_14.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_14 */
+
+#section_box2 .container .youtube_card_image_15{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_15.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_15*/
+
+#section_box2 .container .youtube_card_image_16{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_16.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_16*/
+
+#section_box2 .container .youtube_card_image_17{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_17.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_17 */
+
+#section_box2 .container .youtube_card_image_18{
+    width: 400px; height: 250px;
+    border-radius: 30px 30px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url(../../img/spc_youtube_img/youtube_card_image_18.jpg);
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_18*/
+
+/* /////////////////////////////// 유튜브 카드 이미지 모음 ///////////////////////////////*/
 #section_box2 .container .youtube_card_text{
     position: relative;
     width: 100%; height: 110px;
