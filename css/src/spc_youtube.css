@@ -206,8 +206,8 @@
 
 
 #media_hub_box .container .media_hub_box_image_01 {
-    position: absolute; left: 13.5rem; top: -150px;
-    width: 250px; height: 250px;
+    position: absolute; left: 13rem; top: -150px;
+    width: 290px; height: 250px;
     background-image: url(../../img/spc_familychannel_img/media_hub/hub-img04.png);
     background-repeat: no-repeat;
     background-size: cover;
