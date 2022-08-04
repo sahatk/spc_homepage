@@ -2371,128 +2371,100 @@
     color: #23afe3;
 }
 
-
-.main_footer_icon_wrap {
-    margin-top: 50px;
+.main_footer_wrap_02 .main_footer_icon_wrap ul{
+    display: flex; justify-content: center; align-items: center; gap:20px;
+    width: 540px; height: 200px;
+    /* background-color: #fda; */
 }
 
-.main_footer_icon_wrap ul {
-    display: flex;
-    gap: 40px;
+.main_footer_wrap_02 .main_footer_icon_wrap li{
+    width: 120px; height: 150px; background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.main_footer_icon_wrap li {
-    width: 100px;
-    height: 100px;
+.main_footer_wrap_02 .main_footer_icon_wrap .icon_image_box{
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100px;
 }
 
-.main_footer_icon_wrap li:nth-child(1) {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+.happypoint_icon {
+    width: 80px; height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_happy.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(1):hover {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+.happypoint_icon:hover {
+    width: 80px; height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_happy_hov.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
 }
 
-.main_footer_icon_wrap li:nth-child(2) {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+.instagram_icon {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_insta.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(2):hover {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+.instagram_icon:hover {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_insta_hov.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
 }
 
-.main_footer_icon_wrap li:nth-child(3) {
-    width: 80px;
-    height: 40px;
-    padding-right: 20px;
+.facebook_icon {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_facebook.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 20px;
 }
 
-.main_footer_icon_wrap li:nth-child(3):hover {
-    width: 80px;
-    height: 40px;
-    padding-right: 20px;
+.facebook_icon:hover {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_facebook_hov.png);
+}
+
+.youtube_icon {
+    width: 40px; height: 40px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.main_footer_icon_wrap li .icon_text_facebook {
-    width: 100px;
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 60px;
-}
-
-.main_footer_icon_wrap li:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_youtube.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
-.main_footer_icon_wrap li:nth-child(4):hover {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
+.youtube_icon:hover {
+    width: 40px; height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url(../../img/main_img/footer_box/footer_sns_youtube_hov.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
 }
 
-.main_footer_icon_wrap li:hover .font_18 {
+.main_footer_icon_wrap li:hover .font_18{
     font-weight: 700;
 }
 
 
-.main_footer_icon_wrap .icon_text {
-    width: 100px;
-    text-align: center;
-    margin-top: 80px;
 
-
+.main_footer_wrap_02 .main_footer_icon_wrap .icon_text{
     text-transform: capitalize;
-
+    text-align: center;
+    width: 100%; height: 40px;
+    font-weight: 900;
 }
+
 
 /* SPC Footer 주소 및 정보*/
 /*FOOTER_WRAP_02 : SPC Footer logo 및 주소,정보, Footer 아이콘*/
