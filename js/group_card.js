@@ -17,13 +17,16 @@
     const itemsCode = function (obj) {
         const imagePath = `${sourcePath}${obj.filename}`;
         return `
-        <div class="outline">
-            <div class="card_title">${obj.title}</div>
-            <div class="card_image" style="background-image:url(${imagePath});"><span class="blind">이미지</span></div>
-            <div class="card_text">
-                <p>${obj.content}</p>
+        <a href="${obj.link}">
+            <div class="outline">
+                <div class="card_title">${obj.title}</div>
+                <div class="card_image" style="background-image:url(${imagePath});"><span class="blind">이미지</span></div>
+                <div class="card_text">
+                    <p>${obj.content}</p>
+                </div>
             </div>
-        </div>`;
+        </a>
+        `;
     };
 
     // const hoverItemsCode = function (obj) {
@@ -58,12 +61,12 @@
         const cardTitle = elItemsUl.querySelectorAll(".card_title");
         const cardText = elItemsUl.querySelectorAll(".card_text");
         const cardImage = elItemsUl.querySelectorAll(".card_image");
-        
-    
-        Array.from(card).map(function(el,index){
-            let CardBg = `bg_0${index+1}`;
+
+
+        Array.from(card).map(function (el, index) {
+            let CardBg = `bg_0${index + 1}`;
             console.log(CardBg);
-            el.addEventListener("mouseenter", function() {
+            el.addEventListener("mouseenter", function () {
                 cardTitle[index].classList.add('none');
                 cardText[index].classList.add('none');
                 cardImage[index].classList.add('none');
@@ -71,10 +74,10 @@
             });
         });
 
-        Array.from(card).map(function(el,index){
-            let CardBg = `bg_0${index+1}`;
+        Array.from(card).map(function (el, index) {
+            let CardBg = `bg_0${index + 1}`;
             console.log(CardBg);
-            el.addEventListener("mouseleave", function() {
+            el.addEventListener("mouseleave", function () {
                 cardTitle[index].classList.remove('none');
                 cardText[index].classList.remove('none');
                 cardImage[index].classList.remove('none');
@@ -115,7 +118,7 @@
         // });
 
 
-        
+
     };
 
 

@@ -3,168 +3,224 @@
    "key": 1,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_01.png"
+   "filename": "bread_01.png",
+   "link":"https://www.paris.co.kr/",
+   "name":"파리바게뜨"
  },
  {
    "key": 2,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_02.png"
+   "filename": "bread_02.png",
+   "link":"http://www.baskinrobbins.co.kr/",
+   "name":"배스킨라빈스"
  },
  {
    "key": 3,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_03.png"
+   "filename": "bread_03.png",
+   "link":"https://www.dunkindonuts.co.kr/",
+   "name":"던킨"
  },
  {
    "key": 4,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_04.png"
+   "filename": "bread_04.png",
+   "link":"https://spcsamlip.co.kr/",
+   "name":"SPC 삽립"
  },
  {
    "key": 5,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_05.png"
+   "filename": "bread_05.png",
+   "link":"http://pariscroissantorder.com/",
+   "name":"파리크라상"
  },
  {
    "key": 6,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_06.png"
+   "filename": "bread_06.png",
+   "link":"http://spcpassion5.com/",
+   "name":"패션5"
  },
  {
    "key": 7,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_07.png"
+   "filename": "bread_07.png",
+   "link":"https://www.bizeun.co.kr/",
+   "name":"빚은"
  },
  {
    "key": 8,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_08.png"
+   "filename": "bread_08.png",
+   "link":"https://shany.co.kr/",
+   "name":"샤니"
  },
  {
    "key": 9,
    "category": "베이커리/디저트",
    "path": "bread",
-   "filename": "bread_09.png"
+   "filename": "bread_09.png",
+   "link":"https://spcsamlip.co.kr/brand/bakery-factory/",
+   "name":"베이커리 팩토리"
  },
  {
    "key": 10,
    "category": "카페/음료",
    "path": "cafe",
-   "filename": "cafe_01.png"
+   "filename": "cafe_01.png",
+   "link":"https://www.caffe-pascucci.co.kr/",
+   "name":"파스쿠찌"
  },
  {
    "key": 11,
    "category": "카페/음료",
    "path": "cafe",
-   "filename": "cafe_02.png"
+   "filename": "cafe_02.png",
+   "link":"https://www.jambajuice.co.kr/",
+   "name":"잠바주스"
  },
  {
    "key": 12,
    "category": "카페/음료",
    "path": "cafe",
-   "filename": "cafe_03.png"
+   "filename": "cafe_03.png",
+   "link":"http://coffeeatworks.kr/html/main.html",
+   "name":"커피앳웍스"
  },
  {
    "key": 13,
    "category": "카페/음료",
    "path": "cafe",
-   "filename": "cafe_04.png"
+   "filename": "cafe_04.png",
+   "link":"https://www.teatra.co.kr/main/main.asp",
+   "name":"티트라"
  },
  {
    "key": 14,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_01.png"
+   "filename": "dinner_01.png",
+   "link":"http://www.shakeshack.kr/",
+   "name":"쉐이크쉑"
  },
  {
    "key": 15,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_02.png"
+   "filename": "dinner_02.png",
+   "link":"http://eggslut.co.kr/",
+   "name":"에그슬럿"
  },
  {
    "key": 16,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_03.png"
+   "filename": "dinner_03.png",
+   "link":"http://dining.spc.co.kr/lagrillia.do",
+   "name":"라그릴리아"
  },
  {
    "key": 17,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_04.png"
+   "filename": "dinner_04.png",
+   "link":"http://dining.spc.co.kr/piginthegarden.do",
+   "name":"피그인더가든"
  },
  {
    "key": 18,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_05.png"
+   "filename": "dinner_05.png",
+   "link":"https://citydeli.co.kr/",
+   "name":"시티델리"
  },
  {
    "key": 19,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_06.png"
+   "filename": "dinner_06.png",
+   "link":"http://dining.spc.co.kr/queenspark.do",
+   "name":"퀸즈파크"
  },
  {
    "key": 20,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_07.png"
+   "filename": "dinner_07.png",
+   "link":"http://dining.spc.co.kr/vera.do",
+   "name":"베라"
  },
  {
    "key": 21,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_08.png"
+   "filename": "dinner_08.png",
+   "link":"http://dining.spc.co.kr/index.do",
+   "name":"라뜰리에"
  },
  {
    "key": 22,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_09.png"
+   "filename": "dinner_09.png",
+   "link":"https://spcsamlip.co.kr/brand/glucks-schwein/",
+   "name":"그릭슈바인"
  },
  {
    "key": 23,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_10.png"
+   "filename": "dinner_10.png",
+   "link":"http://dining.spc.co.kr/streat.do",
+   "name":"스트릿"
  },
  {
    "key": 24,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_11.png"
+   "filename": "dinner_11.png",
+   "link":"http://dining.spc.co.kr/dqueens.do",
+   "name":"디.퀸즈"
  },
  {
    "key": 25,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_12.png"
+   "filename": "dinner_12.png",
+   "link":"https://linaskorea.com/",
+   "name":"리나스"
  },
  {
    "key": 26,
    "category": "외식/다이닝",
    "path": "dinner",
-   "filename": "dinner_13.png"
+   "filename": "dinner_13.png",
+   "link":"https://delivery-lagrillia.com/hansangcharim-info",
+   "name":"한상차림"
  },
  {
    "key": 27,
    "category": "유통/서비스",
    "path": "service",
-   "filename": "service_01.png"
+   "filename": "service_01.png",
+   "link":"https://www.happypointcard.com/page/main/index.spc;jsessionid=A5CA762E28BBC27BFA566B2293D1CFE9",
+   "name":"해피포인트"
  },
  {
    "key": 28,
    "category": "유통/서비스",
    "path": "service",
-   "filename": "service_02.png"
+   "filename": "service_02.png",
+   "link":"http://www.spctigerinternational.co.kr/main/html.php?htmid=proc/company01.html",
+   "name":"더월드바인"
  }
 ]
