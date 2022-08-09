@@ -125,7 +125,6 @@
     padding-top: 70px;
 
 }
-
 #section_box1 .container{
     width: 1440px; height: auto;
 }
@@ -139,6 +138,10 @@
     width: 100%; height: auto;
     margin-bottom: 15px;
 } /* spc_history_text 영역 -> spc_histroy_title 제목 영역 */
+
+#section_box1 .container .spc_history_text {
+    color:#7d7d7d;
+}
 
 /*section_box1 (SPC 연혁 소개)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
