@@ -209,6 +209,13 @@
 
 
 /* font-size  65px bold(메인 제목), 50px bold(부 제목) , 24px bold(메인 텍스트), 24px medium, 20px bold(부 텍스트), 18px medium */
+
+.font_85{
+  font-size: 85px;
+  font-weight: 700;
+} /*text 가장 큰*/
+
+
 .font_65{
   font-size: 65px;
   font-weight: 700;

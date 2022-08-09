@@ -22,8 +22,8 @@
 /* header_box안의 컨테이너*/
 #header_box .container {
     display: flex;
-    justify-content: space-around;
-    width: 1700px;
+    justify-content: space-between;
+    width: 1440px;
     max-width: 1920px;
     min-width: 300px;
     height: 50px;
@@ -198,7 +198,7 @@
 
 #media_hub_box .container {
     position: relative;
-    width: 1600px;
+    width: 1440px;
     height: 250px;
     /* background-color: #fff; */
 } /* media_hub_box 위치 영역*/
