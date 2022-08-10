@@ -10,8 +10,7 @@
     box-sizing: border-box;
     padding: 10px;
     z-index: 1000;
-    background-color: transparent;
-    /* background-color: #fda;  */
+    background-color: white;
 }
 
 #header_box:hover .main_li {
