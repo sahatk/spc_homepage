@@ -128,6 +128,16 @@
 
 /*category_box///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/* 카테고리 경로 위치 잡아주기 */
+#food {position: absolute; width: 30px; height: 30px; top: -5%; }
+#material {position: absolute; width: 30px; height: 30px; top: 25%;}
+#IT {position: absolute; width: 30px; height: 30px; top: 50%;}
+#distribution {position: absolute; width: 30px; height: 30px; top: 70%;}
+/* 카테고리 경로 위치 잡아주기 */
+
+
+
+
 #category_box{
     position: fixed; left:10%; top:20%; z-index: 50;
     width: 420px; height: 510px;
