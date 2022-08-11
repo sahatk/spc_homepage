@@ -1,0 +1,514 @@
+/*sky_area //////////////////////////////////////////////////////////////////////////////////////////*/
+#sky_area {
+    background-color: #d1ebfa; 
+    position: absolute; z-index: 50;
+    left:0;
+    top: 0;
+    width: 28.5%;
+    height: 4500px;
+}
+
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    background-color: transparent;
+    /* background-color: #fda;  */
+}
+
+#header_box:hover .main_li {
+    color: #000000 !important;
+}
+
+/* header_box안의 컨테이너*/
+#header_box .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
+#header_box .container a {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+}
+
+/*logo */
+/*/////////////////////*/
+/*navigation*/
+#header_box .header_nav {
+    width: auto;
+    height: auto;
+}
+
+#header_box .header_nav h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}/* 안보이게*/
+
+
+/*기본 header 영역*/
+#header_box .header_nav .main_menu {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+#header_box .header_nav .main_li {
+    width: auto;
+    height: auto;
+    color: #000000 !important;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_nav .main_li a:hover {
+    color: #23afe3;
+    cursor: pointer;
+}
+
+#header_box .header_nav .main_li:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
+    cursor: pointer;
+}/*기본 header 영역*/
+
+
+/* 오버시 header 영역*/
+#header_box .menu_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; height:0; border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0;}
+#header_box:hover .menu_hover_box {height:300px; opacity:1;}
+#header_box .sub_menu_box {background:transparent; height:0; bottom:-1px; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0; visibility:hidden}
+#header_box:hover .sub_menu_box {opacity:1; visibility:visible;}
+#header_box .sub_menu {padding-top: 60px;}
+#header_box .sub_menu li {padding-bottom: 15px;}
+#header_box .sub_menu li a {position:relative; color:transparent; transition:all .2s linear; -webkit-transition:all .2s linear; }
+#header_box .sub_menu li a:before {content:""; position:absolute; bottom:-4px; width:0; height:1px; left:50%; background:#23afe3; transition:all .2s linear; -webkit-transition:all .2s linear;}
+#header_box:hover .sub_menu li a {margin-top:10px; color:#666;}
+#header_box:hover .sub_menu li a:hover {color: #23afe3;}
+#header_box:hover .sub_menu li a:hover:before {width:100%; left:0;}
+/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*category_box///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#category_box{
+    position: fixed; left:10%; top:20%; z-index: 50;
+    width: 420px; height: 510px;
+    /* background-color: #ccc; */
+} /*카테고리 전체 박스*/
+
+#category_box .category_title{
+    height: 60px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}/*카테고리 title : SPC BRAND*/
+
+#category_box .category_menu{
+    width: 420px; height: 420px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px #ddd;
+} /*카테고리 메뉴 박스 */
+
+#category_box .category_ul{
+    width: 380px; 
+    height: 380px;
+    padding: 25px 30px;
+    /* background-color: #ccc; */
+} /*카테고리 메뉴 ul */
+
+#category_box .category_li_title a{
+    width: 320px; height: 60px; text-transform: uppercase;
+    position: relative;
+    display: flex; align-items: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    cursor: pointer;
+} /*카테고리 메뉴 li 타이틀 : ALL BRAND */
+
+#category_box .category_li a{
+    width: 320px; height: 60px;
+    position: relative;
+    display: flex; align-items: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+} /*카테고리 메뉴 li 들 */
+
+#category_box .category_li a:hover{
+    color: #23afe3;
+    transition: all 0.5s ease;
+} /*카테고리 메뉴 li 들 hover */
+
+
+#category_box .category_li_title a::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: url('https://api.iconify.design/akar-icons/chevron-right.svg') no-repeat center center / contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-25px;
+} /*카테고리 메뉴 li 타이틀 button(>) */
+
+#category_box .category_li a::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: url('https://api.iconify.design/akar-icons/plus.svg') no-repeat center center / contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-20px;
+} /*카테고리 메뉴 li들 button(+) */
+
+/*category_box/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box1/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box1{
+    position: relative; z-index: 1;
+    width: 1920px; height: 4500px;
+    /* background-color: #ccc; */
+} /*section_box1*/
+
+#section_box1 .brand_box{
+    position: absolute; left:700px; top:190px;
+    width: 930px; height: 4300px;
+    box-sizing: border-box;
+} /*BRAND 전체 박스*/
+
+
+#section_box1 .brand_box .brand_title {
+    display: flex; align-items: center;
+    width: 930px; height: 50px;
+    margin-bottom: 30px;
+    /* background-color: #fdf; */
+} /* BRAND 베이커리,외식,커피,서비스 안 타이틀 */
+
+#section_box1 .brand_box p{
+    width: 400px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+} /* BRAND 베이커리,외식,커피,서비스 텍스트*/
+
+#section_box1 .brand_box .brand_title_logo{
+    width: 180px;
+    height: 40px;
+    background-color: #1ca3df;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+} /* BRAND 베이커리,외식,커피,서비스 박스 로고*/
+
+
+#section_box1 .brand_box .card_box{
+    margin-bottom: 8rem;
+} /* BRAND 베이커리,외식,커피,서비스 공통 css*/
+
+
+#section_box1 .brand_box .brand_card_ul {
+    display: flex; gap: 50px;
+    align-items: center;
+    width: 850px;
+    height: 300px;
+    /* background-color: #fad; */
+} /* BRAND 박스 -> BRAND CARD ul */
+
+#section_box1 .brand_box .brand_card_li {
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px #ccc;
+    /* background-color: #fda; */
+} /* BRAND 박스 -> BRAND CARD li */
+
+
+
+/*//////////////////////////////// BRAND 카드 이미지 모음 ////////////////////////////////*/
+
+/* ////// 베이커리/디저트 이미지 //////*/
+#section_box1 .brand_box .bread_image_01 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_01.png");
+} /* 파리바게뜨 */
+
+#section_box1 .brand_box .bread_image_02 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_02.png");
+} /* 배스킨라빈스 */
+
+#section_box1 .brand_box .bread_image_03 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_03.png");
+} /* 던킨 */
+
+#section_box1 .brand_box .bread_image_04 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_04.png");
+} /* 파리바게뜨 */
+
+#section_box1 .brand_box .bread_image_05 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_05.png");
+} /* 배스킨라빈스 */
+
+#section_box1 .brand_box .bread_image_06 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_06.png");
+} /* 던킨 */
+
+#section_box1 .brand_box .bread_image_07 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_07.png");
+} /* 빚은 */
+
+#section_box1 .brand_box .bread_image_08 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_08.png");
+} /* 샤니 */
+
+#section_box1 .brand_box .bread_image_09 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/bread/bread_09.png");
+} /* 베이커리 팩토리 */
+
+/* ////// 베이커리/디저트 이미지 //////*/
+
+
+
+/* //////// 외식/다이닝 이미지 ////////*/
+
+#section_box1 .brand_box .dinner_image_01 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_01.png");
+} /* 쉐이크쉑 */
+
+#section_box1 .brand_box .dinner_image_02 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_02.png");
+} /* 에그슬럿 */
+
+#section_box1 .brand_box .dinner_image_03 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_03.png");
+} /* 라그릴리아 */
+
+#section_box1 .brand_box .dinner_image_04 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_04.png");
+} /* 피그인더가든 */
+
+#section_box1 .brand_box .dinner_image_05 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_05.png");
+} /* 시티델리 */
+
+#section_box1 .brand_box .dinner_image_06 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_06.png");
+} /* 퀸즈파크 */
+
+#section_box1 .brand_box .dinner_image_07 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_07.png");
+} /* 베라 */
+
+#section_box1 .brand_box .dinner_image_08 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_08.png");
+} /* 라뜰리에 */
+
+#section_box1 .brand_box .dinner_image_09 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_09.png");
+} /* 그릭슈바인 */
+
+#section_box1 .brand_box .dinner_image_10 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_10.png");
+} /* 스트릿 */
+
+#section_box1 .brand_box .dinner_image_11 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_11.png");
+} /* 디.퀸즈 */
+
+#section_box1 .brand_box .dinner_image_12 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_12.png");
+} /* 리나스 */
+
+#section_box1 .brand_box .dinner_image_13 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/dinner/dinner_13.png");
+} /* 한상차림 */
+
+/* //////// 외식/다이닝 이미지 ////////*/
+
+/* ///////// 커피/음료 이미지 /////////*/
+
+#section_box1 .brand_box .cafe_image_01 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/cafe/cafe_01.png");
+} /* 쉐이크쉑 */
+
+#section_box1 .brand_box .cafe_image_02 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/cafe/cafe_02.png");
+} /* 에그슬럿 */
+
+#section_box1 .brand_box .cafe_image_03 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/cafe/cafe_03.png");
+} /* 라그릴리아 */
+
+#section_box1 .brand_box .cafe_image_04 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/cafe/cafe_04.png");
+} /* 피그인더가든 */
+
+
+/* ///////// 커피/음료 이미지 /////////*/
+
+
+
+/* //////// 유통/서비스 이미지 ////////*/
+
+#section_box1 .brand_box .service_image_01 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/service/service_01.png");
+} /* 쉐이크쉑 */
+
+#section_box1 .brand_box .service_image_02 {
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url("../../img/spc_brand_img/service/service_02.png");
+} /* 에그슬럿 */
+
+/* //////// 유통/서비스 이미지 ////////*/
