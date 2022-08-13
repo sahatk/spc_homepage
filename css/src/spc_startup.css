@@ -1,4 +1,4 @@
-/* startup.css */
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
 #header_box {
   position: fixed;
   top: 0;
@@ -6,13 +6,11 @@
   right: 0;
   width: 100%;
   height: 80px;
-  margin: 0 auto;
+  margin: auto;
   box-sizing: border-box;
   padding: 10px;
   z-index: 1000;
-  background-color: #ffffff;
-  opacity: 1;
-  /* background-color: #fda;  */
+  background-color: white;
 }
 
 #header_box:hover .main_li {
@@ -22,8 +20,8 @@
 /* header_box안의 컨테이너*/
 #header_box .container {
   display: flex;
-  justify-content: space-around;
-  width: 1700px;
+  justify-content: space-between;
+  width: 1440px;
   max-width: 1920px;
   min-width: 300px;
   height: 50px;
@@ -63,9 +61,7 @@
   width: 0;
   height: 0;
   overflow: hidden;
-}
-
-/* 안보이게*/
+}/* 안보이게*/
 
 
 /*기본 header 영역*/
@@ -97,91 +93,28 @@
   height: 30px;
   background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
   cursor: pointer;
-}
-
-/*기본 header 영역*/
+}/*기본 header 영역*/
 
 
 /* 오버시 header 영역*/
-#header_box .menu_hover_box {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: #fff;
-  top: 80px;
-  height: 0;
-  border-top: 1px solid #dddddd;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  opacity: 0;
-}
-
-#header_box:hover .menu_hover_box {
-  height: 300px;
-  opacity: 1;
-}
-
-#header_box .sub_menu_box {
-  background: transparent;
-  height: 0;
-  bottom: -1px;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  opacity: 0;
-  visibility: hidden
-}
-
-#header_box:hover .sub_menu_box {
-  opacity: 1;
-  visibility: visible;
-}
-
-#header_box .sub_menu {
-  padding-top: 60px;
-}
-
-#header_box .sub_menu li {
-  padding-bottom: 15px;
-}
-
-#header_box .sub_menu li a {
-  position: relative;
-  color: transparent;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-}
-
-#header_box .sub_menu li a:before {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  width: 0;
-  height: 1px;
-  left: 50%;
-  background: #23afe3;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-}
-
-#header_box:hover .sub_menu li a {
-  margin-top: 10px;
-  color: #666;
-}
-
-#header_box:hover .sub_menu li a:hover {
-  color: #23afe3;
-}
-
-#header_box:hover .sub_menu li a:hover:before {
-  width: 100%;
-  left: 0;
-}
-
+#header_box .menu_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; height:0; border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0;}
+#header_box:hover .menu_hover_box {height:300px; opacity:1;}
+#header_box .sub_menu_box {background:transparent; height:0; bottom:-1px; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0; visibility:hidden}
+#header_box:hover .sub_menu_box {opacity:1; visibility:visible;}
+#header_box .sub_menu {padding-top: 60px;}
+#header_box .sub_menu li {padding-bottom: 15px;}
+#header_box .sub_menu li a {position:relative; color:transparent; transition:all .2s linear; -webkit-transition:all .2s linear; }
+#header_box .sub_menu li a:before {content:""; position:absolute; bottom:-4px; width:0; height:1px; left:50%; background:#23afe3; transition:all .2s linear; -webkit-transition:all .2s linear;}
+#header_box:hover .sub_menu li a {margin-top:10px; color:#666;}
+#header_box:hover .sub_menu li a:hover {color: #23afe3;}
+#header_box:hover .sub_menu li a:hover:before {width:100%; left:0;}
 /*navigation*/
 
 /*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/* section */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* section //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #startup_wrap {
   width: 100%; height:800px;
