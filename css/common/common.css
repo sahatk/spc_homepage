@@ -265,7 +265,9 @@
 
 
 
-
+.color_gray{
+  color:var(--color-gray);
+}
 
 .color_sky{
   color:var(--color-sky);

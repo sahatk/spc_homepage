@@ -395,4 +395,160 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*section_box4
+/*section_box4 (인사제도) ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box4{
+  width: 100%;
+  height: 1900px;
+} /* SPC 인사제도 전체 영역*/
+
+#section_box4 .container{
+  width: 1440px;
+  height: auto;
+  margin: 100px auto;
+  /* background-color: #fda; */
+} /* SPC 인사제도 위치 영역*/
+
+
+#section_box4 .container .personnel_title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+} /* SPC 인사제도 위치 영역 -> 인사제도 title*/
+
+#section_box4 .container .personnel_text_oval{
+  width: 100%;
+  margin:60px 0;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 타원형 text*/
+
+.personnel_text_oval > p {
+  display: flex; align-items: center; justify-content: center;
+  width: 400px; height: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+
+  color: #ffffff;
+  line-height: 50px;
+
+  background-color: #23afe3;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 타원형 text -> 글씨 및 위치*/
+
+#section_box4 .container .personnel_text{
+  width: 100%;
+  margin:60px 0;
+  text-align: center;
+  font-weight: 700;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 text*/
+
+#section_box4 .container .personnel_box{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 60px;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box*/
+
+#section_box4 .container .personnel_wrap{
+  display: flex;
+  width: 1350px;
+  height: 350px;
+  margin: 0 auto;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> 업적평가 + 역량평가 = 종합평가 전체 wrap*/
+
+#section_box4 .container .plus_wrap{
+  position: relative;
+  display: flex; align-items: center; justify-content: space-around; gap: 100px;
+  width: 800px; height: 350px;
+  border-radius: 300px;
+  background-color: #f2f2f2;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> plus wrap (업적평가 + 역량평가) */
+
+#section_box4 .container .inner_circle{
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 50px;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> 업적평가, 역량평가, 종합평가 내부 circle*/
+
+#section_box4 .container .plus_icon{
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  width: 30px; height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../../img/spc_system_img/careers-i07.png");
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> plus wrap (업적평가 + 역량평가) -> + 아이콘 */
+
+#section_box4 .container .career_image{
+  width: 150px; height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  margin : 0 auto 50px;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> plus wrap (업적평가 + 역량평가) -> 업적평가, 역량평가 circle -> career 이미지 위치 */
+
+#section_box4 .container .career_text{
+  text-align: center;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> plus wrap (업적평가 + 역량평가) -> 업적평가, 역량평가 circle -> 업적평가, 역량평가 -> p */
+
+
+#section_box4 .container .equal_wrap{
+  position: relative;
+  width: 200px; height: 350px;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> equal_wrap */
+
+#section_box4 .container .equal_icon{
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  width: 30px; height: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../../img/spc_system_img/careers-i08.png");
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> equal_wrap -> = 아이콘 */
+
+#section_box4 .container .value_wrap{
+  display: flex; align-items: center; justify-content: center;
+  width: 350px; height: 350px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 box -> value_wrap */
+
+#section_box4 .container .money_wrap {
+  display: flex; align-items: center; justify-content: space-around; gap: 100px;
+  width: 1200px; height: 350px;
+  border-radius: 300px;
+
+  margin: 0 auto;
+
+  background-color: #f2f2f2;
+}
+
+
+
+
+/* ////////////////////// 인사제도 -> 평가/보상 제도 -> 아이콘 이미지 경로 //////////////////////*/
+
+#section_box4 .container .career_image_01{
+  background-image: url("../../img/spc_system_img/careers-i01.png");
+} /* 업적평가 */
+
+#section_box4 .container .career_image_02{
+  background-image: url("../../img/spc_system_img/careers-i02.png");
+} /* 역량평가 */
+
+#section_box4 .container .career_image_03{
+  background-image: url("../../img/spc_system_img/careers-i03.png");
+} /* 종합평가 */
+
+#section_box4 .container .career_image_04{
+  background-image: url("../../img/spc_system_img/careers-i04.png");
+} /* 기본연봉 */
+
+#section_box4 .container .career_image_05{
+  background-image: url("../../img/spc_system_img/careers-i05.png");
+} /* 개인성과급 */
+
+#section_box4 .container .career_image_06{
+  background-image: url("../../img/spc_system_img/careers-i06.png");
+} /* 조직성과급 */
+
+/* ////////////////////// 인사제도 -> 평가/보상 제도 -> 아이콘 이미지 경로 //////////////////////*/
