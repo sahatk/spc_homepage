@@ -399,7 +399,7 @@
 
 #section_box4{
   width: 100%;
-  height: 1900px;
+  height: 1800px;
 } /* SPC 인사제도 전체 영역*/
 
 #section_box4 .container{
@@ -522,9 +522,6 @@
   background-color: #f2f2f2;
 }
 
-
-
-
 /* ////////////////////// 인사제도 -> 평가/보상 제도 -> 아이콘 이미지 경로 //////////////////////*/
 
 #section_box4 .container .career_image_01{
@@ -552,3 +549,166 @@
 } /* 조직성과급 */
 
 /* ////////////////////// 인사제도 -> 평가/보상 제도 -> 아이콘 이미지 경로 //////////////////////*/
+
+/*section_box4 (인사제도) ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box5 (복리후생) ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box5{
+  width: 100%;
+  height: 1900px;
+  background-color: #f8f8f8;
+} /* SPC 복리후생 전체 영역 */
+
+#section_box5 .container{
+  width: 1440px;
+  height: auto;
+  margin: 100px auto;
+  padding-top: 100px;
+  /* background-color: #fda; */
+} /* SPC 복리후생 위치 영역*/
+
+#section_box5 .container .worklife_title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+} /* SPC 복리후생 위치 영역 -> 복리후생 title*/
+
+#section_box5 .container .worklife_text{
+  width: 100%;
+  margin:60px 0;
+  text-align: center;
+  font-weight: 700;
+} /* SPC 복리후생 위치 영역 -> 복리후생 text*/
+
+#section_box5 .container .worklife_text_oval{
+  width: 100%;
+  margin:60px 0;
+} /* SPC 복리후생 위치 영역 -> 복리후생 타원형 text*/
+
+.worklife_text_oval > p {
+  display: flex; align-items: center; justify-content: center;
+  width: 850px; height: 120px;
+  margin: 0 auto;
+  border-radius: 50px;
+
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 50px;
+  
+
+  background-color: #23afe3;
+} /* SPC 복리후생 위치 영역 -> 복리후생 타원형 text -> 글씨 및 위치*/
+
+
+#section_box5 .container .worklife_box {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%;
+  height: 400px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 13px #ccc;
+}  /* SPC 복리후생 위치 영역 -> Work&Life box*/
+
+#section_box5 .container .worklife_ul {
+  width: 650px; height: 300px;
+} /* SPC 복리후생 위치 영역 -> Work&Life box -> Work&Life ul*/
+
+#section_box5 .container .worklife_li {
+  position: relative;
+  display: flex; align-items: center;
+  width: 650px; height: 100px;
+
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 50px;
+} /* SPC 복리후생 위치 영역 -> Work&Life box -> Work&Life li들*/
+
+#section_box5 .worklife_li > p {
+  width: 650px;
+  padding-left: 40px;
+  border-bottom: 1px solid #eaeaea;
+} /* SPC 복리후생 위치 영역 -> Work&Life box -> Work&Life li들 -> p*/
+
+#section_box5 .container .worklife_li::before{
+  position: absolute; top: 50%; transform: translateY(-50%);
+  display: block;
+  content: '';
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  background-color: #23afe3;
+} /* SPC 복리후생 위치 영역 -> Work&Life box -> Work&Life li들 -> ::before (하늘색 점)*/
+
+
+
+#section_box5 .container .health_text_oval{
+  width: 100%;
+  margin:60px 0;
+} /* SPC 복리후생 위치 영역 -> 임직원의 건강과 행복 타원형 text*/
+
+.health_text_oval > p {
+  display: flex; align-items: center; justify-content: center;
+  width: 850px; height: 120px;
+  margin: 0 auto;
+  border-radius: 50px;
+
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 50px;
+  
+
+  background-color: #23afe3;
+} /* SPC 복리후생 위치 영역 -> 임직원의 건강과 행복 타원형 text -> 글씨 및 위치*/
+
+
+#section_box5 .container .health_box {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 13px #ccc;
+}  /* SPC 복리후생 위치 영역 -> health & happy box*/
+
+#section_box5 .container .health_ul {
+  width: 650px; height: 400px;
+} /* SPC 복리후생 위치 영역 -> health & happy box -> health & happy box ul*/
+
+#section_box5 .container .health_li {
+  position: relative;
+  display: flex; align-items: center;
+  width: 650px; height: 100px;
+
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 50px;
+} /* SPC 복리후생 위치 영역 -> health & happy box -> health & happy box li들*/
+
+#section_box5 .health_li > p {
+  width: 650px;
+  padding-left: 40px;
+  border-bottom: 1px solid #eaeaea;
+} /* SPC 복리후생 위치 영역 -> health & happy box -> health & happy box li들 -> p*/
+
+#section_box5 .container .health_li::before{
+  position: absolute; top: 50%; transform: translateY(-50%);
+  display: block;
+  content: '';
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  background-color: #23afe3;
+} /* SPC 복리후생 위치 영역 -> health & happy box -> health & happy box li들 -> ::before (하늘색 점) */
+
+#section_box5 .container .health_text{
+  width: 100%;
+  margin:30px 0;
+  text-align: right;
+  font-weight: 700;
+  color: #7d7d7d;
+} /* SPC 인사제도 위치 영역 -> 평가/보상제도 text*/
