@@ -389,38 +389,37 @@
     width: 100%;
     height: 700px;
     background-color: #f8f8f8;
-} /* 채용 프로세스 전체 영역*/
+} /* SPC 행복 링크 전체 영역*/
 
 #section_box4 .container{
     width: 1440px;
     height: auto;
     margin: auto;
-}
+} /* SPC 행복 링크 전체 영역*/
 
 #section_box4 .container .site_title {
     width: 100%;
     text-align: center;
     margin-bottom: 60px;
     padding-top: 30px;
-} /* 채용 프로세스 위치 영역 -> 채용 프로세스 TITLE*/
-
+} /* SPC 행복 링크 위치 영역 -> SPC 행복은 세계를 향합니다 TITLE*/
 
 #section_box4 .container .site_box {
     width: 100%; height: 350px;
     /* background-color: #fda; */
-}
+} /* SPC 행복 링크 위치 영역 -> site box*/
 
 #section_box4 .container .site_link_wrap {
     display: flex; align-items: center;
     width: 100%; height: 200px;
     /* background-color: #faa; */
     margin-bottom: 80px;
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음*/
 
 #section_box4 .container .site_link_ul {
-    display: flex; justify-content: space-between;
+    display: flex; gap: 20px;
     width: 100%; height: 130px;
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_ul*/
 
 #section_box4 .container .site_link_li {
     display: flex; align-items: center; justify-content: space-around;
@@ -430,7 +429,15 @@
 
     color: #ffffff;
     background-color: #23afe3;
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li*/
+
+#section_box4 .container .site_link_li:hover {
+  border: 1px solid #23afe3;
+  width: 348px; height: 128px;
+
+  color: #23afe3;
+  background-color: #ffffff;
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 오버시*/
 
 #section_box4 .container .site_link_icon_wrap {
     display: flex; align-items: center; justify-content: center;
@@ -439,7 +446,7 @@
     border-radius: 50%;
 
     background-color: #ffffff;
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 아이콘 위치 영역*/
 
 #section_box4 .container .site_link_icon {
     width: 30px; height: 30px;
@@ -447,20 +454,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../../img/spc_information_img/link_icon.png");
-}
-
-
-
-
-
-
+} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 링크 이동 아이콘*/
 
 
 #section_box4 .container .site_button_wrap {
     display: flex; align-items: center; justify-content: center;
     width: 100%; height: 80px;
     /* background-color: #faa; */
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> 채용사이트 바로가기 버튼 영역*/
 
 #section_box4 .container .site_button_wrap p{
     display: flex; align-items: center; justify-content: center;
@@ -470,4 +471,4 @@
     box-shadow: 0 0 13px #ccc;
 
     background-color: #fff;
-}
+} /* SPC 행복 링크 위치 영역 -> site box -> 채용사이트 바로가기 버튼 영역 -> 채용사이트 바로가기 버튼*/
