@@ -226,6 +226,16 @@
   font-weight: 700;
 }/*부 제목*/
 
+.font_40{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.font_40_thin{
+  font-size: 40px;
+  font-weight: 400;
+}
+
 
 .font_24{
   font-size: 24px;

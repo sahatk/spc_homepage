@@ -215,6 +215,7 @@
     align-items: center;
     width: 50%;
     height: 72px;
+    text-transform: uppercase;
 } /* 탭 메뉴 -> 서브 메뉴 li들*/
 
 #tab_menu_box .tab_sub_menu_li.active {
@@ -254,216 +255,39 @@
 
 /*section_box2 (SPC CAREERS banner_image)////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#section_box2{
-  width: 100%;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("../../img/spc_information_img/information_banner.jpg");
-} /* SPC CAREERS banner_image*/
-
-/*section_box2 (SPC CAREERS banner_image)///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*section_box3 (채용 프로세스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-#section_box3{
+#section_box2 {
     width: 100%;
-    height: 1100px;
-    background: linear-gradient(0deg, rgba(248,248,248,1) 0%, rgba(209,235,250,1) 100%);
-  } /* 채용 프로세스 전체 영역*/
-  
-  #section_box3 .container{
-    width: 1440px;
-    height: auto;
-    margin: auto;
-    /* background-color: #fda; */
-  } /* 채용 프로세스 위치 영역*/
-  
-  #section_box3 .container .employment_title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
-    padding-top: 100px;
-  } /* 채용 프로세스 위치 영역 -> 채용 프로세스 TITLE*/
-
-  #section_box3 .container .employment_tab_menu {
-    display: flex; justify-content: space-between; gap:50px;
-    width: 100%;
-    height: 80px;
-    margin-bottom: 60px;
-  } /* 채용 프로세스 위치 영역 -> 채용 프로세스 탭메뉴 전체 영역*/
-
-  #section_box3 .container .employment_tab_menu_li {
-    display: flex; align-items: center; justify-content: center;
-    width: 350px;
-    height: 80px;
-
-    border-radius: 50px;
-
-    color: #afafaf;
-    background-color: #fff;
-  } /* 채용 프로세스 위치 영역 -> 채용 프로세스 탭메뉴 -> li들*/
-
-  #section_box3 .employment_tab_menu_li.active{
-    background-color: #23afe3;
-    color: #ffffff;
-  } /* 채용 프로세스 위치 영역 -> 채용 프로세스 탭메뉴 -> li -> active*/
-
-  #section_box3 .container .employment_text {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
-  } /* 채용 프로세스 위치 영역 -> 텍스트 영역*/
-
-  #section_box3 .container .employment_box{
-    width: 100%;
-    height: 400px;
-  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘,텍스트 박스 영역*/
-
-  #section_box3 .container .employment_circle_wrap{
-    display: flex; gap: 50px;
-    width: 100%;
-    height: 248px;
-    margin-bottom: 60px;
-  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘들 영역*/
-
-  #section_box3 .container .employment_circle{
-    width: 248px;
-    height: 248px;
-
-    border-radius: 50%;
-    box-shadow: 0 0 13px #ccc;
-
-    box-sizing: border-box;
-    padding: 50px;
-
-    background-color: #fff;
-  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘 -> li들*/
-
-  #section_box3 .container .employment_icon {
-    width: 130px; height: 80px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    margin : 0 auto 20px;
-  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘 -> li들 -> 아이콘 이미지 위치 영역*/
-
-
-  /* //////////////////////////////////////////////////// 채용 프로세스 아이콘 이미지 모음 ////////////////////////////////////////////////////*/
-
-  #section_box3 .container .employment_icon_image01 {
-    background-image: url("../../img/spc_information_img/careers-i09.png");
-  } /* 업적평가 */
-
-  #section_box3 .container .employment_icon_image02 {
-    background-image: url("../../img/spc_information_img/careers-i10.png");
-  } /* 역량검사 */
-
-  #section_box3 .container .employment_icon_image03 {
-    background-image: url("../../img/spc_information_img/careers-i11.png");
-  } /* 실무면접 */
-
-  #section_box3 .container .employment_icon_image04 {
-    background-image: url("../../img/spc_information_img/careers-i12.png");
-  } /* 임원면접 */
-
-  #section_box3 .container .employment_icon_image05 {
-    background-image: url("../../img/spc_information_img/careers-i13.png");
-  } /* 최종합격 */
-
-/* //////////////////////////////////////////////////// 채용 프로세스 아이콘 이미지 모음 /////////////////////////////////////////////////////////////*/
-
-
-
-
-/*section_box3 (채용 프로세스)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*section_box4 ( SPC의 행복은 세계를 향합니다 )//////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-#section_box4 {
-    width: 100%;
-    height: 700px;
+    height: 1400px;
     background-color: #f8f8f8;
 } /* SPC 행복 링크 전체 영역*/
 
-#section_box4 .container{
+#section_box2 .container{
     width: 1440px;
     height: auto;
     margin: auto;
+    /* background-color: #fda; */
 } /* SPC 행복 링크 전체 영역*/
 
-#section_box4 .container .site_title {
+#section_box2 .container .academy_title {
     width: 100%;
     text-align: center;
-    margin-bottom: 60px;
-    padding-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 100px;
 } /* SPC 행복 링크 위치 영역 -> SPC 행복은 세계를 향합니다 TITLE*/
 
-#section_box4 .container .site_box {
-    width: 100%; height: 350px;
-    /* background-color: #fda; */
-} /* SPC 행복 링크 위치 영역 -> site box*/
+#section_box2 .container .academy_text{
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-#section_box4 .container .site_link_wrap {
-    display: flex; align-items: center;
-    width: 100%; height: 200px;
-    /* background-color: #faa; */
-    margin-bottom: 80px;
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음*/
+#section_box2 .container .site_button_wrap {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 50px;
+}
 
-#section_box4 .container .site_link_ul {
-    display: flex; gap: 20px;
-    width: 100%; height: 130px;
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_ul*/
-
-#section_box4 .container .site_link_li {
-    display: flex; align-items: center; justify-content: space-around;
-    width: 350px; height: 130px;
-    
-    border-radius: 30px;
-
-    color: #ffffff;
-    background-color: #23afe3;
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li*/
-
-#section_box4 .container .site_link_li:hover {
-  border: 1px solid #23afe3;
-  width: 348px; height: 128px;
-
-  color: #23afe3;
-  background-color: #ffffff;
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 오버시*/
-
-#section_box4 .container .site_link_icon_wrap {
-    display: flex; align-items: center; justify-content: center;
-    width: 60px; height: 60px;
-
-    border-radius: 50%;
-
-    background-color: #ffffff;
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 아이콘 위치 영역*/
-
-#section_box4 .container .site_link_icon {
-    width: 30px; height: 30px;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../../img/spc_information_img/link_icon.png");
-} /* SPC 행복 링크 위치 영역 -> site box -> link 묵음 -> link_li -> 링크 이동 아이콘*/
-
-
-#section_box4 .container .site_button_wrap {
-    display: flex; align-items: center; justify-content: center;
-    width: 100%; height: 80px;
-    /* background-color: #faa; */
-} /* SPC 행복 링크 위치 영역 -> site box -> 채용사이트 바로가기 버튼 영역*/
-
-#section_box4 .container .site_button_wrap p{
+#section_box2 .container .site_button_wrap p{
     display: flex; align-items: center; justify-content: center;
     width: 250px; height: 80px;
 
@@ -472,3 +296,70 @@
 
     background-color: #fff;
 } /* SPC 행복 링크 위치 영역 -> site box -> 채용사이트 바로가기 버튼 영역 -> 채용사이트 바로가기 버튼*/
+
+#section_box2 .container .academy_box{
+    width: 100%;
+    height: 900px;
+    /* background-color: #ffd; */
+}
+
+#section_box2 .container .academy_wrap{
+    display: flex; gap: 40px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+#section_box2 .container .academy_introduce_image {
+    width: 600px;
+    height: 400px;
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 13px #ccc;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* //////////////////////// 컬러너리아카데미 박스 -> 소개 이미지 모음 //////////////////////// */
+#section_box2 .container .academy_introduce_image_01 {
+    background-image: url("../../img/spc_academy_img/academy_introduce_01.jpg");;
+}
+
+#section_box2 .container .academy_introduce_image_02 {
+    background-image: url("../../img/spc_academy_img/academy_introduce_02.jpg");;
+}
+/* //////////////////////// 컬러너리아카데미 박스 -> 소개 이미지 모음 //////////////////////// */
+
+#section_box2 .container .academy_card {
+    width: 800px;
+    height: 400px;
+
+    border-radius: 30px;
+    box-shadow: 0 0 13px #ccc;
+    box-sizing: border-box;
+    padding: 45px;
+
+    background-color: #fff;
+
+}
+
+#section_box2 .container .academy_sky_text{
+    display: flex; justify-content: center; align-items: center;
+    width: 400px;
+    height: 65px;
+
+    border-radius: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+
+    background-color: #23afe3;
+}
+
+#section_box2 .container .academy_sky_text > p{
+    line-height: 24px;
+}
+
