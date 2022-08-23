@@ -843,3 +843,5 @@
 #section_box5 .container .directions_text_li:first-of-type:before {
     display: none; width: 0px; height: 0px;
 } /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> 주소, 대표전화 ul -> li::before -> 회색 선 제거*/
+
+/*section_box5 (SPC CAREERS 교육장 오시는 길)/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
