@@ -253,7 +253,7 @@
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*section_box2 (SPC CAREERS banner_image)////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*section_box2 (SPC CAREERS 컬러너리아카데미 소개 영역)///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #section_box2 {
     width: 100%;
@@ -364,3 +364,482 @@
     line-height: 24px;
 } /* 컬러너리아카데미 소개 위치 영역 -> 컬러너리아카데미 박스 -> 컬러너리아카데미 wrap -> 컬러너리아카데미 카드 -> 하늘색 텍스트 -> p  */
 
+
+/*section_box2 (SPC CAREERS 컬러너리아카데미 소개 영역)///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box3 (SPC CAREERS 과정 안내 영역)///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#section_box3 {
+    width: 100%;
+    height: 2010px;
+} /* 과정안내 소개 전체 영역*/
+
+#section_box3 .container{
+    width: 1440px;
+    height: auto;
+    margin: auto;
+    /* background-color: #fda; */
+} /* 과정안내 소개 위치 영역*/
+
+#section_box3 .container .process_title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+} /* 과정안내 소개 위치 영역 -> 과정안내 소개 타이틀*/
+
+#section_box3 .container .process_text{
+    text-align: center;
+    margin-bottom: 50px;
+} /* 과정안내 소개 위치 영역 -> 과정안내 소개 설명*/
+
+#section_box3 .container .process_sky_text {
+    display: flex; justify-content: center; align-items: center;
+    width: 250px;
+    height: 65px;
+
+    border-radius: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    margin : 15px auto;
+
+    background-color: #23afe3;
+} /* 과정안내 소개 위치 영역 -> 교육내용 하늘색 텍스트*/
+
+#section_box3 .container .process_card_box {
+    width: 100%;
+    height: 630px;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스*/
+
+#section_box3 .container .process_card_ul {
+    display: flex; gap: 25px;
+    width: 100%;
+    height: 340px;
+    margin: 50px 0;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul*/
+
+#section_box3 .container .process_card_li {
+    width: 268px;
+    height: 340px;
+
+    border-radius: 30px;
+    box-shadow: 0 0 13px #ccc;
+
+    box-sizing: border-box;
+    padding: 15px;
+
+    background-color: #fff;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li*/
+
+#section_box3 .container .icon{
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
+    height: 105px;
+
+    padding-top: 20px;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 아이콘 영역*/
+
+#section_box3 .container .icon_image{
+    width: 80px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 교육 내용 아이콘 영역 -> 과정 아이콘 이미지*/
+
+
+/* //////////과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 교육 내용 아이콘 영역 -> 과정 아이콘 이미지 경로 ////////////*/
+#section_box3 .container .icon_image_01{
+    background-image: url("../../img/spc_academy_img/academy_i01.png");
+}
+
+#section_box3 .container .icon_image_02{
+    background-image: url("../../img/spc_academy_img/academy_i02.png");
+}
+
+#section_box3 .container .icon_image_03{
+    background-image: url("../../img/spc_academy_img/academy_i03.png");
+}
+
+#section_box3 .container .icon_image_04{
+    background-image: url("../../img/spc_academy_img/academy_i04.png");
+}
+
+#section_box3 .container .icon_image_05{
+    background-image: url("../../img/spc_academy_img/academy_i05.png");
+}/* ////////과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 교육 내용 아이콘 영역 -> 과정 아이콘 이미지 경로 ////////////*/
+
+
+#section_box3 .container .process_card_title {
+    padding-top: 25px;
+}/* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 카드 제목 ////////////*/
+
+#section_box3 .container .process_card_text {
+    padding-top: 25px;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 교육 내용 ul -> li -> 카드 설명 ////////////*/
+
+#section_box3 .container .process_career_ul {
+    display: flex; justify-content: center;
+    width: 960px;
+    height: 170px;
+    margin: 0 auto;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> */
+
+#section_box3 .container .process_career_li {
+    position: relative;
+    width: 240px;
+    height: 170px;
+    margin: 0 auto;
+    /* background-color: #faa; */
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> li */
+
+#section_box3 .container .process_career_li::before {
+    position: absolute;
+    left: 0; top: 50%; margin-top: -86px;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 170px;
+    background-color: #eaeaea;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> li::before(회색 선) */
+
+#section_box3 .container .process_career_li:nth-of-type(1)::before {
+    display: none;
+    width: 0px; height: 0px;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> li::before(회색 선) 제거 */
+
+#section_box3 .container .process_career_icon {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
+    height: 105px;
+
+    padding-bottom: 20px;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> li -> 협찬 아이콘 영역 */
+
+#section_box3 .container .process_career_icon_image {
+    width: 90px;
+    height: 105px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> 협찬 아이콘 영역 -> 협찬 아이콘 이미지 */
+
+/* //////////////////////// 협찬 아이콘 이미지 경로 //////////////////////////////*/
+#section_box3 .container .process_career_icon_image_01 {
+    background-image: url("../../img/spc_academy_img/academy_career_01.png");
+} 
+#section_box3 .container .process_career_icon_image_02 {
+    background-image: url("../../img/spc_academy_img/academy_career_02.png");
+} 
+#section_box3 .container .process_career_icon_image_03 {
+    background-image: url("../../img/spc_academy_img/academy_career_03.png");
+} 
+#section_box3 .container .process_career_icon_image_04 {
+    background-image: url("../../img/spc_academy_img/academy_career_04.png");
+} /* //////////////////////// 협찬 아이콘 이미지 경로 //////////////////////////////*/
+
+#section_box3 .container .process_career_title {
+    width: 100%; height: 30px;
+
+    text-align: center;
+
+    color: #afafaf;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 호스트 협찬 ul -> 협찬 제목 */
+
+
+#section_box3 .container .process_table {
+    display:table; 
+    border-collapse:collapse;
+    width: 100%;
+    height: 700px;
+
+    border: 0.5px solid #ebebeb;
+
+    text-align: center;
+    text-transform: uppercase;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 테이블 박스 */
+
+#section_box3 .process_table th {
+    width: 480px;
+    height: 70px;
+
+    border: 0.5px solid #ebebeb;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: #f8f8f8;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 테이블 박스 -> 테이블 th (제목) */
+
+#section_box3 .process_table td {
+    width: 480px;
+    height: 70px;
+
+    border: 0.5px solid #ebebeb;
+
+    font-size: 20px;
+    font-weight: 700;
+} /* 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 테이블 박스 -> 테이블 td (내용) */
+
+
+
+/* ////////////// 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 테이블 박스 -> td background-color 모음 //////////////*/
+.table_color_sky {
+    background-color: #e5f5fc;
+}
+
+.table_color_green {
+    background-color: #f6faec;
+}
+
+.table_color_orange {
+    background-color: #fef3e9;
+}
+
+.table_color_pink {
+    background-color: #fcf1f6;
+}
+/* ////////////// 과정안내 소개 위치 영역 -> 교육내용 카드 박스 -> 테이블 박스 -> td background-color 모음 //////////////*/
+
+
+/*section_box3 (SPC CAREERS 과정 안내 영역)///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box4 (SPC CAREERS 교육장 안내 영역)/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box4 {
+    width: 100%;
+    height: 2600px;
+} /* 교육장 소개 전체 영역*/
+
+#section_box4 .container{
+    width: 1440px;
+    height: auto;
+    margin: auto;
+    /* background-color: #fda; */
+} /* 교육장 소개 위치 영역*/
+
+#section_box4 .container .guide_title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+} /* 교육장 소개 위치 영역 -> 교육장 소개 타이틀*/
+
+#section_box4 .container .guide_text{
+    text-align: center;
+    margin-bottom: 50px;
+} /* 교육장 소개 위치 영역 -> 교육장 소개 설명*/
+
+#section_box4 .container .guide_card_wrap{
+    width: 100%;
+    height: 400px;
+
+    box-sizing: border-box;
+    padding: 50px 120px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역*/
+
+#section_box4 .container .guide_card {
+    width: 1200px;
+    height: 300px;
+
+    border-radius: 50px;
+    box-shadow: 0px 0px 13px #ccc;
+
+    box-sizing: border-box;
+    padding: 40px 50px;
+
+    background-color: #ffffff;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드*/
+
+#section_box4 .container .guide_card_sky_text {
+    display: flex; align-items: center; justify-content: center;
+    width: 400px; height: 80px;
+
+    border-radius: 50px;
+
+    margin: 0 auto 30px;
+
+    color: #ffffff;
+    background-color: #23afe3;
+
+    line-height: 24px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 제목*/
+
+
+#section_box4 .container .guide_card_text {
+    text-align: center;
+
+    margin-bottom: 10px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 설명*/
+
+#section_box4 .container .guide_text_ul {
+    display: flex; justify-content: center;
+
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 설명 -> 주소, 대표전화 ul*/
+
+#section_box4 .container .guide_text_li {
+    position: relative;
+    
+    padding: 0px 20px;
+
+    color: #7d7d7d;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 설명 -> 주소, 대표전화 ul -> li*/
+
+#section_box4 .container .guide_text_li::before {
+    position: absolute; top: 50%; left: 0;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #afafaf;
+    margin-top: -8px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 설명 -> 주소, 대표전화 ul -> li::before -> 회색 선*/
+
+#section_box4 .container .guide_text_li:first-of-type:before {
+    display: none; width: 0px; height: 0px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 카드 영역 -> 교육장 안내 카드 -> 카드 설명 -> 주소, 대표전화 ul -> li::before -> 회색 선 제거*/
+
+
+#section_box4 .container .guide_silde_wrap {
+    position: relative;
+    display: flex; justify-items: center; 
+    width: 100%; height: 700px;
+
+    padding-top: 30px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 슬라이드 영역 */
+
+#section_box4 .container .guide_slide_ul {
+    display: flex; gap: 80px; align-items: center; justify-content: center; 
+    width : 100%; height: 600px;
+
+    margin-bottom: 20px;
+} /* 교육장 소개 위치 영역 -> 교육장 안내 슬라이드 영역 -> 이미지 슬라이드 ul */
+
+#section_box4 .container .guide_slide_li {
+    width: 1200px; height: 600px;
+
+    border-radius: 50px;
+    box-shadow: 0 0 13px #ccc;
+
+
+    background-image: url("../../img/spc_academy_img/academy_slide_01.png");
+} /* 교육장 소개 위치 영역 -> 교육장 안내 슬라이드 영역 -> 이미지 슬라이드 ul -> li*/
+
+#section_box4 .indicators{
+    position: absolute; z-index: 100;
+    left: 0; right: 0; margin:auto;
+    bottom:1.5rem;
+    width: 100%; height:auto;
+} /* 인디케이터 전체 영역 */
+
+#section_box4 .indicators ul{
+    width: auto; height: auto;
+    padding:0.2rem;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    /* background-color: #ddd; */
+} /* 인디케이터 ul */
+
+#section_box4 .indicators li {
+    width: 1.5rem; height: 1.5rem;
+} /* 인디케이터 li */
+
+#section_box4 .indicators li a{
+    display: block;
+    width: 100%; height: 100%;
+    /* border: 1px solid #555; */
+    background-color: #afafaf;
+    border-radius: 4rem;
+} /* 인디케이터 li a */
+
+#section_box4 .indicators li.action a{
+    background-color: #23afe3;
+} /* 인디케이터 li action a */
+
+#section_box4 .indicators li.action{
+    width: 1.5rem;
+} /* 인디케이터 li action a */
+
+
+/*section_box4 (SPC CAREERS 교육장 안내 영역)/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*section_box5 (SPC CAREERS 교육장 오시는 길)/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section_box5 {
+    width: 100%; height: 400px;
+
+    box-sizing: border-box;
+    padding: 100px 0;
+} /* 교육장 오시는 길 전체 영역*/
+
+#section_box5 .container{
+    width: 1440px; height: 200px;
+
+    margin: 0 auto;
+    background-color: #fff;
+} /* 교육장 오시는 길 위치 영역*/
+
+#section_box5 .container .directions_title {
+    margin-bottom: 20px;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 타이틀*/
+
+#section_box5 .container .directions_text {
+    display: flex; justify-content: space-between;
+    width: 100%; height: auto;
+
+    margin-bottom: 20px;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명*/
+
+#section_box5 .directions_text span {
+    position: relative;
+
+    margin: 0 20px 0 0;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> span 영역*/
+
+#section_box5 .directions_text span::after{
+    position: absolute; top: 50%; right: 0;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #afafaf;
+    margin: -8px -13px 0 0;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> span::after -> 회색 선*/
+
+#section_box5 .container .directions_text_ul {
+    display: flex; justify-content: center;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> 주소, 대표전화 ul*/
+
+#section_box5 .container .directions_text_li {
+    position: relative;
+    
+    padding: 0px 20px;
+
+    color: #7d7d7d;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> 주소, 대표전화 ul -> li*/
+
+#section_box5 .container .directions_text_li::before {
+    position: absolute; top: 50%; left: 0;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #afafaf;
+    margin-top: -8px;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> 주소, 대표전화 ul -> li::before -> 회색 선*/
+
+#section_box5 .container .directions_text_li:first-of-type:before {
+    display: none; width: 0px; height: 0px;
+} /* 교육장 오시는 길 위치 영역 -> 교육장 오시는 길 설명 -> 주소, 대표전화 ul -> li::before -> 회색 선 제거*/

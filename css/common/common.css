@@ -273,7 +273,9 @@
 
 
 
-
+.color_black{
+  color:var(--color-black);
+}
 
 .color_gray{
   color:var(--color-gray);
