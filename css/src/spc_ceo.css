@@ -10,7 +10,8 @@
     box-sizing: border-box;
     padding: 10px;
     z-index: 1000;
-    background-color: transparent;
+    background-color: #ffffff;
+    opacity: 0.9;
     /* background-color: #fda;  */
 } /* header 전체 박스*/
 
@@ -94,15 +95,9 @@
 #header_box .header_nav .main_li:last-child {
     width: 30px;
     height: 30px;
-    background: url(../../img/main_img/header_box/global_icon.png) no-repeat center center / contain;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
 } /* 내비게이션 바 메인 메뉴 global 로고 */
 
-#header_box .header_nav .main_li:last-child:hover {
-    width: 30px;
-    height: 30px;
-    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
-    cursor: pointer;
-} /* 내비게이션 바 메인 메뉴 global 로고 오버시 */
 /*기본 header 영역*/
 
 

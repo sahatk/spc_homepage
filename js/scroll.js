@@ -40,6 +40,15 @@ function headerbarToggle() {
     headerBox.addEventListener('mouseleave', function(){
       logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_newwhite.png')`;
     });
+  } else {
+    headerBox.addEventListener('mouseover', function () {
+      logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+    });
+
+    headerBox.addEventListener('mouseleave', function(){
+      logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+    });
+
   }
 
 
