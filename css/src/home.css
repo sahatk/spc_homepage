@@ -48,10 +48,14 @@
 .logo_img {
     width: 150px;
     height: 50px;
-    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-image: url(../../img/main_img/header_box/gnb_logo_newwhite.png);
     background-repeat: no-repeat;
     background-size: 150px 50px;
 } /* header logo 이미지 */
+
+#header_box:hover .logo_img{
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+}
 
 /*/////////////////////*/
 /*navigation*/
@@ -368,45 +372,60 @@
     overflow: hidden;
 }
 
-/*happy-point icon*/
-#section_box1 .navigation li:nth-child(1) {
+
+#section_box1 .navigation .happy_icon {
+    position: relative;
     background-image: url(../../img/main_img/section_box1/main_sns/happy_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
-}
+} /*happy-point_icon*/
 
-/*instagram icon*/
-#section_box1 .navigation li:nth-child(2) {
+
+#section_box1 .navigation .instagram_icon {
+    position: relative;
     background-image: url(../../img/main_img/section_box1/main_sns/instagram_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
-}
+} /*instagram_icon*/
 
-/*facebook icon*/
-#section_box1 .navigation li:nth-child(3) {
+
+#section_box1 .navigation .facebook_icon {
+    position: relative;
     background-image: url(../../img/main_img/section_box1/main_sns/facebook_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
     width: 70px;
     height: 70px;
-}
+} /*facebook_icon*/
 
-/*youtube icon*/
-#section_box1 .navigation li:nth-child(4) {
+
+#section_box1 .navigation .youtube_icon {
+    position: relative;
     background-image: url(../../img/main_img/section_box1/main_sns/youtube_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
-}
+} /*youtube_icon*/
+
+#section_box1 .navigation li:hover::after {
+    content: '';
+    width: 100%; height: 100%;
+    background-color: #fece00;
+    position: absolute;
+    top: 0; left: 0;
+    transition: 0.3s linear;
+    border-radius: 50%;
+    opacity: 0.2;
+} /* icon 오버시 효과
 
 /*sns wrap*/
 
