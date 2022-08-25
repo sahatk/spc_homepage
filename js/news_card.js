@@ -28,7 +28,7 @@
             <div class="card_text_wrap_02">
                 <b>${obj.date}</b>
                 <div class="view_more">
-                <a target="_blank" href="https://www.happyconstore.com/">view more</a>
+                <a target="_blank" href=${obj.link}>view more</a>
                 </div>
             </div>  
         </div>

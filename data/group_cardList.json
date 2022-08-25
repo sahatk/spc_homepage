@@ -21,7 +21,7 @@
     "content": "spc그룹은 1945년 이래 <br> 고객과 함께 해온 <br> 종합식품기업입니다.",
     "filename": "group_bg_03.png",
     "hoverfilename": "group_bg_03_hover.jpg",
-    "link":"#"
+    "link":"./pages/spc_group/spc_history01.html"
   },
   {
     "key": 4,
