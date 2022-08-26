@@ -277,6 +277,11 @@
     /* background-color: #fda; */
 } /* BRAND 박스 -> BRAND CARD li */
 
+#section_box1 .brand_box .brand_card_li:hover {
+    box-shadow: 0 0 40px 0 #d1ebfa;
+    /* background-color: #fda; */
+} /* BRAND 박스 -> BRAND CARD li -> 오버 시*/
+
 
 
 /*//////////////////////////////// BRAND 카드 이미지 모음 ////////////////////////////////*/

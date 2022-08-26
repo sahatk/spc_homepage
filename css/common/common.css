@@ -144,7 +144,7 @@
 } 
 /* SPC 해피포인트 구매하러 가기 버튼*/
 
-/* SPC NEWS VIEW MORE 버튼*/
+/* VIEW MORE 버튼*/
 .view_more{
   width: 180px;
   height: 50px;
@@ -161,6 +161,7 @@
 }
 
 .view_more a{
+  display: block;
   width: 180px;
   height: 50px;
   border-radius: 40px;

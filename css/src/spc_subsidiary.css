@@ -277,11 +277,13 @@
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0px 0px 13px #ddd;
+    overflow: hidden;
+    cursor: pointer;
 } /* 계열사 식품,원료,IT,유통 박스 > 카드 */
 
 #section_box1 .subsidiary_card_li .subsidiary_card_text_wrap{
     position : relative;
-    width: 450px; height: 210px;
+    width: 450px; height: 200px;
     border-radius: 0px 0px 30px 30px ;
     /* background-color: #fda; */
 } /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트 wrap */
@@ -290,7 +292,7 @@
     width: 400px;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
 } /* 계열사 식품,원료,IT,유통 박스 > 카드 텍스트_01 */
 
 #section_box1 .subsidiary_card_text_wrap .subsidiary_card_text_02{
@@ -305,94 +307,66 @@
 } /* 계열사 식품,원료,IT,유통 박스 > 카드 MORE VIEW BUTTON */
 
 
+#section_box1 .subsidiary_card_li .subsidiary_card_image{
+    width: 450px; height: 250px;
+    border-radius: 30px 30px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+} /* 계열사 식품,원료,IT,유통 박스 > 계열사 카드 이미지 */
 
+#section_box1 .subsidiary_card_li:hover .subsidiary_card_image {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+} /* 계열사 식품,원료,IT,유통 박스 > 계열사 카드 li > 오버시 > 카드 이미지*/
 
+#section_box1 .subsidiary_card_li:hover .view_more{
+    background-color: #1e2432;
+    cursor: pointer;
+    color:#fff;
+} /* 계열사 식품,원료,IT,유통 박스 > 계열사 카드 이미지 > 오버시 -> MORE VIEW 버튼 */
 
-
-
-
-/* ///////////////////계열사 카드 이미지 모음/////////////////////////*/
+/* ///////////////////계열사 카드 이미지 경로 모음/////////////////////////*/
 
 /*식품*/
 #section_box1 .subsidiary_card_li .food_card_image_01{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/SPC삽립.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/spc_samlip.png");
 } /* 계열사 식품 박스 > 카드 이미지_01 */
-
 #section_box1 .subsidiary_card_li .food_card_image_02{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/파리크라상.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/paris_croissant.png");
 } /* 계열사 식품 박스 > 카드 이미지_02 */
-
 #section_box1 .subsidiary_card_li .food_card_image_03{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/비알코리아.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/br_korea.png");
 } /* 계열사 식품 박스 > 카드 이미지_03 */
 /*식품*/
 
 
 /*원료*/
 #section_box1 .subsidiary_card_li .material_card_image_01{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/SPL.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/SPL.png");
 } /* 계열사 원료 박스 > 카드 이미지_01 */
-
 #section_box1 .subsidiary_card_li .material_card_image_02{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/SPC팩.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/spc_pack.png");
 } /* 계열사 원료 박스 > 카드 이미지_02 */
 /*원료*/
 
+
 /*IT/서비스*/
 #section_box1 .subsidiary_card_li .service_card_image_01{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/SPL.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/secta9ine.jpg");
 } /* 계열사 IT/서비스 박스 > 카드 이미지_01 */
 /*IT/서비스*/
 
+
 /*유통*/
 #section_box1 .subsidiary_card_li .distribution_card_image_01{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/GFS.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/GFS.png");
 } /* 계열사 유통 박스 > 카드 이미지_01 */
-
 #section_box1 .subsidiary_card_li .distribution_card_image_02{
-    width: 450px; height: 240px;
-    border-radius: 30px 30px 0px 0px;
-    background-image: url(../../img/spc_subsidiary_img/타이거\ 인터내셔날.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../../img/spc_subsidiary_img/tiger_international.png");
 } /* 계열사 유통 박스 > 카드 이미지_02 */
 /*유통*/
+
 
 /* ///////////////////계열사 카드 이미지 모음/////////////////////////*/
 
