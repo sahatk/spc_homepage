@@ -19,6 +19,7 @@
 
         return `
     <div class="outline">
+        <a target="_blank" href="${obj.link}">
         <div class="card_image" style="background-image:url(${imagePath});"><span class="blind">이미지</span></div>
         <div class="card_text_01">
             <div class="card_text_wrap_01">
@@ -31,6 +32,7 @@
                 </div>
             </div>  
         </div>
+        </a>
     </div>`;
     };
 
