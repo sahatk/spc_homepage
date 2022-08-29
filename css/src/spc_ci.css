@@ -1,0 +1,285 @@
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    opacity: 0.9;
+    /* background-color: #fda;  */
+}
+
+#header_box:hover .main_li {
+    color: #000000 !important;
+}
+
+/* header_box안의 컨테이너*/
+#header_box .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
+#header_box .container a {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+}
+
+/*logo */
+/*/////////////////////*/
+/*navigation*/
+#header_box .header_nav {
+    width: auto;
+    height: auto;
+}
+
+#header_box .header_nav h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}/* 안보이게*/
+
+
+/*기본 header 영역*/
+#header_box .header_nav .main_menu {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+#header_box .header_nav .main_li {
+    width: auto;
+    height: auto;
+    color: #000000 !important;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_nav .main_li a:hover {
+    color: #23afe3;
+    cursor: pointer;
+}
+
+#header_box .header_nav .main_li:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
+    cursor: pointer;
+}/*기본 header 영역*/
+
+
+/* 오버시 header 영역*/
+#header_box .menu_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; height:0; border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0;}
+#header_box:hover .menu_hover_box {height:300px; opacity:1;}
+#header_box .sub_menu_box {background:transparent; height:0; bottom:-1px; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0; visibility:hidden}
+#header_box:hover .sub_menu_box {opacity:1; visibility:visible;}
+#header_box .sub_menu {padding-top: 60px;}
+#header_box .sub_menu li {padding-bottom: 15px;}
+#header_box .sub_menu li a {position:relative; color:transparent; transition:all .2s linear; -webkit-transition:all .2s linear; }
+#header_box .sub_menu li a:before {content:""; position:absolute; bottom:-4px; width:0; height:1px; left:50%; background:#23afe3; transition:all .2s linear; -webkit-transition:all .2s linear;}
+#header_box:hover .sub_menu li a {margin-top:10px; color:#666;}
+#header_box:hover .sub_menu li a:hover {color: #23afe3;}
+#header_box:hover .sub_menu li a:hover:before {width:100%; left:0;}
+/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////// ci_contents /////////// */
+
+#ci_wrap {
+    width:100%; height:800px;
+    display:flex; justify-content: center;
+    /* background-color:#666; */
+  }
+  
+  #ci_wrap .container {
+    width:1440px;
+    /* background-color: #fda; */
+  }
+  
+  .ci_title {
+    box-sizing: border-box;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  
+  .ci_title h2 {
+    font-size: 65px; font-weight: 700;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    text-align: left;
+  }
+  
+  .txtContent {
+    width: 100%; height: auto;
+    display: flex;
+  }
+  
+  .txtContent h3 span {
+    color:#23afe3;
+  }
+  
+  .txtContent .txtwrap {
+    margin-left:150px;
+  }
+  
+  .txtwrap p {margin-bottom: 20px;}
+  
+  #ciImgcontent {
+    width: 100%; height:764px;
+  
+    box-sizing: border-box;
+    padding-top: 100px;
+  
+    background-color: #ebebeb;
+  }
+  
+  #ciImgcontent .bg {
+    margin: 0 auto; padding:50px 50px;
+    width: 1440px; height:360px; border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .logo {
+    display: flex; justify-content: center; align-items: center;
+    width:60%; height:300px;
+    /* background-color: #fdd; */
+    text-align: center;
+    line-height:300px;
+  }
+  
+  .logo_image{
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url("../../img/spc_ci_img/CI_logo.png");
+  }
+  
+  .pantone_wrap {
+    width: 100%; height: 100%;
+    /* background-color: #fad; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  
+  .pantone_wrap li {
+    width:220px; height: 300px;
+  }
+  
+  .pantone_box {
+    width: 100%; height:300px;
+    border-radius: 30px;
+    /* background-color: #fdd; */
+    box-shadow: 0 0 13px #ccc;
+  }
+  
+  .pantone_blue .blue {
+    background-color: #30b3e7;
+  }
+  
+  .pantone_yellow .yellow {
+    background-color: #ffce00;
+  }
+  
+  .pantone_gray .gray {
+    background-color:#7f8181;
+  }
+  
+  .pantone_wrap .top {
+    width:100%; height:150px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+  }
+  
+  .pantone_wrap .top p {
+    padding-left: 30px; padding-top:50px;
+    color:#fff;
+  }
+  
+  .pantone_wrap .bottom {
+    width: 100%; height:150px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .pantone_wrap .bottom p {
+    padding-left: 30px; padding-top: 30px;
+  }
+  
+  .downloadwrap {
+    width: 100%; height:65px;
+    margin-top: 40px;
+    /* background-color: #fda; */
+    display: flex; 
+    justify-content:center;
+  }
+  
+  .downloadwrap > div {
+    /* background-color: #ddf; */
+    margin-right: 50px;
+    border-radius: 30px;
+    /* box-shadow: 0 0 13px #ccc; */
+  }
+  
+  .ci_file button {
+    width: 317px; height: 65px;
+    font-size: 15px;
+    border-radius: 65px;
+    text-transform: uppercase;
+
+    background: #fff url(/img/spc_ci_img/dw_bt.png) 90% center no-repeat;
+    /* box-shadow: 0 0 13px #ccc; */
+  }
+  
+  .png_file button {
+    width: 317px; height: 65px;
+    font-size: 15px;
+    border-radius: 65px;
+    text-transform: uppercase;
+    
+    background: #fff url(/img/spc_ci_img/dw_bt.png) 90% center no-repeat;
+    /* box-shadow: 0 0 13px #ccc; */
+  }
+
+
+  /*////// ci_contents /////////// *//*////// ci_contents /////////// *//*////// ci_contents /////////// */
