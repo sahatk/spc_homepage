@@ -1,0 +1,290 @@
+/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+#header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+#header_box:hover .main_li {
+    color: #000000 !important;
+}
+
+/* header_box안의 컨테이너*/
+#header_box .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: 1920px;
+    min-width: 300px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    /* background-color:rgb(126, 199, 148);     */
+}
+
+/*logo */
+#header_box .container h1 {
+    width: 150px;
+    height: 50px;
+}
+
+#header_box .container a {
+    width: 150px;
+    height: 50px;
+}
+
+.logo_img {
+    width: 150px;
+    height: 50px;
+    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+}
+
+/*logo */
+/*/////////////////////*/
+/*navigation*/
+#header_box .header_nav {
+    width: auto;
+    height: auto;
+}
+
+#header_box .header_nav h2 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}/* 안보이게*/
+
+
+/*기본 header 영역*/
+#header_box .header_nav .main_menu {
+
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+#header_box .header_nav .main_li {
+    width: auto;
+    height: auto;
+    color: #000000 !important;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_nav .main_li a:hover {
+    color: #23afe3;
+    cursor: pointer;
+}
+
+#header_box .header_nav .main_li:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
+    cursor: pointer;
+}/*기본 header 영역*/
+
+
+/* 오버시 header 영역*/
+#header_box .menu_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; height:0; border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0;}
+#header_box:hover .menu_hover_box {height:300px; opacity:1;}
+#header_box .sub_menu_box {background:transparent; height:0; bottom:-1px; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0; visibility:hidden}
+#header_box:hover .sub_menu_box {opacity:1; visibility:visible;}
+#header_box .sub_menu {padding-top: 60px;}
+#header_box .sub_menu li {padding-bottom: 15px;}
+#header_box .sub_menu li a {position:relative; color:transparent; transition:all .2s linear; -webkit-transition:all .2s linear; }
+#header_box .sub_menu li a:before {content:""; position:absolute; bottom:-4px; width:0; height:1px; left:50%; background:#23afe3; transition:all .2s linear; -webkit-transition:all .2s linear;}
+#header_box:hover .sub_menu li a {margin-top:10px; color:#666;}
+#header_box:hover .sub_menu li a:hover {color: #23afe3;}
+#header_box:hover .sub_menu li a:hover:before {width:100%; left:0;}
+/*navigation*/
+
+/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* R&D 소개  ////////////////////////// */
+
+#section_box1 {
+    width: 100%; height: 250px;
+    display: flex; justify-content: center;
+    /* background-color: #fda; */
+    margin-top:80px; 
+    padding-top:70px;
+  }
+  
+  #section_box1 .container {
+    width: 1440px; height: auto;
+  }
+  
+  #section_box1 .container .text_wrap {
+    width: 100%; height: 150px;
+    background-color: #fff;
+  }
+  
+  #section_box1 .text_wrap h2 {
+    margin-bottom:15px;
+  }
+  
+/*tab_menu (SPC R&D tab_menu)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#tab_menu_box {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+} /* 탭 메뉴 전체 영역*/
+
+#tab_menu_box .container {
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+} /* 탭 메뉴 위치 영역*/
+
+#tab_menu_box .container .tab_main_menu_ul {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+} /* 탭 메뉴 -> 메인 메뉴 ul */
+
+#tab_menu_box .tab_main_menu_li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: 72px;
+    border-right: 1px solid #d7d7d7;
+    margin-right: -1px;
+} /* 탭 메뉴 -> 메인 메뉴 ul -> li */
+
+#tab_menu_box .tab_main_menu_li:first-child {
+    border-left: 1px solid #d7d7d7;
+} /* 탭 메뉴 -> 메인 메뉴 ul -> li 첫요소 */
+
+#tab_menu_box .tab_main_menu_li > a:hover {
+    color: #ffffff;
+    background-color: var(--color-sky);
+
+} /* 탭 메뉴 -> 메인 메뉴 ul -> li -> a 오버시 */
+
+.tab_main_menu_li.active {
+    color: var(--color-sky);
+    border-bottom: 2px solid var(--color-sky);
+} /* 탭 메뉴 -> 메인 메뉴 현재 페이지 active 고정*/
+
+/*tab_menu (SPC R&D tab_menu)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////*/
+
+  /* 컨텐츠 */
+  #rnb_content {
+    width: 100%; height:1300px;
+    display: flex; justify-content: center;
+    /* background-color: #fda; */
+    margin-top: 80px;
+  }
+  
+  #rnb_content .container {
+    width: 1440px; height: auto;
+    margin:0 auto; background-color: #fff;
+    overflow: hidden;
+  }
+  
+  /* backgroundimage */
+  
+  #rnb_content .container .introduce_img {
+    border-radius:30px;
+    margin: 0 auto;
+    width:100%; height:300px;
+    background-image: url(/img/spc_r&d_img/rnd-introduce-image01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:100% 100%;
+  }
+  
+  /* info */
+  
+  .info_wrap {
+    width: 100%; height: auto;
+    margin-top:90px;
+  }
+  
+  .info_wrap .title_wrap {
+    width: 1280px; height: auto;
+  }
+  
+  .info_wrap .title_wrap p {
+    margin-bottom: 25px;
+  }
+  
+  .info_wrap .title_wrap .font_20_thin span {font-weight:700;}
+  
+  /* desc */
+  .desc_wrap {
+    width: 1400px; height: auto;
+    margin-top:70px;
+  }
+  
+  .desc_wrap .contanier {
+    display: flex; justify-content: center;
+    align-items: center;
+  }
+  
+  .desc_wrap .contanier .desc_img {
+    width:40%; height:auto;
+  }
+  
+  .desc_wrap .contanier .desc_img .leaven_bg {
+    width: 525px; height:380px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-image: url(/img/spc_r&d_img/rd_img.png);
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  
+  .desc_wrap .contanier .txt_wrap {
+    width:60%; height: auto;
+  } 
+  
+  .desc_wrap .contanier .txt_wrap p {
+    margin-bottom: 15px;
+  }
+
+/*/////////////////////////////////////////////////////////*/
+
+  /* 컨텐츠_02*/
+  
+  #section_box3 {
+    position: relative;
+    width: 100%; height: 470px;
+    background-image: url(/img/spc_r&d_img/rnd1-2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #section_box3 .container {
+    width: 1440px; height: auto;
+    margin:0 auto; 
+  }
+
+  #section_box3 .container .text_wrap{
+    box-sizing: border-box;
+    padding: 76px 0 0;
+  }
