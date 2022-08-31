@@ -639,7 +639,7 @@
 
 #section_box3 .brand_card_li .outline{
     display: flex; justify-content: center; align-items: center;
-    width: 50px; height: 50px;
+    width: 40px; height: 40px;
     border-radius: 30px;
     box-shadow: 0 0 13px #ccc;
 }  /*SPC BRAND 박스 카드 ICON 바깥 라인 박스 */
@@ -678,25 +678,25 @@
 
 
 #section_box3 .container .home_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/home_icon.png);
 } /*SPC BRAND 박스 카드 home ICON  */
 
 #section_box3 .container .instagram_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/instagram_icon.png);
 } /*SPC BRAND 박스 카드 instagram ICON  */
 
 #section_box3 .container .facebook_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/facebook_icon.png);
 } /*SPC BRAND 박스 카드 instagram ICON  */
 
 #section_box3 .container .youtube_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/youtube_icon.png);
 } /*SPC BRAND 박스 카드 instagram ICON  */
@@ -771,10 +771,14 @@
 
 #section_box4 .subsidiary_card_li .outline{
     display: flex; justify-content: center; align-items: center;
-    width: 50px; height: 50px;
+    width: 40px; height: 40px;
     border-radius: 30px;
     box-shadow: 0 0 13px #ccc;
 }  /*SPC 계열사 박스 카드 ICON 바깥 라인 박스 */
+
+#section_box4 .subsidiary_card_li .outline:hover{
+    box-shadow: 0 0 13px #23afe3;
+}  /*SPC 계열사 박스 카드 ICON 바깥 라인 박스:hover*/
 
 #section_box4 .subsidiary_card_li .icon_wrap_01{
     position: absolute;
@@ -806,25 +810,25 @@
 
 
 #section_box4 .container .home_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/home_icon.png);
 } /*SPC 계열사 박스 카드 home ICON  */
 
 #section_box4 .container .instagram_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/instagram_icon.png);
 } /*SPC 계열사 박스 카드 instagram ICON  */
 
 #section_box4 .container .facebook_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/facebook_icon.png);
 } /*SPC 계열사 박스 카드 instagram ICON  */
 
 #section_box4 .container .youtube_icon {
-    width: 30px; height: 30px;
+    width: 20px; height: 20px;
     background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     background-image: url(../../img/spc_familychannel_img/icon/youtube_icon.png);
 } /*SPC 계열사 박스 카드 instagram ICON  */

@@ -990,6 +990,10 @@
     background-color: var(--color-white);
 }
 
+.main_brand_card li:hover{
+    opacity: 0.7;
+}
+
 .main_brand_card li .image {
     width: 220px;
     height: 220px;
@@ -1463,6 +1467,11 @@
 
 }
 
+.main_news_card li .outline:hover .card_image {
+    opacity: 0.7;
+
+}
+
 /* SPC NEWS CARD 박스 크기 및 위치 설정 */
 
 /* SPC NEWS CARD 이미지 */
@@ -1722,9 +1731,12 @@
     position: relative;
     width: 340px;
     height: 350px;
-
-
 }
+
+.main_magazine_card li .outline:hover {
+    opacity: 0.7;
+}
+
 
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 
@@ -1963,7 +1975,10 @@
     position: relative;
     width: 360px;
     height: 300px;
+}
 
+.main_youtube_card li .outline:hover .card_image_01 {
+    opacity: 0.7;
 }
 
 /* SPC YOUTUBE CARD 박스 크기 및 위치 설정 */
@@ -2186,7 +2201,10 @@
     position: relative;
     width: 250px;
     height: 250px;
+}
 
+.main_sns_card li .outline:hover {
+    opacity: 0.7;
 }
 
 /* SPC SNS CARD 박스 크기 및 위치 설정 */
@@ -2199,7 +2217,6 @@
     background-image: url(../../img/main_img/section_box9/sns_image_01.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .main_sns_card .outline .card_image_02 {
