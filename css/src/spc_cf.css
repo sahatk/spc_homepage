@@ -402,81 +402,65 @@
     box-shadow: 0 0 13px #ccc;
 } /*SPC CF 박스 카드*/
 
-/*/////////////////////// SPC CF 박스 카드 이미지 모음 ////////////////////////*/
-#section_box2 .container .cf_card_image_01 {
+#section_box2 .cf_card_li:hover .cf_card_image{
+    opacity: 0.7;
+} /*SPC CF 박스 카드 -> 오버시 -> 카드 이미지 영역 밝기 조절 */
+
+#section_box2 .cf_card_li:hover .cf_card_text{
+    background-color:#1e2432;
+    color: #ffffff;
+    border-radius: 0 0 30px 30px;
+} /*SPC CF 박스 카드 -> 오버시 -> 카드 텍스트 색상 변화*/
+
+#section_box2 .cf_card_li:hover .date_text{
+    color: #ffffff;
+} /*SPC CF 박스 카드 -> 오버시 -> 카드 날짜 영역 색상 변화 */
+
+#section_box2 .container .cf_card_image{
     width: 500px;
     height: 300px;
     border-radius: 30px 30px 0 0;
     background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+} /*SPC CF 박스 카드 -> 카드 이미지 영역*/
+
+/*/////////////////////// SPC CF 박스 카드 이미지 경로 모음 ////////////////////////*/
+#section_box2 .container .cf_card_image_01 {
     background-image: url(../../img/spc_cf_img/cf_card_image_01.jpg);
 } /*SPC CF 박스 카드 이미지 01*/
 
 #section_box2 .container .cf_card_image_02 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_02.jpg);
 } /*SPC CF 박스 카드 이미지 02*/
 
 #section_box2 .container .cf_card_image_03 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_03.jpg);
 } /*SPC CF 박스 카드 이미지 03*/
 
 #section_box2 .container .cf_card_image_04 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_04.jpg);
 } /*SPC CF 박스 카드 이미지 04*/
 
 #section_box2 .container .cf_card_image_05 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_05.jpg);
 } /*SPC CF 박스 카드 이미지 05*/
 
 #section_box2 .container .cf_card_image_06 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_06.jpg);
 } /*SPC CF 박스 카드 이미지 06*/
 
 #section_box2 .container .cf_card_image_07 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_07.jpg);
 } /*SPC CF 박스 카드 이미지 07*/
 
 #section_box2 .container .cf_card_image_08 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_08.jpg);
 } /*SPC CF 박스 카드 이미지 08*/
 
 #section_box2 .container .cf_card_image_09 {
-    width: 500px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_cf_img/cf_card_image_09.jpg);
 } /*SPC CF 박스 카드 이미지 09*/
 
-/*/////////////////////// SPC CF 박스 카드 이미지 모음 ////////////////////////*/
-
+/*/////////////////////// SPC CF 박스 카드 이미지 경로 모음 ////////////////////////*/
 
 #section_box2 .cf_card_text{
     position: relative;
