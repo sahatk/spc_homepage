@@ -347,47 +347,38 @@
     box-shadow: 0 0 13px #ccc;
 } /*SPC 해피포인트 박스 카드*/
 
-/*/////////////////////// SPC 해피포인트 박스 카드 이미지 모음 ////////////////////////*/
-#section_box1 .container .happypoint_card_image_01 {
+#section_box1 .happypoint_card_li:hover .happypoint_card_image{
+    opacity: 0.7;
+} /*SPC 해피포인트 박스 카드 -> 오버 시 -> 카드 이미지 영역 밝기 조절*/
+
+#section_box1 .container .happypoint_card_image{
     width: 304px;
     height: 300px;
     border-radius: 30px 30px 0 0;
     background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+} /*SPC 해피포인트 박스 카드 -> 오버 시 -> 카드 이미지 영역 */
+
+/*/////////////////////// SPC 해피포인트 박스 카드 이미지 경로 모음 ////////////////////////*/
+#section_box1 .container .happypoint_card_image_01 {
     background-image: url(../../img/spc_familychannel_img/happypoint/point-img01.jpg);
 } /*SPC 해피포인트 박스 카드 이미지 01*/
 
 #section_box1 .container .happypoint_card_image_02 {
-    width: 304px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/happypoint/point-img02.jpg);
 } /*SPC 해피포인트 박스 카드 이미지 02*/
 
 #section_box1 .container .happypoint_card_image_03 {
-    width: 304px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/happypoint/point-img03.jpg);
 } /*SPC 해피포인트 박스 카드 이미지 03*/
 
 #section_box1 .container .happypoint_card_image_04 {
-    width: 304px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/happypoint/point-img04.jpg);
 } /*SPC 해피포인트 박스 카드 이미지 04*/
 
 #section_box1 .container .happypoint_card_image_05 {
-    width: 304px;
-    height: 300px;
-    border-radius: 30px 30px 0 0;
-    background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
     background-image: url(../../img/spc_familychannel_img/happypoint/point-img05.jpg);
 } /*SPC 해피포인트 박스 카드 이미지 05*/
-/*/////////////////////// SPC 해피포인트 박스 카드 이미지 모음 ////////////////////////*/
+/*/////////////////////// SPC 해피포인트 박스 카드 이미지 경로 모음 ////////////////////////*/
 
 
 #section_box1 .happypoint_card_text{
