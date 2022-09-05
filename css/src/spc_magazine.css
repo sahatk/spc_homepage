@@ -523,125 +523,90 @@
     padding:9px 12px;
 } /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 td*/
 
+#section_box3 .magazine_table .magazine_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 영역 */
+
+#section_box3 .magazine_table .magazine_image:hover {
+    opacity: 0.7;
+} /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 영역 -> 오버 시 */
+
 
 /* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
 #section_box3 .magazine_table .magazine_image_01 {
     width:826px; height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_01.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_02 {
     width:826px; height: 560px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_02.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_03 {
     width:400px; height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_03.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_04 {
     width:400px; height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_04.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_05 {
     width:400px; height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_05.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_06 {
     width:400px; height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_06.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_07 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_07.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_08 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_08.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_09 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_09.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_10 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_10.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_11 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_11.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_12 {
     width:258px; height: 285px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_12.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_13 {
     width:826px; height: 127px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_13.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_14 {
     width:826px; height: 205px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_14.jpg);
 }
 
 #section_box3 .magazine_table .magazine_image_15 {
     width:826px; height: 234px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     background-image: url(../../img/spc_magazine_img/magazine_table_img_15.jpg);
 }/* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
 
