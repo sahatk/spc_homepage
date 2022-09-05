@@ -22,6 +22,11 @@ function headerbarToggle() {
     });
     headerLi[6].style = global_black;
     logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+
+    headerBox.addEventListener('mouseover', function () {
+      headerLi[6].style = global_black;
+    });
+
   } else {
     headerBox.style.backgroundColor = 'transparent';
     headerLi.forEach(el => {
@@ -35,18 +40,22 @@ function headerbarToggle() {
   if (currentScrollpos == 0) {
     headerBox.addEventListener('mouseover', function () {
       logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+      headerLi[6].style = global_black;
     });
 
     headerBox.addEventListener('mouseleave', function(){
       logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_newwhite.png')`;
+      headerLi[6].style = global_white;
     });
   } else {
     headerBox.addEventListener('mouseover', function () {
       logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+      headerLi[6].style = global_black;
     });
 
     headerBox.addEventListener('mouseleave', function(){
       logo.style.backgroundImage = `url('img/main_img/header_box/gnb_logo_new.png')`;
+      headerLi[6].style = global_black;
     });
 
   }
