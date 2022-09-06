@@ -17,6 +17,9 @@
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="../../img/favicon.png">
 
+    <script src="../../js/jquery.min_1.12.4.js"></script>
+
+
     <!-- <script src="../../js/scroll.js"></script> -->
     <title>spc_information</title>
 </head>
@@ -164,52 +167,195 @@
             <div class="employment_text">
                 <p class="font_24">그룹주간으로 진행하는 대졸 신입공채 (상/하반기)</p>
             </div>
+            <div class="employment_text">
+                <p class="font_24">사별주관으로 사무직종을 대상으로 진행하는 신입/경력 채용</p>
+            </div>
+            <div class="employment_text">
+                <p class="font_24">그룹주관으로 진행하는 R&D 직무 신입/경력 분기별 진행</p>
+            </div>
+            <div class="employment_text">
+                <p class="font_24">사별주관으로 현장직종을 대상으로 진행하는 신입/경력 채용</p>
+            </div>
             <div class="employment_box">
                 <ul class="employment_circle_wrap">
                     <li class="employment_circle">
                         <div class="employment_icon employment_icon_image01">
-                            <div class="blind">employment 아이콘 이미지 01</div>
+                            <div class="blind">employment 서류전형 아이콘 이미지 01</div>
                         </div>
-                        <div class="employment_text">
-                            <p class="font_24">업적평가</p>
+                        <div class="employment_circle_text">
+                            <p class="font_24">서류전형</p>
                         </div>
                     </li>
                     <li class="employment_circle">
                         <div class="employment_icon employment_icon_image02">
-                            <div class="blind">employment 아이콘 이미지 02</div>
+                            <div class="blind">employment 역량검사 아이콘 이미지 02</div>
                         </div>
-                        <div class="employment_text">
+                        <div class="employment_circle_text">
                             <p class="font_24">역량검사</p>
                         </div>
                     </li>
                     <li class="employment_circle">
                         <div class="employment_icon employment_icon_image03">
-                            <div class="blind">employment 아이콘 이미지 03</div>
+                            <div class="blind">employment (Test 전형) 실무 면접 아이콘 이미지 03</div>
                         </div>
-                        <div class="employment_text">
+                        <div class="employment_circle_text">
                             <p class="font_24">(Test 전형)<br/>실무 면접</p>
                         </div>
                     </li>
                     <li class="employment_circle">
                         <div class="employment_icon employment_icon_image04">
-                            <div class="blind">employment 아이콘 이미지 04</div>
+                            <div class="blind">employment 임원면접 아이콘 이미지 04</div>
                         </div>
-                        <div class="employment_text">
+                        <div class="employment_circle_text">
+                            <p class="font_24">임원면접</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image08">
+                            <div class="blind">employment 최종합격 아이콘 이미지 05</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">최종합격</p>
+                        </div>
+                    </li>
+                    <div class="employment_circle_text">
+                        <p class="font_24 color_gray">Test 전형 : 관능검사/외국어역량검사 등을 실시</p>
+                    </div>
+                </ul>
+                <ul class="employment_circle_wrap">
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image01">
+                            <div class="blind">employment 서류전형 아이콘 이미지 01</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">서류전형</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image03">
+                            <div class="blind">employment (Test 전형) 실무면접 아이콘 이미지 02</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">(Test 전형)<br/>실무면접</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image02">
+                            <div class="blind">employment (Test 전형) 역량검사 아이콘 이미지 03</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">(Test 전형)<br/>역량검사</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image04">
+                            <div class="blind">employment 임원면접 아이콘 이미지 04</div>
+                        </div>
+                        <div class="employment_circle_text">
                             <p class="font_24">임원면접</p>
                         </div>
                     </li>
                     <li class="employment_circle">
                         <div class="employment_icon employment_icon_image05">
-                            <div class="blind">employment 아이콘 이미지 05</div>
+                            <div class="blind">employment 인사면담 아이콘 이미지 05</div>
                         </div>
-                        <div class="employment_text">
+                        <div class="employment_circle_text">
+                            <p class="font_24">인사면담</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image08">
+                            <div class="blind">employment 최종합격 아이콘 이미지 05</div>
+                        </div>
+                        <div class="employment_circle_text">
                             <p class="font_24">최종합격</p>
                         </div>
                     </li>
                 </ul>
-                <div class="employment_text">
-                    <p class="font_24 color_gray">Test 전형 : 관능검사/외국어역량검사 등을 실시</p>
-                </div>
+                <ul class="employment_circle_wrap">
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image01">
+                            <div class="blind">employment 서류전형 아이콘 이미지 01</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">서류전형</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image02">
+                            <div class="blind">employment 역량검사 아이콘 이미지 02</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">역량검사</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image07">
+                            <div class="blind">employment Test 전형 아이콘 이미지 03</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">Test 전형</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image04">
+                            <div class="blind">employment 임원면접 아이콘 이미지 04</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">임원면접</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image05">
+                            <div class="blind">employment 인사면담 아이콘 이미지 05</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">인사면담</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image08">
+                            <div class="blind">employment 최종합격 아이콘 이미지 05</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">최종합격</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="employment_circle_wrap">
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image01">
+                            <div class="blind">employment 서류전형 아이콘 이미지 01</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">서류전형</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image06">
+                            <div class="blind">employment 현장면접 아이콘 이미지 02</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">현장면접</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image05">
+                            <div class="blind">employment 인사면담 아이콘 이미지 03</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">인사면담</p>
+                        </div>
+                    </li>
+                    <li class="employment_circle">
+                        <div class="employment_icon employment_icon_image08">
+                            <div class="blind">employment 최종합격 아이콘 이미지 04</div>
+                        </div>
+                        <div class="employment_circle_text">
+                            <p class="font_24">최종합격</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section> <!-- 채용 프로세스 박스-->
@@ -362,5 +508,5 @@
         </div>
     </footer><!-- FOOTER 박스-->
 </body>
-
+<script src="../../js/information_card.js"></script>
 </html>

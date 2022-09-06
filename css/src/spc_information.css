@@ -272,7 +272,7 @@
 
 #section_box3{
     width: 100%;
-    height: 1100px;
+    height: 1200px;
     background: linear-gradient(0deg, rgba(248,248,248,1) 0%, rgba(209,235,250,1) 100%);
   } /* 채용 프로세스 전체 영역*/
   
@@ -303,6 +303,7 @@
     height: 80px;
 
     border-radius: 50px;
+    cursor: pointer;
 
     color: #afafaf;
     background-color: #fff;
@@ -321,17 +322,18 @@
 
   #section_box3 .container .employment_box{
     width: 100%;
-    height: 400px;
+    height: 560px;
   } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘,텍스트 박스 영역*/
 
   #section_box3 .container .employment_circle_wrap{
-    display: flex; gap: 50px;
+    display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;
     width: 100%;
     height: 248px;
     margin-bottom: 60px;
   } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘들 영역*/
 
   #section_box3 .container .employment_circle{
+    position: relative;
     width: 248px;
     height: 248px;
 
@@ -339,13 +341,30 @@
     box-shadow: 0 0 13px #ccc;
 
     box-sizing: border-box;
-    padding: 50px;
+    padding: 60px;
 
     background-color: #fff;
   } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘 -> li들*/
 
+  #section_box3 .employment_circle::before{
+    display: block; content: '';
+    position: absolute; top:50%; left:100%;
+    transform: translate(150%,-50%);
+
+    width: 15px; height: 15px;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../img/arrow_img/icon_slide_next_b.png");
+  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘 -> li들::before*/
+
+  #section_box3 .employment_circle:last-of-type::before{
+    display:none; width: 0; height: 0;
+  } /* 채용 프로세스 위치 영역 ->채용 프로세스 아이콘 -> li들::before 마지막 요소 none*/
+
   #section_box3 .container .employment_icon {
-    width: 130px; height: 80px;
+    width: 60px; height: 60px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -357,7 +376,7 @@
 
   #section_box3 .container .employment_icon_image01 {
     background-image: url("../../img/spc_information_img/careers-i09.png");
-  } /* 업적평가 */
+  } /* 서류전형 */
 
   #section_box3 .container .employment_icon_image02 {
     background-image: url("../../img/spc_information_img/careers-i10.png");
@@ -372,11 +391,30 @@
   } /* 임원면접 */
 
   #section_box3 .container .employment_icon_image05 {
+    background-image: url("../../img/spc_information_img/careers-i15.png");
+  } /* 인사면담 */
+
+  #section_box3 .container .employment_icon_image06 {
+    background-image: url("../../img/spc_information_img/careers-i17.png");
+  } /* 현장면접 */
+
+  #section_box3 .container .employment_icon_image07 {
+    background-image: url("../../img/spc_information_img/careers-i14.png");
+  } /* Test 전형 */
+
+  #section_box3 .container .employment_icon_image08 {
     background-image: url("../../img/spc_information_img/careers-i13.png");
   } /* 최종합격 */
 
+
+
 /* //////////////////////////////////////////////////// 채용 프로세스 아이콘 이미지 모음 /////////////////////////////////////////////////////////////*/
 
+#section_box3 .container .employment_circle_text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+} /* 채용 프로세스 위치 영역 -> circle 박스 텍스트 영역*/
 
 
 
