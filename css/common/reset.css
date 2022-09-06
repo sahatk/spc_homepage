@@ -14,6 +14,7 @@ button {border:0; background-color:transparent;
   border-radius:0; cursor: pointer;}
 address,cite {font-style:normal;}
 abbr { text-decoration: none;}
+svg {width: 0 !important; height: 0 !important;}
 
 header,article,section,aside,nav,footer,main,figure,figcaption {display: block;}
 

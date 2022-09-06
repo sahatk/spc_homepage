@@ -154,9 +154,54 @@
   border-radius: 50px;
 }
 
-.map img {
+#map {
+  position: relative;
   width: 637px; height: 310px;
+  border-radius: 30px;
 }
+
+.custom_zoomcontrol{
+  position: absolute; bottom: 20px; right:15px;
+  width: 40px;
+  height: 81px;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 0 13px #ccc;
+
+  background-color: #ffffff;
+}
+
+.custom_zoomcontrol .zoomIn {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.custom_zoomcontrol .zoomIn i{
+  font-size: 20px;
+}
+
+.custom_zoomcontrol .zoomOut {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.line{
+  position: relative;
+  overflow: hidden;
+  width: 30px;
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+}
+
+
+.custom_zoomcontrol .zoomOut i{
+  font-size: 20px;
+}
+
 
 .transfer {
   width: auto; height: auto;

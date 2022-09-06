@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/common//variable.css">
+    <link rel="stylesheet" href="/css/common//constiable.css">
     <link rel="stylesheet" href="/css/common/reset.css">
     <link rel="stylesheet" href="/css/common/common.css">
     <link rel="stylesheet" href="/css/common/subpage_footer.css">
@@ -16,6 +16,10 @@
 
     <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>오시는 길 - SPC</title>
 </head>
@@ -114,9 +118,18 @@
                 <img src="/img/spc_address_img/address-img.jpg" alt="사옥이미지">
             </div>
             <div class="address">
-                <div class="map">
-                    <img src="/img/spc_address_img/spc_address.png" alt="지도">
+                <div id="map">
+                    <div class="custom_zoomcontrol radius_border">
+                        <div class="zoomIn">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="line"></div>
+                        <div class="zoomOut">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                    </div>
                 </div>
+                <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
                 <div class="transfer">
                     <div class="car_wrap">
                         <div class="car_use">
@@ -167,11 +180,21 @@
             </div>
             <div class="main_footer_info">
                 <ul>
-                    <a href="https://www.spc.co.kr/privacy-policy/"><li class="font_18_b active">개인정보처리방침</li></a>
-                    <a href="https://www.spc.co.kr/email-privacy/"><li class="font_18_b">이메일수집 거부</li></a>
-                    <a href="http://happy.spc.co.kr/indexframe.jsp"><li class="font_18_b">거래희망사전등록</li></a>
-                    <a href="../contact/spc_address.html"><li class="font_18_b">오시는길</li></a>
-                    <a href="https://www.spc.co.kr/notice/"><li class="font_18_b">공지사항</li></a>
+                    <a href="https://www.spc.co.kr/privacy-policy/">
+                        <li class="font_18_b active">개인정보처리방침</li>
+                    </a>
+                    <a href="https://www.spc.co.kr/email-privacy/">
+                        <li class="font_18_b">이메일수집 거부</li>
+                    </a>
+                    <a href="http://happy.spc.co.kr/indexframe.jsp">
+                        <li class="font_18_b">거래희망사전등록</li>
+                    </a>
+                    <a href="../contact/spc_address.html">
+                        <li class="font_18_b">오시는길</li>
+                    </a>
+                    <a href="https://www.spc.co.kr/notice/">
+                        <li class="font_18_b">공지사항</li>
+                    </a>
                 </ul>
                 <address class="font_18">서울시 서초구 양재동 남부순환로 2620(양재동 11-149)SPC그룹
                     <br>
@@ -181,50 +204,50 @@
             <div class="main_footer_icon_wrap">
                 <ul>
                     <li>
-                            <a target="_blank" href="https://www.happypointcard.com/page/presentation/app.spc">
-                                <span class="blind">happy point</span>
-                                <div class="icon_image_box">
-                                    <div class="happypoint_icon icon"></div>
+                        <a target="_blank" href="https://www.happypointcard.com/page/presentation/app.spc">
+                            <span class="blind">happy point</span>
+                            <div class="icon_image_box">
+                                <div class="happypoint_icon icon"></div>
+                            </div>
+                            <div class="icon_text">
+                                <p class="font_18">happypoint</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/spc_group/">
+                            <span class="blind">instagram</span>
+                            <div class="icon_image_box">
+                                <div class="icon instagram_icon ">
                                 </div>
-                                <div class="icon_text">
-                                    <p class="font_18">happypoint</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/spc_group/">
-                                <span class="blind">instagram</span>
-                                <div class="icon_image_box">
-                                    <div class="icon instagram_icon ">
-                                    </div>
-                                </div>
-                                <div class="icon_text">
-                                    <p class="font_18">instagram</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/happySPC">
-                                <span class="blind">facebook</span>
-                                <div class="icon_image_box">
-                                    <div class="facebook_icon icon"></div>
-                                </div>
-                                <div class="icon_text">
-                                    <p class="font_18">facebook</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/channel/UCiyg3rAdPOJN4eKAgAs5FOQ">
-                                <span class="blind">youtube</span>
-                                <div class="icon_image_box">
-                                    <div class="youtube_icon icon"></div>
-                                </div>
-                                <div class="icon_text">
-                                    <p class="font_18">youtube</p>
-                                </div>
-                            </a>
-                        </li>
+                            </div>
+                            <div class="icon_text">
+                                <p class="font_18">instagram</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/happySPC">
+                            <span class="blind">facebook</span>
+                            <div class="icon_image_box">
+                                <div class="facebook_icon icon"></div>
+                            </div>
+                            <div class="icon_text">
+                                <p class="font_18">facebook</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCiyg3rAdPOJN4eKAgAs5FOQ">
+                            <span class="blind">youtube</span>
+                            <div class="icon_image_box">
+                                <div class="youtube_icon icon"></div>
+                            </div>
+                            <div class="icon_text">
+                                <p class="font_18">youtube</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -236,5 +259,57 @@
         </div>
     </footer><!-- FOOTER 박스-->
 </body>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=312c231c02f9f1e747eed7ecddabda2d"></script>
+<script>
+    const container = document.getElementById('map');
+    const zoomIn = document.querySelector('.zoomIn');
+    const zoomOut = document.querySelector('.zoomOut');
+
+    const options = {
+        center: new kakao.maps.LatLng(37.4844035, 127.0373614),
+        level: 3
+    };
+    const map = new kakao.maps.Map(container, options);
+
+
+
+
+
+    // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+
+    zoomIn.addEventListener("click", function () {
+        map.setLevel(map.getLevel() - 1);
+    });
+
+    zoomOut.addEventListener("click", function () {
+        map.setLevel(map.getLevel() + 1);
+    });
+
+
+    // 마커가 표시될 위치입니다 
+    const markerPosition = new kakao.maps.LatLng(37.4844035, 127.0373614);
+
+    // 마커를 생성합니다
+    const marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    const iwContent = '<div style="padding:5px;">SPC그룹 본사<br><a href="https://map.kakao.com/?urlX=508253&urlY=1106965&urlLevel=3&itemId=21370406&q=SPC%EA%B7%B8%EB%A3%B9%20%EB%B3%B8%EC%82%AC&srcid=21370406&map_type=TYPE_MAP" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,508253,1106965&rt1=&rt2=SPC%EA%B7%B8%EB%A3%B9%20%EB%B3%B8%EC%82%AC&rtIds=,21370406" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        iwPosition = new kakao.maps.LatLng(37.4844035, 127.0373614); //인포윈도우 표시 위치입니다
+
+    // 인포윈도우를 생성합니다
+    const infowindow = new kakao.maps.InfoWindow({
+        position: iwPosition,
+        content: iwContent
+    });
+
+    // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+    infowindow.open(map, marker);
+
+</script>
 
 </html>

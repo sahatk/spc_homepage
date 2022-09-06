@@ -298,6 +298,11 @@
     background-color: #fff;
 }  /* 컬러너리아카데미 소개 위치 영역 -> 컬러너리아카데미 소개 홈페이지 바로가기 버튼 위치 영역 -> 홈페이지 바로가기 버튼*/
 
+#section_box2 .container .site_button_wrap p:hover{
+    background-color:#1e2432;
+    color: #ffffff;
+}  /* 컬러너리아카데미 소개 위치 영역 -> 컬러너리아카데미 소개 홈페이지 바로가기 버튼 위치 영역 -> 홈페이지 바로가기 버튼 -> 오버 시*/
+
 #section_box2 .container .academy_box{
     width: 100%;
     height: 900px;
