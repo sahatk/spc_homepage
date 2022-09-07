@@ -437,7 +437,7 @@
 #section_box2 .container .search_wrap_ul{
     width: 100%;
     height: 100px;
-    display: flex; align-items: center; gap: 30px;
+    display: flex; align-items: center; justify-content: center; gap: 30px;
     margin-bottom: 90px;
     /* background-color: #fda; */
 } /*SPC LIVE 보도자료 박스 SEARCH_WRAP 위치 영역*/
@@ -447,23 +447,61 @@
     display: flex; align-items: center;
     width: 300px;
     height: 80px;
-    padding: 0 20px;
+    padding: 0 34px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 0 13px #ccc;
     box-sizing: border-box;
+    cursor: pointer;
 } /*SPC LIVE 보도자료 박스 탭 메뉴 카드*/
 
-#section_box2 .search_wrap_li p::before{
-    content: '';
+#section_box2 .container .scroll_option{
+    display: none;
+    position: absolute; bottom: 0; left: 0;
+    transform: translate(0%, 100%);
+
+    width: 300px; height: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 13px #ccc;
+    border-radius: 0 0 30px 30px;
+    z-index: 100;
+    cursor: pointer;
+} /* SPC LIVE 보도자료 박스 탭 메뉴 option */
+
+#section_box2 .container .scroll_option_block{
+    display: block;
+} /* SPC LIVE 보도자료 박스 탭 메뉴 option -> display:block */
+
+#section_box2 .container .scroll_option_li{
+    width: 300px; height: 50px;
+
+    box-sizing: border-box;
+    padding: 10px 35px;
+    
+    color: #7d7d7d;
+    font-weight: 700;
+} /* SPC LIVE 보도자료 박스 탭 메뉴 option -> li */
+
+#section_box2 .container .scroll_option_li:hover{
+    color: #23afe3;
+} /* SPC LIVE 보도자료 박스 탭 메뉴 option -> li -> hover */
+
+#section_box2 .search_wrap_li .arrow{
     position: absolute;
     top: 50%;
     right: 35px;
     width: 20px;
     height: 20px;
-    background: url('https://api.iconify.design/akar-icons/chevron-right.svg?rotate=90deg') no-repeat center center / contain;
     margin-top: -10px;
+} /*SPC LIVE 보도자료 박스 탭 메뉴 카드 안 화살표*/
+
+#section_box2 .search_wrap_li .arrow_bottom{
+    background: url('https://api.iconify.design/akar-icons/chevron-right.svg?rotate=90deg') no-repeat center center / contain;
 } /*SPC LIVE 보도자료 박스 탭 메뉴 카드 안 bottom 화살표*/
+
+#section_box2 .search_wrap_li .arrow_top{
+    background: url('https://api.iconify.design/akar-icons/chevron-right.svg?rotate=270deg') no-repeat center center / contain;
+} /*SPC LIVE 보도자료 박스 탭 메뉴 카드 안 top 화살표*/
 
 #section_box2 .container .search_wrap_input{
     position: relative;
@@ -472,6 +510,10 @@
     height: 80px;
     border-radius: 30px;
 } /*SPC LIVE 보도자료 박스 input 전체 영역*/
+
+#section_box2 .search_wrap_input input[type=text]:focus-visible{
+    outline: none;
+} /*SPC LIVE 보도자료 박스 input 전체 영역 -> focus-visible 리셋*/
 
 #section_box2 .search_wrap_input input[type=text]{
     width: 900px;
@@ -575,7 +617,6 @@
     background-image: url(../../img/spc_news_img/news_12.jpg);
 } /*SPC LIVE 보도자료 박스 카드 이미지 12*/
 /*/////////////////////// SPC LIVE 보도자료 박스 카드 이미지 모음 ////////////////////////*/
-
 
 #section_box2 .livenews_card_text{
     position: relative;
