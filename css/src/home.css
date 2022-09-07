@@ -640,6 +640,7 @@
     font-weight: 700;
     word-break: keep-all;
     padding: 0 0 0 30px;
+    text-transform: uppercase;
 }
 
 .main_group_card .none {

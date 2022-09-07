@@ -1,23 +1,23 @@
-// 영화차트 탭 메뉴
-const movBtn = $(".employment_tab_menu > li");
-// const movBtn = document.querySelectorAll('.movie_title > ul > li');
+// 탭 메뉴
+const tabMenuBtn = $(".employment_tab_menu > li");
+// const tabMenuBtn = document.querySelectorAll('.movie_title > ul > li');
 
-const movCont = $(".employment_box > ul");
-// const movCont = document.querySelectorAll('.movie_chart > div');
+const employCont = $(".employment_box > ul");
+// const employCont = document.querySelectorAll('.movie_chart > div');
 
-const movTitle = $(".employment_text");
+const employTitle = $(".employment_text");
 
-movTitle.hide().eq(0).show();
-movCont.hide().eq(0).show();
+employTitle.hide().eq(0).show();
+employCont.hide().eq(0).show();
 
-movBtn.click(function (e) {
+tabMenuBtn.click(function (e) {
     e.preventDefault();
     const target = $(this);
     const index = target.index();
-    movBtn.removeClass("active");
+    tabMenuBtn.removeClass("active");
     target.addClass("active");
-    movCont.hide();
-    movCont.eq(index).show();
-    movTitle.hide();
-    movTitle.eq(index).show();
+    employCont.hide();
+    employCont.eq(index).show();
+    employTitle.hide();
+    employTitle.eq(index).show();
 })
