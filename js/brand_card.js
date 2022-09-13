@@ -69,45 +69,93 @@
         // } else {
         //     return data = null;
         // }
+        
     
-
-
-
-        function prev() {
-            // const count = obj.key;
-            // console.log(count);
-            // const calc = (count === 9 ? (count - 5) / 2 : 0);
-            if (imageIndex > -4) {
+        const prevDessertHandler = () => {
+            if ((-2 < imageIndex) && (imageIndex <= 2)) {
                 nextBtn.removeAttribute('disabled');
                 position += IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
                 imageIndex = imageIndex - 1;
+                if (imageIndex === -2) {
+                    prevBtn.setAttribute('disabled', 'true');
+                }
             }
-            if (imageIndex === 4) {
-                prevBtn.setAttribute('disabled', 'true');
-            }
-        }
+        };
 
-        function next() {
-            // const count = obj.key;
-            // console.log(count);
-            // const calc = count === (13 || 9) ? (count - 5) / 2 : 0;
-            
-            if (imageIndex < -4) {
+        const nextDessertHandler = () => {
+            if ((imageIndex < 2) && (imageIndex >= -2)) {
                 prevBtn.removeAttribute('disabled');
                 position -= IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
                 imageIndex = imageIndex + 1;
+                if (imageIndex === 2) {
+                    nextBtn.setAttribute('disabled', 'true');
+                }
             }
-            if (imageIndex === 4) {
-                nextBtn.setAttribute('disabled', 'true');
+        };
+
+        const prevDinnerHandler = () => {
+            if ((-4 < imageIndex) && (imageIndex <= 4)) {
+                nextBtn.removeAttribute('disabled');
+                position += IMAGE_WIDTH;
+                makeLi.style.transform = `translateX(${position}px)`;
+                imageIndex = imageIndex - 1;
+                if (imageIndex === -4) {
+                    prevBtn.setAttribute('disabled', 'true');
+                }
             }
+        };
+
+        const nextDinnerHandler = () => {
+            if ((imageIndex < 4) && (imageIndex >= -4)) {
+                prevBtn.removeAttribute('disabled');
+                position -= IMAGE_WIDTH;
+                makeLi.style.transform = `translateX(${position}px)`;
+                imageIndex = imageIndex + 1;
+                if (imageIndex === 4) {
+                    nextBtn.setAttribute('disabled', 'true');
+                }
+            }
+        };
+
+        const stopHandler = () => {
+            imageIndex = 0;
+            position = 0;
+        }
+
+
+
+
+        function prev() {
+            const count = obj.category;
+            if(count === '베이커리/디저트'){
+                prevDessertHandler();
+            }else if(count === '외식/다이닝'){
+                prevDinnerHandler();
+            }else{
+                stopHandler();
+            }
+            // (count === ('베이커리/디저트') && ('외식/다이닝')) ? prevHandler() : stopHandler();
+        }
+
+        function next() {
+            const count = obj.category;
+            if(count === '베이커리/디저트'){
+                nextDessertHandler();
+            }else if(count === '외식/다이닝'){
+                nextDinnerHandler();
+            }else{
+                stopHandler();
+            }
+            // (count === ('베이커리/디저트') && ('외식/다이닝')) ? nextHandler() : stopHandler();
         }
 
         function init() {
             prevBtn.setAttribute('disabled', 'true');
             prevBtn.addEventListener('click', prev);
             nextBtn.addEventListener('click', next);
+            console.log(obj.category.key);
         }
 
         init();
