@@ -32,7 +32,7 @@
     slideViewAreaList.prepend(lastSlideItem); // 맨앞에 li 태그 추가
 
     const slideViewItems = slideViewAreaList.querySelectorAll('li'); // li
-    console.log(slideViewItems);
+    // console.log(slideViewItems);
     let COUNT = 0;
     let PRECOUNT = COUNT;
     let slideLen = slideViewItems.length -1; //슬라이드 이미지는 원래 4개이므로 length(5) -1 // slideViewItems.length : 인디케이터 아이템 li 개수 (5개)

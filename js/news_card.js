@@ -5,6 +5,12 @@
     const elItems = document.querySelector('.main_news_card');
     let elItemsUl;
 
+    const section_box6 = document.querySelector('#section_box6');
+
+    const newswrap = document.querySelector(".main_news_wrap_02");
+    const prevBtn = section_box6.querySelector(".main_view_left"); // 이전 버튼
+    const nextBtn = section_box6.querySelector(".main_view_right"); // 다음 버튼
+
     // 함수 -------------------------------------------------------------------
     // 리스트 기능
 
@@ -42,6 +48,61 @@
         makeLi.classList.add('card');
         makeLi.innerHTML = itemsCode(obj);
         elItemsUl.append(makeLi);
+
+
+
+        // image slide
+        const card = newswrap.querySelectorAll(".card");
+        let imageIndex = 0;
+        let position = 0;
+        const IMAGE_WIDTH = 510;
+    
+        const prevHandler = () => {
+            if ((0 < imageIndex) && (imageIndex <= 6)) {
+                nextBtn.removeAttribute('disabled');
+                position += IMAGE_WIDTH;
+                makeLi.style.transform = `translateX(${position}px)`;
+                imageIndex = imageIndex - 1;
+                if (imageIndex === 0) {
+                    prevBtn.setAttribute('disabled', 'true');
+                }
+            }
+        };
+
+        const nextHandler = () => {
+            if ((imageIndex < 6) && (imageIndex >= 0)) {
+                prevBtn.removeAttribute('disabled');
+                position -= IMAGE_WIDTH;
+                makeLi.style.transform = `translateX(${position}px)`;
+                imageIndex = imageIndex + 1;
+                if (imageIndex === 6) {
+                    nextBtn.setAttribute('disabled', 'true');
+                }
+            }
+        };
+
+        // const stopHandler = () => {
+        //     imageIndex = 0;
+        //     position = 0;
+        // }
+
+        function prev() {
+            prevHandler();
+        }
+
+        function next() {
+           nextHandler();
+        }
+
+        function init() {
+            prevBtn.setAttribute('disabled', 'true');
+            prevBtn.addEventListener('click', prev);
+            nextBtn.addEventListener('click', next);
+        }
+
+        init();
+
+        
     };
 
     // 기능 수행

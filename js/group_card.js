@@ -65,7 +65,6 @@
 
         Array.from(card).map(function (el, index) {
             let CardBg = `bg_0${index + 1}`;
-            console.log(CardBg);
             el.addEventListener("mouseenter", function () {
                 cardTitle[index].classList.add('none');
                 cardText[index].classList.add('none');
@@ -76,7 +75,6 @@
 
         Array.from(card).map(function (el, index) {
             let CardBg = `bg_0${index + 1}`;
-            console.log(CardBg);
             el.addEventListener("mouseleave", function () {
                 cardTitle[index].classList.remove('none');
                 cardText[index].classList.remove('none');

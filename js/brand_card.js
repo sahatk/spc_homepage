@@ -155,7 +155,7 @@
             prevBtn.setAttribute('disabled', 'true');
             prevBtn.addEventListener('click', prev);
             nextBtn.addEventListener('click', next);
-            console.log(obj.category.key);
+            // console.log(obj.category.key);
         }
 
         init();
