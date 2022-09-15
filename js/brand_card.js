@@ -76,6 +76,7 @@
                 nextBtn.removeAttribute('disabled');
                 position += IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex - 1;
                 if (imageIndex === -2) {
                     prevBtn.setAttribute('disabled', 'true');
@@ -88,6 +89,7 @@
                 prevBtn.removeAttribute('disabled');
                 position -= IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex + 1;
                 if (imageIndex === 2) {
                     nextBtn.setAttribute('disabled', 'true');
@@ -100,6 +102,7 @@
                 nextBtn.removeAttribute('disabled');
                 position += IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex - 1;
                 if (imageIndex === -4) {
                     prevBtn.setAttribute('disabled', 'true');
@@ -112,6 +115,7 @@
                 prevBtn.removeAttribute('disabled');
                 position -= IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex + 1;
                 if (imageIndex === 4) {
                     nextBtn.setAttribute('disabled', 'true');

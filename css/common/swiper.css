@@ -45,7 +45,7 @@
     flex-wrap: wrap;
 }
 .swiper-container-free-mode > .swiper-wrapper {
-    transition-timing-function: ease-out;
+    transition: 0.5s ease-out;
     margin: 0 auto;
 }
 .swiper-slide {
@@ -137,7 +137,7 @@
 .swiper-pagination {
     position: absolute;
     text-align: center;
-    transition: 300ms opacity;
+    transition: 0.5s opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
 }

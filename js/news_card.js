@@ -62,6 +62,7 @@
                 nextBtn.removeAttribute('disabled');
                 position += IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex - 1;
                 if (imageIndex === 0) {
                     prevBtn.setAttribute('disabled', 'true');
@@ -74,6 +75,7 @@
                 prevBtn.removeAttribute('disabled');
                 position -= IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
+                makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex + 1;
                 if (imageIndex === 6) {
                     nextBtn.setAttribute('disabled', 'true');
