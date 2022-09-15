@@ -8,8 +8,8 @@
     const section_box6 = document.querySelector('#section_box6');
 
     const newswrap = document.querySelector(".main_news_wrap_02");
-    const prevBtn = section_box6.querySelector(".main_view_left"); // 이전 버튼
-    const nextBtn = section_box6.querySelector(".main_view_right"); // 다음 버튼
+    const prevBtn = section_box6.querySelector(".main_view_left"); // 이전 버튼 부모 요소
+    const nextBtn = section_box6.querySelector(".main_view_right"); // 다음 버튼 부모 요소
 
     // 함수 -------------------------------------------------------------------
     // 리스트 기능
@@ -60,12 +60,16 @@
         const prevHandler = () => {
             if ((0 < imageIndex) && (imageIndex <= 6)) {
                 nextBtn.removeAttribute('disabled');
+                nextBtn.style.opacity='1';
+                nextBtn.style.pointerEvents='auto';
                 position += IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
                 makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex - 1;
                 if (imageIndex === 0) {
                     prevBtn.setAttribute('disabled', 'true');
+                    prevBtn.style.opacity='0.2';
+                    prevBtn.style.pointerEvents='none';
                 }
             }
         };
@@ -73,12 +77,16 @@
         const nextHandler = () => {
             if ((imageIndex < 6) && (imageIndex >= 0)) {
                 prevBtn.removeAttribute('disabled');
+                prevBtn.style.opacity='1';
+                prevBtn.style.pointerEvents='auto';
                 position -= IMAGE_WIDTH;
                 makeLi.style.transform = `translateX(${position}px)`;
                 makeLi.style.transition = `0.5s ease-out`;
                 imageIndex = imageIndex + 1;
                 if (imageIndex === 6) {
                     nextBtn.setAttribute('disabled', 'true');
+                    nextBtn.style.opacity='0.2';
+                    nextBtn.style.pointerEvents='none';
                 }
             }
         };

@@ -1399,6 +1399,7 @@
 .main_news_view .main_view_left {
     float: left;
     margin: 1rem;
+    opacity: 0.2;
 }
 
 .main_news_view .main_view_right {
