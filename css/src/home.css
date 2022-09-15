@@ -1805,17 +1805,6 @@
 
 }
 
-/*황토색 YOUTUBE_bg 박스*/
-#section_box8 .youtube_box_bg {
-    position: absolute;
-    width: 750px;
-    height: 900px;
-    background-color: #fff0c3;
-    border-bottom-right-radius: 70px;
-    z-index: -1;
-
-}
-
 #section_box8 .container {
     width: 1800px;
     /* width: 100%; */
@@ -1826,6 +1815,17 @@
     overflow: hidden;
     background-color: transparent;
     /* background-color: #8c94da; */
+}
+
+/*황토색 YOUTUBE_bg 박스*/
+#section_box8 .youtube_box_bg {
+    position: absolute;
+    width: 750px;
+    height: 900px;
+    background-color: #fff0c3;
+    border-bottom-right-radius: 70px;
+    z-index: -1;
+
 }
 
 .main_youtube_wrap_01 {
