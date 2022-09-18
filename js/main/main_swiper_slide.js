@@ -1,6 +1,6 @@
 // 유튜브 슬라이드
 const youtubeSwiper = new Swiper('.swiper-container-youtube', {
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     speed:500,
     loop: true,
     autoplay: {
