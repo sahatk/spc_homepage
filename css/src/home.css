@@ -283,11 +283,11 @@
     float: left;
     width: 40px;
     height: 40px;
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=white') no-repeat center center / contain;
 }
 
 #section_box1 .prev_button_wrap:hover .prev_button {
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
     cursor: pointer;
 }
 
@@ -327,11 +327,11 @@
     float: right;
     width: 40px;
     height: 40px;
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white&width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=white') no-repeat center center / contain;
 }
 
 #section_box1 .next_button_wrap:hover .next_button {
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
     cursor: pointer;
 }
 
@@ -731,24 +731,19 @@
     transform: translate(0%, -50%);
     width: 50px;
     height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=gray') no-repeat center center / contain;
     z-index: 100;
 }
 
 #section_box3 .prev_button:hover:disabled {
-
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
-
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=gray') no-repeat center center / contain;
 }
 
 #section_box3 .prev_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
     z-index: 100;
     cursor: pointer;
-
 }
-
-
 
 /*SPC BRAND prev_button*/
 
@@ -761,18 +756,16 @@
     transform: translate(0%, -50%);
     width: 50px;
     height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=gray') no-repeat center center / contain;
     z-index: 100;
 }
 
 #section_box3 .next_button:hover:disabled {
-
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
-
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=gray') no-repeat center center / contain;
 }
 
 #section_box3 .next_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
     z-index: 100;
     cursor: pointer;
 
@@ -1313,7 +1306,7 @@
 
 #section_box6 {
     width: 100%;
-    height: 900px;
+    height: 850px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
@@ -2309,11 +2302,11 @@
 .main_footer_wrap_01 .prev_button {
     width: 50px;
     height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?color=gray') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%23ccc') no-repeat center center / contain;
 }
 
 .main_footer_wrap_01 .prev_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-left-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%2323afe3') no-repeat center center / contain;
     cursor: pointer;
 }
 
@@ -2321,11 +2314,11 @@
 .main_footer_wrap_01 .next_button {
     width: 50px;
     height: 50px;
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=gray') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%23ccc') no-repeat center center / contain;
 }
 
 .main_footer_wrap_01 .next_button:hover {
-    background: url('https://api.iconify.design/bi/arrow-right-short.svg?width=16&height=16') no-repeat center center / contain;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%2323afe3') no-repeat center center / contain;
     cursor: pointer;
 }
 

@@ -158,22 +158,19 @@
 
 .slide_buttons button {
   width: 15px; height: 15px;
+  background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
 }
 
 .slide_buttons .prev {
   float: left;
-  background-image: url(/img/spc_startup_img/icon_slide_prev_b.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%; 
+  width: 30px; height: 30px;
+  
 }
 
 .slide_buttons .next {
   float: right;
-  background-image: url(/img/spc_startup_img/icon_slide_next_b.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%; 
+  width: 30px; height: 30px;
+  background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
 }
 
 .view_area {
