@@ -296,43 +296,84 @@
 /*section_box1 (SPC YOUTUBE Channel 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #section_box1 {
-    display: flex; align-items: center; 
     width: 100%;
-    height: 900px;
+    height: 700px;
+    margin-top: 100px;
     /* background-color: #fda; */
-} /*SPC YOUTUBE Channel 박스 전체 영역*/
+} /*SPC YOUTUBE Channel 전체 영역*/
 
 #section_box1 .container{
     width: 1600px;
-    height: 700px;
+    height: 600px;
     margin: 0 auto;
     /* background-color: #fff; */
-} /*SPC YOUTUBE Channel 박스 위치 영역*/
+} /*SPC YOUTUBE Channel 위치 영역*/
 
 #section_box1 .container .youtube_title{
     width: 100%;
     height: 100px;
     display: flex; align-items: center; justify-content: center;
     text-align: center;
-    margin-bottom: 90px;
-} /*SPC YOUTUBE Channel 박스 타이틀*/
+} /*SPC YOUTUBE Channel 타이틀*/
+
+#section_box1 .container .youtube_box{
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+} /*SPC YOUTUBE Channel -> YOUTUBE 박스*/
 
 #section_box1 .container .youtube_card_box{
-    width: 100%;
-    height: 460px;
-    /* background-color: #fdf; */
-} /*SPC YOUTUBE Channel 박스 카드 전체 영역*/
+    width: 1440px;
+    height: 450px;
+    /* overflow: hidden; */
+} /*SPC YOUTUBE Channel -> YOUTUBE 박스 -> YOUTUBE 카드 박스*/
+
+#section_box1 .container .youtube_arrow_box{
+    position: relative; left: 0; top: 50%;
+    transform: translateY(-50%);
+    display: flex; justify-content: space-between;
+    width: 1600px; height: 50px;
+} /*YOUTUBE 박스 -> 이전, 다음 버튼 영역 */
+
+#section_box1 .youtube_arrow_box .prev_button{
+    position: absolute; left: 1%; top: 50%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*YOUTUBE 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 */
+
+#section_box1 .youtube_arrow_box .prev_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*YOUTUBE 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 : 오버시*/
+
+#section_box1 .youtube_arrow_box .next_button{
+    position: absolute; right: 1%; top: 50%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*YOUTUBE 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 */
+
+#section_box1 .youtube_arrow_box .next_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*YOUTUBE 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 : 오버시*/
 
 #section_box1 .container .youtube_card_ul{
+    display: flex; justify-content: space-between; align-items: center;
     width: 100%;
-    height: 460px;
-    display: flex; gap: 50px;
+    height: 450px;
     /* background-color: #3eb146; */
 } /*SPC YOUTUBE Channel 박스 카드 위치 영역*/
 
 #section_box1 .container .youtube_card_li{
-    width: 500px;
-    height: 460px;
+    width: 450px;
+    height: 370px;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 13px #ccc;
@@ -349,46 +390,70 @@
 } /*SPC YOUTUBE Channel 박스 카드 -> 오버시 유튜브 카드 텍스트 변화*/
 
 #section_box1 .container .youtube_card_image {
-    width: 500px;
-    height: 300px;
+    width: 450px;
+    height: 250px;
     border-radius: 30px 30px 0 0;
     background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
 } /*SPC YOUTUBE Channel 박스 카드 -> 오버시 유튜브 카드 이미지 */
 
 /*/////////////////////// SPC YOUTUBE Channel 박스 카드 이미지 모음 ////////////////////////*/
 #section_box1 .container .youtube_card_image_01 {
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_01.jpg);
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_01.jpg");
 } /*SPC YOUTUBE Channel 박스 카드 이미지 01*/
 
 #section_box1 .container .youtube_card_image_02 {
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_02.jpg);
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_02.jpg");
 } /*SPC YOUTUBE Channel 박스 카드 이미지 02*/
 
 #section_box1 .container .youtube_card_image_03 {
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_03.jpg);
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_03.jpg");
 } /*SPC YOUTUBE Channel 박스 카드 이미지 03*/
+
+#section_box1 .container .youtube_card_image_04 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_04.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 04*/
+
+#section_box1 .container .youtube_card_image_05 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_05.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 05*/
+
+#section_box1 .container .youtube_card_image_06 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_06.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 06*/
+
+#section_box1 .container .youtube_card_image_07 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_07.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 07*/
+
+#section_box1 .container .youtube_card_image_08 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_08.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 08*/
+
+#section_box1 .container .youtube_card_image_09 {
+    background-image: url("../../img/spc_youtube_img/youtube/youtube_card_image_09.jpg");
+} /*SPC YOUTUBE Channel 박스 카드 이미지 09*/
+
 /*/////////////////////// SPC YOUTUBE Channel 박스 카드 이미지 모음 ////////////////////////*/
 
 
 #section_box1 .youtube_card_text{
     position: relative;
-    width: 100%; height: 160px;
+    width: 100%; height: 120px;
     box-sizing: border-box;
     padding: 20px;
 } /*SPC YOUTUBE Channel 박스 카드 제목 영역 */
 
 #section_box1 .youtube_card_text p{
-    padding : 15px 0 15px 0;
+    padding : 0 0 15px 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
 } /*SPC YOUTUBE Channel 박스 카드 제목 */
 
 
 #section_box1 .youtube_card_text .date_text{
     position: absolute;
-    bottom:30px; left: 20px;
+    bottom:30px; left: 22px;
     color: #7d7d7d;
 } /*SPC YOUTUBE Channel 박스 카드 날짜 */
 
@@ -404,7 +469,7 @@
 /*section_box2 (SPC YOUTUBE 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #section_box2 {
-    width: 100%; height: 2800px; display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 2700px; display: flex; align-items: center; justify-content: center;
 } 
 /* SPC YOUTUBE 전체 영역*/
 
@@ -448,27 +513,27 @@
 /* //////////////////////////// LOGO 이미지 경로 모음 ////////////////////////////*/
 
 #section_box2 .container .youtube_logo_image_01{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_01.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_01.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 01*/
 
 #section_box2 .container .youtube_logo_image_02{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_02.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_02.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 02*/
 
 #section_box2 .container .youtube_logo_image_03{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_03.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_03.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 03*/
 
 #section_box2 .container .youtube_logo_image_04{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_04.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_04.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 04*/
 
 #section_box2 .container .youtube_logo_image_05{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_05.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_05.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 05*/
 
 #section_box2 .container .youtube_logo_image_06{
-    background-image: url(../../img/spc_youtube_img/youtube_logo_06.png);
+    background-image: url("../../img/spc_youtube_img/logo/youtube_logo_06.png");
 } /* SPC YOUTUBE 박스 -> logo 박스 -> logo 이미지 06*/
 
 /* //////////////////////////// LOGO 이미지 경로 모음 ////////////////////////////*/
@@ -564,80 +629,105 @@
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지 영역
 
 
-/* /////////////////////////////// 유튜브 카드 이미지 경로 모음 ///////////////////////////////*/
-#section_box2 .container .youtube_card_image_01{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_01.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_01*/
+/* /////////////////////////////// 각각 브랜드 유튜브 카드 이미지 경로 모음 ///////////////////////////////*/
 
-#section_box2 .container .youtube_card_image_02{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_02.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_02 */
+/* ////////// SPC MAGAZINE ///////// */
+#section_box2 .container .spc_card_image_01{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_01.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_01*/
 
-#section_box2 .container .youtube_card_image_03{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_03.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_03*/
+#section_box2 .container .spc_card_image_02{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_02.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_02*/
 
-#section_box2 .container .youtube_card_image_04{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_04.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_04*/
+#section_box2 .container .spc_card_image_03{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_03.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_03*/
+/* ////////// SPC MAGAZINE ///////// */
 
-#section_box2 .container .youtube_card_image_05{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_05.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_05 */
 
-#section_box2 .container .youtube_card_image_06{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_06.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_06*/
 
-#section_box2 .container .youtube_card_image_07{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_07.webp);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_07*/
+/* ////////// STUDIO SAMLIP ///////// */
+#section_box2 .container .samlip_card_image_01{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_01.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_01*/
 
-#section_box2 .container .youtube_card_image_08{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_08.webp);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_08 */
+#section_box2 .container .samlip_card_image_02{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_02.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_02*/
 
-#section_box2 .container .youtube_card_image_09{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_09.webp);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_09*/
+#section_box2 .container .samlip_card_image_03{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_03.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_03*/
+/* ////////// STUDIO SAMLIP ///////// */
 
-#section_box2 .container .youtube_card_image_10{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_10.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_10*/
 
-#section_box2 .container .youtube_card_image_11{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_11.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_11 */
 
-#section_box2 .container .youtube_card_image_12{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_12.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_12*/
+/* ////////// PARIS BAGUETTE ///////// */
+#section_box2 .container .paris_card_image_01{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_01.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_01*/
 
-#section_box2 .container .youtube_card_image_13{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_13.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_13*/
+#section_box2 .container .paris_card_image_02{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_02.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_02*/
 
-#section_box2 .container .youtube_card_image_14{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_14.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_14 */
+#section_box2 .container .paris_card_image_03{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_03.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_03*/
+/* ////////// PARIS BAGUETTE ///////// */
 
-#section_box2 .container .youtube_card_image_15{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_15.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_15*/
 
-#section_box2 .container .youtube_card_image_16{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_16.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_16*/
 
-#section_box2 .container .youtube_card_image_17{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_17.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_17 */
+/* ////////// BASKIN ROBBINS ///////// */
+#section_box2 .container .baskin_card_image_01{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_01.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_01*/
 
-#section_box2 .container .youtube_card_image_18{
-    background-image: url(../../img/spc_youtube_img/youtube_card_image_18.jpg);
-} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 유튜브 카드 이미지_18*/
+#section_box2 .container .baskin_card_image_02{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_02.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_02*/
 
-/* /////////////////////////////// 유튜브 카드 이미지 경로 모음 ///////////////////////////////*/
+#section_box2 .container .baskin_card_image_03{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_03.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li ->BASKIN ROBBINS 카드 이미지_03*/
+/* ////////// BASKIN ROBBINS ///////// */
+
+
+
+/* ////////// DUNKIN ///////// */
+#section_box2 .container .dunkin_card_image_01{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_01.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_01*/
+
+#section_box2 .container .dunkin_card_image_02{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_02.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_02*/
+
+#section_box2 .container .dunkin_card_image_03{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_03.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_03*/
+/* ////////// DUNKIN ///////// */
+
+
+
+/* ////////// SHAKESHACK KOREA ///////// */
+#section_box2 .container .shake_card_image_01{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_01.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_01*/
+
+#section_box2 .container .shake_card_image_02{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_02.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_02*/
+
+#section_box2 .container .shake_card_image_03{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_03.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_03*/
+/* ////////// SHAKESHACK KOREA ///////// */
+
+/* /////////////////////////////// 각각 브랜드 유튜브 카드 이미지 경로 모음 ///////////////////////////////*/
+
+
 #section_box2 .container .youtube_card_text{
     position: relative;
     width: 100%; height: 110px;

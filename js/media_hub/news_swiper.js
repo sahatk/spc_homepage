@@ -1,6 +1,6 @@
 const newsSwiper = new Swiper('.swiper-container-news', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 47.5,
     slidesPerGroup: 1,
     speed:500,
     loop: true,
