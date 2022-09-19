@@ -324,7 +324,7 @@
     background-position: 50% 50%;
     background-image: url(../../img/spc_sns_img/instagram/insta-bg.png);
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 } /*SPC SNS 박스 -> 인스타그램 타이틀*/
 
 #section_box1 .container .insta_title > a{
@@ -355,21 +355,62 @@
     margin-top:2px;
 } /*SPC SNS 박스 -> 인스타그램 타이틀 -> 인스타그램 로고 아이콘*/
 
-#section_box1 .container .insta_card_box{
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
+#section_box1 .container .insta_box{
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    width: 1600px;
+    height: 350px;
     margin-bottom: 100px;
-} /*SPC SNS 박스 -> 인스타그램 카드 박스*/
+} /*SPC SNS 박스 -> 인스타그램 박스*/
+
+#section_box1 .container .insta_card_box{
+    width: 1440px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 인스타그램 카드 박스*/
+
+#section_box1 .container .insta_arrow_box{
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+    display: flex; justify-content: space-between;
+    width: 1600px; height: 50px;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 이전, 다음 버튼 영역 */
+
+#section_box1 .insta_card_box .prev_button{
+    position: absolute; left: 1%; top: 55%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 */
+
+#section_box1 .insta_card_box .prev_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 : 오버시*/
+
+#section_box1 .insta_card_box .next_button{
+    position: absolute; right: 1%; top: 55%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 */
+
+#section_box1 .insta_card_box .next_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*SPC SNS 박스 -> 인스타그램 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 : 오버시*/
 
 #section_box1 .container .insta_card_ul{
-    display: flex; gap: 25px;
+    display: flex; justify-content: space-between;
     width: 100%;
-    height: 300px;
+    height: 250px;
 } /*SPC SNS 박스 -> 인스타그램 카드 박스 ul*/
 
 #section_box1 .container .insta_card_li{
-    width: 300px; height: 300px;
+    width: 250px; height: 250px;
     border-radius: 20px;
     box-shadow: 0 0 13px #ccc;
 } /*SPC SNS 박스 -> 인스타그램 카드 박스 li*/
@@ -378,52 +419,63 @@
     opacity: 0.7;
 } /*SPC SNS 박스 -> 인스타그램 카드 박스 li:hover*/
 
-
-/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 모음 ////////////// */
-#section_box1 .container .insta_card_image_01{
-    width: 300px; height: 300px;
+#section_box1 .container .insta_card_image{
+    width: 250px; height: 250px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 20px;
-    background-image: url("../../img/spc_sns_img/instagram/sns_image_01.jpg");
+} /*SPC SNS 박스 -> 인스타그램 카드 이미지
+
+/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 경로 모음 ////////////// */
+#section_box1 .container .insta_card_image_01{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_01.jpg");
 }
 
 #section_box1 .container .insta_card_image_02{
-    width: 300px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url("../../img/spc_sns_img/instagram/sns_image_02.jpg");
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_02.jpg");
 }
 
 #section_box1 .container .insta_card_image_03{
-    width: 300px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url("../../img/spc_sns_img/instagram/sns_image_03.jpg");
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_03.jpg");
 }
 
 #section_box1 .container .insta_card_image_04{
-    width: 300px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url("../../img/spc_sns_img/instagram/sns_image_04.jpg");
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_04.jpg");
 }
 
 #section_box1 .container .insta_card_image_05{
-    width: 300px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url("../../img/spc_sns_img/instagram/sns_image_05.jpg");
-}/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 모음 ////////////// */
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_05.jpg");
+}
+
+#section_box1 .container .insta_card_image_06{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_06.jpg");
+}
+
+#section_box1 .container .insta_card_image_07{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_07.jpg");
+}
+
+#section_box1 .container .insta_card_image_08{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_08.jpg");
+}
+
+#section_box1 .container .insta_card_image_09{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_09.jpg");
+}
+
+#section_box1 .container .insta_card_image_10{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_10.jpg");
+}
+
+#section_box1 .container .insta_card_image_11{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_11.jpg");
+}
+
+#section_box1 .container .insta_card_image_12{
+    background-image: url("../../img/spc_sns_img/instagram/insta_card_image_12.jpg");
+}
+/* //////////////SPC SNS 박스 -> 인스타그램 카드 이미지 경로 모음 ////////////// */
 
 #section_box1 .container .facebook_title{
     display: flex; align-items: center; justify-content: center;
@@ -432,7 +484,7 @@
     box-shadow: 0 0 13px #ccc;
     background-color: #1877f2;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 } /*SPC SNS 박스 -> 페이스북 타이틀*/
 
 #section_box1 .container .facebook_title > a{
@@ -463,21 +515,61 @@
     margin-bottom: 10px;
 } /*SPC SNS 박스 -> 페이스북 타이틀 -> 페이스북 로고 아이콘*/
 
+#section_box1 .container .facebook_box{
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    width: 1600px;
+    height: 400px;
+} /*SPC SNS 박스 -> 페이스북 박스*/
+
 #section_box1 .container .facebook_card_box{
-    width: 100%;
+    width: 1440px;
     height: 300px;
     margin: 0 auto;
-    margin-bottom: 100px;
-} /*SPC SNS 박스 -> 페이스북 카드 박스*/
+    overflow: hidden;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 페이스북 카드 박스*/
+
+#section_box1 .container .facebook_arrow_box{
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+    display: flex; justify-content: space-between;
+    width: 1600px; height: 50px;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 이전, 다음 버튼 영역 */
+
+#section_box1 .facebook_card_box .prev_button{
+    position: absolute; left: 1%; top: 55%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 */
+
+#section_box1 .facebook_card_box .prev_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 : 오버시*/
+
+#section_box1 .facebook_card_box .next_button{
+    position: absolute; right: 1%; top: 55%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
+    z-index: 1;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 */
+
+#section_box1 .facebook_card_box .next_button:hover{
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%2323afe3') no-repeat center center / contain;
+    cursor: pointer;
+} /*SPC SNS 박스 -> 페이스북 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 : 오버시*/
 
 #section_box1 .container .facebook_card_ul{
-    display: flex; gap: 50px;
+    display: flex; justify-content: space-between;
     width: 100%;
     height: 300px;
 } /*SPC SNS 박스 -> 페이스북 카드 박스 ul*/
 
 #section_box1 .container .facebook_card_li{
-    width: 500px; height: 300px;
+    width: 450px; height: 300px;
     border-radius: 20px;
     box-shadow: 0 0 13px #ccc;
 } /*SPC SNS 박스 -> 페이스북 카드 박스 li*/
@@ -486,33 +578,63 @@
     opacity: 0.7;
 } /*SPC SNS 박스 -> 페이스북 카드 박스 li:hover*/
 
-/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 모음 ////////////// */
-#section_box1 .container .facebook_card_image_01{
-    width: 500px; height: 300px;
+#section_box1 .container .facebook_card_image{
+    width: 450px; height: 300px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 20px;
-    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_01.jpg);
+} /*SPC SNS 박스 -> 페이스북 카드 이미지 */
+
+/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 경로 모음 ////////////// */
+#section_box1 .container .facebook_card_image_01{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_01.jpg");
 }
 
 #section_box1 .container .facebook_card_image_02{
-    width: 500px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_02.jpg);
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_02.jpg");
 }
 
 #section_box1 .container .facebook_card_image_03{
-    width: 500px; height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url(../../img/spc_sns_img/facebook/facebook_card_image_03.jpg);
-}/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 모음 ////////////// */
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_03.jpg");
+}
+
+#section_box1 .container .facebook_card_image_04{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_04.jpg");
+}
+
+#section_box1 .container .facebook_card_image_05{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_05.jpg");
+}
+
+#section_box1 .container .facebook_card_image_06{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_06.jpg");
+}
+
+#section_box1 .container .facebook_card_image_07{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_07.jpg");
+}
+
+#section_box1 .container .facebook_card_image_08{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_08.jpg");
+}
+
+#section_box1 .container .facebook_card_image_09{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_09.jpg");
+}
+
+#section_box1 .container .facebook_card_image_10{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_10.jpg");
+}
+
+#section_box1 .container .facebook_card_image_11{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_11.jpg");
+}
+
+#section_box1 .container .facebook_card_image_12{
+    background-image: url("../../img/spc_sns_img/facebook/facebook_card_image_12.jpg");
+}/* //////////////SPC SNS 박스 -> 페이스북 카드 이미지 경로 모음 ////////////// */
+
 
 /*section_box1 (SPC그룹 공식 SNS채널)///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 

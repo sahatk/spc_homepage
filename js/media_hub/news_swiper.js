@@ -1,4 +1,4 @@
-const snsSwiper = new Swiper('.swiper-container-news', {
+const newsSwiper = new Swiper('.swiper-container-news', {
     slidesPerView: 'auto',
     spaceBetween: 30,
     slidesPerGroup: 1,
