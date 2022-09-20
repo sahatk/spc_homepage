@@ -469,7 +469,7 @@
 /*section_box2 (SPC YOUTUBE 박스)////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #section_box2 {
-    width: 100%; height: 2700px; display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 2900px; display: flex; justify-content: center;
 } 
 /* SPC YOUTUBE 전체 영역*/
 
@@ -483,13 +483,13 @@
 } /* SPC YOUTUBE 전체 박스 */
 
 #section_box2 .container .youtube_box {
-    display: flex;
-    width: 100%; height: 360px;
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 400px;
     margin-bottom: 60px;
 } /* SPC YOUTUBE 하나의 박스 */
 
 #section_box2 .container .youtube_logo_box{
-    width: 300px; height: 360px;
+    width: 300px; height: 400px; margin-top: 20px;
 } /* SPC YOUTUBE 박스 -> logo 박스 */
 
 #section_box2 .container .youtube_logo{
@@ -594,14 +594,23 @@
     background: url('https://api.iconify.design/bi/arrow-right-short.svg?color=white') no-repeat center center / contain;
 } /* SPC YOUTUBE 박스 -> logo 박스 -> 버튼 박스 -> 다음 버튼 -> 오버시 -> next 화살표 이미지 */
 
+#section_box2 .container .youtube_outline_box{
+    display: flex; align-items: center; justify-content: center;
+    width: 1300px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+} /* SPC YOUTUBE 박스 -> outline -> card 박스 */
+
 #section_box2 .container .youtube_card_box{
-    width: 1300px; height: 360px;
+    display: flex; align-items: center;
+    width: 1260px; height: 400px;
 } /* SPC YOUTUBE 박스 -> card 박스 */
 
 #section_box2 .container .youtube_card_ul{
-    display: flex; gap: 30px;
-    width: 1300px; height: 360px;
-    padding : 0 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; height: 360px;
+    box-sizing: border-box;
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_ul*/
 
 #section_box2 .container .youtube_card_li{
@@ -621,7 +630,7 @@
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> 오버시 -> 텍스트 색상 변화*/
 
 #section_box2 .container .youtube_card_image{
-    width: 400px; height: 250px;
+    width: inherit; height: 250px;
     border-radius: 30px 30px 0 0;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -643,6 +652,30 @@
 #section_box2 .container .spc_card_image_03{
     background-image: url("../../img/spc_youtube_img/spc/spc_card_image_03.jpg");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_03*/
+
+#section_box2 .container .spc_card_image_04{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_04.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_04*/
+
+#section_box2 .container .spc_card_image_05{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_05.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_05*/
+
+#section_box2 .container .spc_card_image_06{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_06.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_06*/
+
+#section_box2 .container .spc_card_image_07{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_07.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_07*/
+
+#section_box2 .container .spc_card_image_08{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_08.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_08*/
+
+#section_box2 .container .spc_card_image_09{
+    background-image: url("../../img/spc_youtube_img/spc/spc_card_image_09.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SPC MAGAZINE 카드 이미지_09*/
 /* ////////// SPC MAGAZINE ///////// */
 
 
@@ -659,6 +692,30 @@
 #section_box2 .container .samlip_card_image_03{
     background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_03.jpg");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_03*/
+
+#section_box2 .container .samlip_card_image_04{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_04.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_04*/
+
+#section_box2 .container .samlip_card_image_05{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_05.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_05*/
+
+#section_box2 .container .samlip_card_image_06{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_06.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_06*/
+
+#section_box2 .container .samlip_card_image_07{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_07.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_07*/
+
+#section_box2 .container .samlip_card_image_08{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_08.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_08*/
+
+#section_box2 .container .samlip_card_image_09{
+    background-image: url("../../img/spc_youtube_img/samlip/samlip_card_image_09.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> STUDIO SAMLIP 카드 이미지_09*/
 /* ////////// STUDIO SAMLIP ///////// */
 
 
@@ -675,6 +732,30 @@
 #section_box2 .container .paris_card_image_03{
     background-image: url("../../img/spc_youtube_img/paris/paris_card_image_03.webp");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_03*/
+
+#section_box2 .container .paris_card_image_04{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_04.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_04*/
+
+#section_box2 .container .paris_card_image_05{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_05.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_05*/
+
+#section_box2 .container .paris_card_image_06{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_06.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_06*/
+
+#section_box2 .container .paris_card_image_07{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_07.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_07*/
+
+#section_box2 .container .paris_card_image_08{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_08.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_08*/
+
+#section_box2 .container .paris_card_image_09{
+    background-image: url("../../img/spc_youtube_img/paris/paris_card_image_09.webp");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> PARIS BAGUETTE 카드 이미지_09*/
 /* ////////// PARIS BAGUETTE ///////// */
 
 
@@ -691,6 +772,30 @@
 #section_box2 .container .baskin_card_image_03{
     background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_03.jpg");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li ->BASKIN ROBBINS 카드 이미지_03*/
+
+#section_box2 .container .baskin_card_image_04{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_04.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_04*/
+
+#section_box2 .container .baskin_card_image_05{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_05.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_05*/
+
+#section_box2 .container .baskin_card_image_06{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_06.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li ->BASKIN ROBBINS 카드 이미지_06*/
+
+#section_box2 .container .baskin_card_image_07{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_07.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_07*/
+
+#section_box2 .container .baskin_card_image_08{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_08.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> BASKIN ROBBINS 카드 이미지_08*/
+
+#section_box2 .container .baskin_card_image_09{
+    background-image: url("../../img/spc_youtube_img/baskin/baskin_card_image_09.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li ->BASKIN ROBBINS 카드 이미지_09*/
 /* ////////// BASKIN ROBBINS ///////// */
 
 
@@ -707,6 +812,30 @@
 #section_box2 .container .dunkin_card_image_03{
     background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_03.jpg");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_03*/
+
+#section_box2 .container .dunkin_card_image_04{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_04.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_04*/
+
+#section_box2 .container .dunkin_card_image_05{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_05.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_05*/
+
+#section_box2 .container .dunkin_card_image_06{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_06.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_06*/
+
+#section_box2 .container .dunkin_card_image_07{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_07.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_07*/
+
+#section_box2 .container .dunkin_card_image_08{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_08.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_08*/
+
+#section_box2 .container .dunkin_card_image_09{
+    background-image: url("../../img/spc_youtube_img/dunkin/dunkin_card_image_09.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> DUNKIN 카드 이미지_09*/
 /* ////////// DUNKIN ///////// */
 
 
@@ -723,6 +852,30 @@
 #section_box2 .container .shake_card_image_03{
     background-image: url("../../img/spc_youtube_img/shake/shake_card_image_03.jpg");
 } /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_03*/
+
+#section_box2 .container .shake_card_image_04{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_04.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_04*/
+
+#section_box2 .container .shake_card_image_05{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_05.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_05*/
+
+#section_box2 .container .shake_card_image_06{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_06.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_06*/
+
+#section_box2 .container .shake_card_image_07{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_07.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_07*/
+
+#section_box2 .container .shake_card_image_08{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_08.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_08*/
+
+#section_box2 .container .shake_card_image_09{
+    background-image: url("../../img/spc_youtube_img/shake/shake_card_image_09.jpg");
+} /* SPC YOUTUBE 박스 -> card 박스 -> youtube_card_li -> SHAKESHACK 카드 이미지_09*/
 /* ////////// SHAKESHACK KOREA ///////// */
 
 /* /////////////////////////////// 각각 브랜드 유튜브 카드 이미지 경로 모음 ///////////////////////////////*/
@@ -730,21 +883,20 @@
 
 #section_box2 .container .youtube_card_text{
     position: relative;
-    width: 100%; height: 110px;
+    width: 400px; height: 110px;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 20px;
 } /*SPC YOUTUBE 박스 -> card 박스 -> 카드 제목 영역 */
 
 #section_box2 .youtube_card_text p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
 } /*SPC YOUTUBE 박스 -> card 박스 -> 카드 제목 */
 
 #section_box2 .youtube_card_text .date_text{
     position: absolute;
-    bottom:20px; left: 25px;
+    bottom:20px; left: 23px;
     color: #7d7d7d;
 } /*SPC YOUTUBE 박스 -> card 박스 -> 카드 날짜 */
 
