@@ -214,10 +214,10 @@ font-family: 'Gmarket Sans';
 .main_family_site p{
   width: 130px;
   height: 60px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 64px;
 }
 
 .main_family_site .top_arrow{
