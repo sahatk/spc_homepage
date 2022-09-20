@@ -28,6 +28,29 @@
   width:100%; max-width:1100px; height: auto;
   margin:auto; background-color: #ccc;}
 
+/* 폰트 적용 */
+
+@font-face {
+
+  src : url("../../fonts/NotoSerifKR-SemiBold.otf");
+
+  font-family: 'sans-serif';
+
+}
+
+@font-face {
+
+  src : url("../../fonts/GmarketSansTTFBold.ttf");
+
+  font-family: 'Gmarket Sans';
+
+}
+
+body {
+font-family: 'Gmarket Sans';
+}
+
+/* 폰트 적용 */
 
 /*main_view_all 버튼*/
 .main_view_all{
