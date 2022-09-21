@@ -32,7 +32,15 @@
 
 @font-face {
 
-  src : url("../../fonts/NotoSerifKR-SemiBold.otf");
+  src : url("../../fonts/Pretendard-Black.ttf");
+
+  font-family: 'Pretendard';
+
+}
+
+@font-face {
+
+  src : url("../../fonts/NotoSerifKR-Bold.otf");
 
   font-family: 'sans-serif';
 
@@ -47,7 +55,7 @@
 }
 
 body {
-font-family: 'Gmarket Sans';
+font-family: 'Pretendard', 'Gmarket Sans';
 }
 
 /* 폰트 적용 */
