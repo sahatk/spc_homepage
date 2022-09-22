@@ -209,12 +209,14 @@ font-family: 'Pretendard', 'Gmarket Sans', 'sans-serif';
 
 /*main_footer_FAMILY_SITE 버튼*/
 .main_family_site{
+  position: relative;
   display: flex; justify-content: space-between; align-items: center;
-  width: 200px;
+  width: 250px;
   height: 60px;
   border-radius: 40px;
   background-color: #fff;
   box-shadow: 0px 0px 13px #ccc;
+  box-sizing: border-box;
   padding-left: 30px;
   
 }
@@ -228,15 +230,81 @@ font-family: 'Pretendard', 'Gmarket Sans', 'sans-serif';
   line-height: 64px;
 }
 
-.main_family_site .top_arrow{
+.main_family_site .scroll_option{
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transform: translate(0%, 0%);
+  width: 250px;
+  height: 150px;
+  background-color: #ffffff;
+  /* box-shadow: 0 0 13px #ccc; */
+  border-radius: 30px 30px 0 0;
+  z-index: 100;
+  cursor: pointer;
+  overflow-y: scroll;
+} /* family_site 버튼 -> option*/
+
+.main_family_site .scroll_option_block{
+  display: block;
+} /* family_site 버튼 -> option -> display:block */
+
+.main_family_site .scroll_option::-webkit-scrollbar {
+  width: 5px;
+} /* family_site 버튼 -> option -> 스크롤바 전체 영역*/
+
+.main_family_site .scroll_option::-webkit-scrollbar-thumb {
+  background-color: #23afe3;
+  border-radius: 10px;
   width: 10px;
-  height: 10px;
-  padding-left: 60px;
-  background-image: url(../../img/main_img/footer_box/footer_dropdown.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
+} /* family_site 버튼 -> option -> 스크롤바 위치 영역*/
+
+.main_family_site .scroll_option::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+} /* family_site 버튼 -> option -> 스크롤바 트랙*/
+
+
+.main_family_site .scroll_option_li{
+  width: 240px; height: 50px;
+
+  box-sizing: border-box;
+  padding: 10px 25px;
+  
+  color: #7d7d7d;
+  font-weight: 700;
+} /* family_site 버튼 -> option -> li */
+
+.main_family_site .scroll_option_li a{
+  display: block;
+} /* family_site 버튼 -> option -> li */
+
+.main_family_site .scroll_option_li:hover{
+  color: #23afe3;
+} /* family_site 버튼 -> option -> li -> hover */
+
+.main_family_site .arrow{
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+} /* family_site 버튼 -> option -> 화살표*/
+
+.main_family_site .arrow_bottom{
+  background: url('https://api.iconify.design/akar-icons/chevron-right.svg?rotate=90deg') no-repeat center center / contain;
+} /* family_site 버튼 -> option -> bottom 화살표*/
+
+.main_family_site .arrow_top{
+  background: url('https://api.iconify.design/akar-icons/chevron-right.svg?rotate=270deg') no-repeat center center / contain;
+} /* family_site 버튼 -> option -> top 화살표*/
+
+
+
+
 /*main_footer_FAMILY_SITE 버튼*/
 
 

@@ -1,3 +1,4 @@
+{
 // 탭 메뉴
 const tabMenuBtn = $(".employment_tab_menu > li");
 // const tabMenuBtn = document.querySelectorAll('.movie_title > ul > li');
@@ -21,3 +22,4 @@ tabMenuBtn.click(function (e) {
     employTitle.hide();
     employTitle.eq(index).show();
 })
+}

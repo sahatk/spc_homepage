@@ -1,3 +1,4 @@
+{
 // 유튜브 슬라이드
 const youtubeSwiper = new Swiper('.swiper-container-youtube', {
     slidesPerView: 'auto',
@@ -41,3 +42,4 @@ const footerSwiper = new Swiper('.swiper-container-footer', {
         prevEl: '.swiper-button-prev-footer',
     }
 });
+}

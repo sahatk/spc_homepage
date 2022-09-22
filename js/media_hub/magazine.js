@@ -1,3 +1,4 @@
+{
 /////////////////////// 변수 선언 ///////////////////////
 
 const searchComp = document.querySelector(".select_box_title"); //검색 컴포넌트
@@ -45,3 +46,4 @@ optionLi.forEach((item) => {
 
 
 searchComp.addEventListener("click", arrowHandler);
+}
