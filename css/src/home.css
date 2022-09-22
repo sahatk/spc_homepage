@@ -1818,7 +1818,6 @@
     width: 100%;
     height: 900px;
     margin: 0 auto;
-
     background-color: #ffffff;
     z-index: 2;
 
@@ -1826,12 +1825,11 @@
 
 #section_box8 .container {
     display: flex; align-items: center;
-    width: 1800px;
+    width: 1440px;
     max-width: 1920px;
     min-width: 300px;
     height: 700px;
     margin: auto;
-    overflow: hidden;
     background-color: transparent;
 }
 
@@ -1864,25 +1862,30 @@
     /* background-color: #d1ebfa; */
 }
 
+.main_youtube_slide_wrap{
+    display: flex; gap: 30px;
+    width: 1440px;
+    height: 450px;
+}
+
 
 .main_youtube_wrap_02 {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 200px;
     height: 450px;
     background-color: transparent;
     /* background-color: #8cda98; */
-    float: left;
 }
 
 .main_youtube_wrap_03 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 1240px;
     height: 450px;
     background-color: transparent;
     /* background-color: #23afe3; */
-    float: right;
     overflow: hidden;
 }
 
@@ -1891,7 +1894,6 @@
     width: 50%;
     height: 150px;
     float: left;
-    margin-left: 7rem;
 
     color: #000000;
     font-weight: 700;
@@ -1925,23 +1927,19 @@
 
 /*SPC YOUTUBE VIEW_ALL BOX*/
 .main_youtube_wrap_02 .main_youtube_view {
-    margin-left: 7rem;
+    width: 200px; height: 300px;
 }
 
 .main_youtube_view .main_view_all {
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    width: 200px;
+    margin-bottom: 2rem;
 }
 
-.main_youtube_view .main_view_left {
-    float: right;
-    margin-left: 8rem;
-
-
-}
-
-.main_youtube_view .main_view_right {
-    float: right;
-    margin-left: 2rem;
+.main_youtube_view .main_view_arrow{
+    display: flex; align-items: center; gap: 30px;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 
@@ -1950,12 +1948,11 @@
 /* SPC YOUTUBE CARD 박스 크기 및 위치 설정 */
 .main_youtube_card {
     display: flex;
-
+    justify-content: center;
     align-items: center;
     width: 1200px;
     height: 450px;
     box-sizing: border-box;
-
 }
 
 .main_youtube_card ul {
@@ -1973,7 +1970,7 @@
     width: 350px;
     height: 300px;
     box-sizing: border-box;
-    margin: 0 25px;
+    /* margin: 0 25px; */
     border-radius: 40px;
     background-color: var(--color-white);
     box-shadow: 0px 0px 13px #ccc;
@@ -1992,7 +1989,7 @@
 
 .main_youtube_card li .outline .card_image {
     width: 350px;
-    height: 210px;
+    height: 200px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-repeat: no-repeat;
@@ -2044,7 +2041,9 @@
 /*SPC YOUTUBE CARD 설명 부분 */
 
 .main_youtube_card .card_text_01 {
-    padding: 0px 10px 10px;
+    width: inherit; height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .main_youtube_card .card_text_01 p {
@@ -2054,7 +2053,8 @@
     text-overflow: ellipsis;
     font-size: 20px;
     font-weight: 700;
-    padding: 0px 15px 15px 15px
+    box-sizing: border-box;
+    padding: 0px 15px 25px 15px
 }
 
 /*SPC YOUTUBE CARD 설명 부분 */

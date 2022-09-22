@@ -1,12 +1,14 @@
 {
 // 유튜브 슬라이드
 const youtubeSwiper = new Swiper('.swiper-container-youtube', {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
+    spaceBetween:75,
     speed:500,
     loop: true,
-    autoplay: {
-        delay: 2000,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction : false,
+    // },
     navigation: {
         nextEl: '.swiper-button-next-youtube',
         prevEl: '.swiper-button-prev-youtube',
@@ -21,6 +23,7 @@ const snsSwiper = new Swiper('.swiper-container-sns', {
     loop: true,
     autoplay: {
         delay: 2000,
+        disableOnInteraction : false,
     },
     navigation: {
         nextEl: '.swiper-button-next-sns',
@@ -36,6 +39,7 @@ const footerSwiper = new Swiper('.swiper-container-footer', {
     loop: true,
     autoplay: {
         delay: 2000,
+        disableOnInteraction : false,
     },
     navigation: {
         nextEl: '.swiper-button-next-footer',
