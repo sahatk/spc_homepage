@@ -28,7 +28,7 @@
     height: 50px;
     margin: auto;
     background-color: transparent;
-    /* background-color:rgb(126, 199, 148);     */
+    /* background-color: rgb(126, 199, 148); */
   }
   
   /*logo */
@@ -45,7 +45,7 @@
   .logo_img {
     width: 150px;
     height: 50px;
-    background-image: url(../../img/main_img/header_box/gnb_logo_new.png);
+    background-image: url(../../img/main_img/header_box/gnb_logo_gray.png);
     background-repeat: no-repeat;
     background-size: 150px 50px;
   }
@@ -67,9 +67,8 @@
   
   /*기본 header 영역*/
   #header_box .header_nav .main_menu {
-  
     display: flex;
-    gap: 90px;
+    gap: 140px;
     align-items: center;
     height: 100%;
     list-style-type: none;
