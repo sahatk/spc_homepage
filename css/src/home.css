@@ -695,14 +695,12 @@
 
 
 #section_box3 {
-
     display: flex;
     align-items: center;
     width: 100%;
     height: 900px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 10px;
     background-color: #e2e2e8;
 }
 
@@ -816,6 +814,7 @@
 
 /*SPC BRAND TEXT BOX*/
 .main_brand_text {
+    display: flex; flex-direction: column; justify-content: center;
     width: 30%;
     height: 150px;
     float: left;
@@ -825,7 +824,6 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-    padding-top: 30px;
 }
 
 .main_brand_text h2 {
@@ -1138,16 +1136,15 @@
 
 /*SPC 해피포인트 TEXT BOX*/
 .main_happypoint_wrap_01 .main_happypoint_text {
+    display: flex; flex-direction: column; justify-content: center;
     width: 50%;
     height: 150px;
     float: left;
-
 
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-    padding-top: 80px;
 }
 
 .main_happypoint_wrap_01 .main_happypoint_text h2 {
@@ -1366,16 +1363,15 @@
 
 /*SPC NEWS TEXT BOX*/
 .main_news_wrap_01 .main_news_text {
+    display: flex; flex-direction: column; justify-content: center;
     width: 50%;
     height: 150px;
     float: left;
-
 
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-    padding-top: 80px;
 }
 
 .main_news_wrap_01 .main_news_text h2 {
@@ -1639,11 +1635,12 @@
 
 /*SPC MAGAZINE TEXT BOX*/
 .main_magazine_wrap_01 .main_magazine_text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
     height: 150px;
     float: left;
-
-
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
@@ -1858,31 +1855,16 @@
     width: 1440px;
     height: 150px;
     margin-top: 2rem;
-    background-color: transparent;
     /* background-color: #d1ebfa; */
-}
-
-.main_youtube_slide_wrap{
-    display: flex; gap: 30px;
-    width: 1440px;
-    height: 450px;
+    background-color: transparent;
 }
 
 
 .main_youtube_wrap_02 {
     display: flex;
-    align-items: center;
-    width: 200px;
-    height: 450px;
-    background-color: transparent;
-    /* background-color: #8cda98; */
-}
-
-.main_youtube_wrap_03 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 1240px;
+    width: 1440px;
     height: 450px;
     background-color: transparent;
     /* background-color: #23afe3; */
@@ -1891,10 +1873,10 @@
 
 /*SPC YOUTUBE TEXT BOX*/
 .main_youtube_wrap_01 .main_youtube_text {
+    display: flex; flex-direction: column; justify-content: center;
     width: 50%;
     height: 150px;
     float: left;
-
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
@@ -1906,7 +1888,6 @@
     width: 100%;
     height: auto;
     margin-bottom: 0.2rem;
-
 }
 
 
@@ -1925,39 +1906,45 @@
 
 /*SPC YOUTUBE TEXT BOX*/
 
-/*SPC YOUTUBE VIEW_ALL BOX*/
-.main_youtube_wrap_02 .main_youtube_view {
-    width: 200px; height: 300px;
+/*SPC SNS VIEW_ALL BOX*/
+.main_youtube_wrap_01 .main_youtube_view {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    gap: 20px;
+}
+
+
+.main_youtube_view .main_view_left {
+    float: left;
+    margin: 1rem;
+}
+
+.main_youtube_view .main_view_right {
+    float: left;
+    margin: 1rem;
 }
 
 .main_youtube_view .main_view_all {
-    margin-top: 2rem;
-    width: 200px;
-    margin-bottom: 2rem;
+    float: left;
+    margin: 1rem;
 }
 
-.main_youtube_view .main_view_arrow{
-    display: flex; align-items: center; gap: 30px;
-    justify-content: center;
-    flex-direction: row-reverse;
-}
-
-
-/*SPC YOUTUBE VIEW_ALL BOX*/
+/*SPC SNS VIEW_ALL BOX*/
 
 /* SPC YOUTUBE CARD 박스 크기 및 위치 설정 */
 .main_youtube_card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 1400px;
     height: 450px;
     box-sizing: border-box;
 }
 
 .main_youtube_card ul {
     display: flex; justify-content: space-between; align-items: center;
-    width: 1200px;
+    width: 100%;
     height: 450px;
     /* background-color: #dff; */
     background-color: transparent;
@@ -1967,7 +1954,7 @@
     display: flex;
     align-items: center;
 
-    width: 350px;
+    width: 320px;
     height: 300px;
     box-sizing: border-box;
     /* margin: 0 25px; */
@@ -1983,12 +1970,12 @@
 
 .main_youtube_card li .outline {
     position: relative;
-    width: 350px;
+    width: 320px;
     height: 300px;
 }
 
 .main_youtube_card li .outline .card_image {
-    width: 350px;
+    width: 320px;
     height: 200px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -2004,35 +1991,35 @@
 
 /* SPC YOUTUBE CARD 이미지 경로 모음 */
 .main_youtube_card .outline .card_image_01 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_01.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_01.jpg");
 }
 
 .main_youtube_card .outline .card_image_02 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_02.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_02.jpg");
 }
 
 .main_youtube_card .outline .card_image_03 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_03.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_03.jpg");
 }
 
 .main_youtube_card .outline .card_image_04 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_04.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_04.jpg");
 }
 
 .main_youtube_card .outline .card_image_05 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_05.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_05.jpg");
 }
 
 .main_youtube_card .outline .card_image_06 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_06.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_06.jpg");
 }
 
 .main_youtube_card .outline .card_image_07 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_07.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_07.jpg");
 }
 
 .main_youtube_card .outline .card_image_08 {
-    background-image: url(../../img/main_img/section_box8/youtube_bg_08.jpg);
+    background-image: url("../../img/main_img/section_box8/youtube_bg_08.jpg");
 }
 /* SPC YOUTUBE CARD 이미지 경로 모음 */
 
@@ -2041,7 +2028,7 @@
 /*SPC YOUTUBE CARD 설명 부분 */
 
 .main_youtube_card .card_text_01 {
-    width: inherit; height: 100px;
+    width: 320px; height: 100px;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -2127,11 +2114,11 @@
 
 /*SPC SNS TEXT BOX*/
 .main_sns_wrap_01 .main_sns_text {
+    display: flex; flex-direction: column; justify-content: center;
     width: 50%;
     height: 150px;
     float: left;
-
-
+    
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
