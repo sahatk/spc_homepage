@@ -90,11 +90,36 @@
 }
 
 #header_box .header_nav .main_li:last-child {
+  position: relative;
   width: 30px;
   height: 30px;
   background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain !important;
   cursor: pointer;
-}/*기본 header 영역*/
+}
+
+#header_box .header_nav .scroll_language{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 60px;
+  height: 90px;
+  box-shadow: 0 0 13px #ccc;
+  background-color: #fff;
+  color: #000000;
+  z-index: 100;
+  cursor: pointer;
+} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역*/
+
+#header_box .header_nav .scroll_language_block{
+  display: block;
+} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 보이게 끔*/
+
+#header_box .header_nav .scroll_language_li{
+  padding: 5px;
+} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 -> li 요소 (KR,EN,CN)*/
+/*기본 header 영역*/
 
 
 /* 오버시 header 영역*/
