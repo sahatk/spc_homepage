@@ -109,6 +109,14 @@
     cursor: pointer;
 } /* 내비게이션 바 메인 메뉴 global 로고 오버시 */
 
+.global_logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60px; height: 140px;
+    background-color: transparent;
+}
+
 #header_box .header_nav .scroll_language{
     display: none;
     position: absolute;
@@ -124,6 +132,10 @@
     cursor: pointer;
 } /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역*/
 
+#header_box .header_nav .scroll_language_ul{
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+
 #header_box .header_nav .scroll_language_block{
     display: block;
 } /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 보이게 끔*/
@@ -131,6 +143,7 @@
 #header_box .header_nav .scroll_language_li{
     padding: 5px;
 } /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 -> li 요소 (KR,EN,CN)*/
+
 /*기본 header 영역*/
 
 
