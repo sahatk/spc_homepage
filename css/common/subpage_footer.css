@@ -54,7 +54,7 @@
 
 /* SPC Footer 주소 및 정보*/
 .main_footer_info {
-    margin-top: 50px;
+    display: flex; flex-direction: column; justify-content: center;
 }
 
 .main_footer_info ul {
