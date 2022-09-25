@@ -505,7 +505,7 @@
 #section_box3{
     position: relative;
     width: 100%;
-    height: 3500px;
+    height: auto;
     /* background-color: #fad; */
     box-sizing: border-box;
     padding-top: 100px;
@@ -513,7 +513,7 @@
 
 #section_box3 .container{
     width: 1600px;
-    height: 3300px;
+    height: auto;
     margin: 0 auto;
     /* background-color: #fda; */
 } /* SPC MAGAZINE 테이블 박스 위치 영역*/
@@ -566,6 +566,11 @@
     font-weight: 700;
 } /* SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li */
 
+/* #section_box3 .container .scroll_option_li.active{
+    color: #23afe3;
+} 
+SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li -> active */
+
 #section_box3 .container .scroll_option_li:hover{
     color: #23afe3;
 } /* SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li -> hover */
@@ -594,6 +599,14 @@
     margin: 0 auto;
 } /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블*/
 
+#section_box3 .container .magazine_table_block{
+    display: block;
+} /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 보이기 */
+
+#section_box3 .container .magazine_table_none{
+    display: none;
+} /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 숨기기 */
+
 #section_box3 .magazine_table td{
     padding:9px 12px;
 } /* SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 td*/
@@ -610,80 +623,240 @@
 
 
 /* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
+
+/*6월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #section_box3 .magazine_table .magazine_image_01 {
     width:826px; height: 250px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_01.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_01.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_02 {
     width:826px; height: 560px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_02.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_02.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_03 {
-    width:400px; height: 450px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_03.jpg);
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_03.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_04 {
-    width:400px; height: 450px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_04.jpg);
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_04.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_05 {
-    width:400px; height: 450px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_05.jpg);
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_05.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_06 {
-    width:400px; height: 450px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_06.jpg);
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_06.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_07 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_07.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_07.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_08 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_08.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_08.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_09 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_09.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_09.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_10 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_10.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_10.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_11 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_11.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_11.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_12 {
     width:258px; height: 285px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_12.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_12.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_13 {
     width:826px; height: 127px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_13.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_13.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_14 {
     width:826px; height: 205px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_14.jpg);
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_14.jpg");
 }
 
 #section_box3 .magazine_table .magazine_image_15 {
     width:826px; height: 234px;
-    background-image: url(../../img/spc_magazine_img/magazine_table_img_15.jpg);
-}/* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_15.jpg");
+}
+/*6월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+
+/*7월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#section_box3 .magazine_table .magazine_image_16 {
+    width:826px; height: 250px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_16.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_17 {
+    width:826px; height: 520px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_17.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_18 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_18.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_19 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_19.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_20 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_20.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_21 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_21.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_22 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_22.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_23 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_23.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_24 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_24.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_25 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_25.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_26 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_26.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_27 {
+    width:826px; height: 164px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_27.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_28 {
+    width:826px; height: 164px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_28.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_29 {
+    width:826px; height: 127px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_29.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_30 {
+    width:826px; height: 234px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_30.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_31 {
+    width:826px; height: 234px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_31.jpg");
+}
+/*7월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+/*8월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#section_box3 .magazine_table .magazine_image_32 {
+    width:826px; height: 250px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_32.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_33 {
+    width:826px; height: 520px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_33.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_34 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_34.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_35 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_35.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_36 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_36.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_37 {
+    width:400px; height: 420px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_37.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_38 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_38.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_39 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_39.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_40 {
+    width:258px; height: 285px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_40.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_41 {
+    width:826px; height: 181px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_41.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_42 {
+    width:826px; height: 132px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_42.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_43 {
+    width:826px; height: 234px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_43.jpg");
+}
+
+#section_box3 .magazine_table .magazine_image_44 {
+    width:826px; height: 234px;
+    background-image: url("../../img/spc_magazine_img/magazine_table_img_44.jpg");
+}
+/*8월 MAGAZINE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* ////////////// SPC MAGAZINE 테이블 박스 -> MAGAZINE 테이블 이미지 모음 ////////////// */
 
 
 #section_box3 .container .magazine_link {

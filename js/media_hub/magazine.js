@@ -1,6 +1,8 @@
 {
 /////////////////////// 변수 선언 ///////////////////////
 
+const sectionbox = document.querySelector("section_box3");
+
 const searchComp = document.querySelector(".select_box_title"); //검색 컴포넌트
 
 const searchP = searchComp.querySelector("p"); // 검색 현황 텍스트
@@ -11,6 +13,10 @@ const optionLi = optionComp.querySelectorAll('.scroll_option_li'); // 스크롤 
 
 const arrow = document.querySelector('.arrow'); // 위, 아래 화살표 모양 
 
+const table_01 = document.querySelectorAll('.magazine_table_01');
+const table_02 = document.querySelectorAll('.magazine_table_02');
+const table_03 = document.querySelectorAll('.magazine_table_03');
+
 /////////////////////// 함수 ///////////////////////
 
 const optionHandler = (item) => {
@@ -20,6 +26,49 @@ const optionHandler = (item) => {
     
     searchP.innerText = "";
     searchP.innerHTML = title;
+
+    if(title === "SPC MAGAZINE 2022년 06월호"){
+        table_02.forEach( (item, index) => {
+            table_02[index].style.display='none';
+        });
+
+        table_03.forEach( (item, index) => {
+            table_03[index].style.display='none';
+        });
+
+        table_01.forEach( (item, index) => {
+            table_01[index].style.display='block';
+        });
+
+    }else if(title === "SPC MAGAZINE 2022년 07월호"){
+        table_01.forEach( (item, index) => {
+            table_01[index].style.display='none';
+        });
+
+        table_03.forEach( (item, index) => {
+            table_03[index].style.display='none';
+        });
+
+        table_02.forEach( (item, index) => {
+            table_02[index].style.display='block';
+        });
+        
+    }else if(title === "SPC MAGAZINE 2022년 08월호"){
+        table_01.forEach( (item, index) => {
+            table_01[index].style.display='none';
+        });
+
+        table_02.forEach( (item, index) => {
+            table_02[index].style.display='none';
+        });
+
+        table_03.forEach( (item, index) => {
+            table_03[index].style.display='block';
+        });
+    }else {
+        alert("페이지가 없습니다.");
+    }
+    
 }; // 옵션 클릭 시 검색 현황 변경 함수
 
 const arrowHandler = () => {
