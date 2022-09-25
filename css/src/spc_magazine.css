@@ -566,10 +566,10 @@
     font-weight: 700;
 } /* SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li */
 
-/* #section_box3 .container .scroll_option_li.active{
+#section_box3 .container .scroll_option_li.active{
     color: #23afe3;
 } 
-SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li -> active */
+/* SPC MAGAZINE 테이블 박스 -> select 박스 전체 영역 -> 제목 (SPC MAGAZINE ????년 ??월호) -> option -> li -> active */
 
 #section_box3 .container .scroll_option_li:hover{
     color: #23afe3;

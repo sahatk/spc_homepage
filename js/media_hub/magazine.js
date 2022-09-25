@@ -19,15 +19,21 @@ const table_03 = document.querySelectorAll('.magazine_table_03');
 
 /////////////////////// 함수 ///////////////////////
 
-const optionHandler = (item) => {
+const optionHandler = (item, index) => {
     const optionTarget = item.currentTarget;
     
     const title = optionTarget.innerText;
     
     searchP.innerText = "";
     searchP.innerHTML = title;
+    
 
     if(title === "SPC MAGAZINE 2022년 06월호"){
+        optionLi[0].classList.remove("active");
+        optionLi[1].classList.remove("active");
+
+        optionLi[2].classList.add("active");
+
         table_02.forEach( (item, index) => {
             table_02[index].style.display='none';
         });
@@ -41,6 +47,11 @@ const optionHandler = (item) => {
         });
 
     }else if(title === "SPC MAGAZINE 2022년 07월호"){
+        optionLi[0].classList.remove("active");
+        optionLi[2].classList.remove("active");
+
+        optionLi[1].classList.add("active");
+
         table_01.forEach( (item, index) => {
             table_01[index].style.display='none';
         });
@@ -54,6 +65,11 @@ const optionHandler = (item) => {
         });
         
     }else if(title === "SPC MAGAZINE 2022년 08월호"){
+        optionLi[1].classList.remove("active");
+        optionLi[2].classList.remove("active");
+
+        optionLi[0].classList.add("active");
+
         table_01.forEach( (item, index) => {
             table_01[index].style.display='none';
         });
@@ -68,7 +84,6 @@ const optionHandler = (item) => {
     }else {
         alert("페이지가 없습니다.");
     }
-    
 }; // 옵션 클릭 시 검색 현황 변경 함수
 
 const arrowHandler = () => {
