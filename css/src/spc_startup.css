@@ -158,8 +158,8 @@
 }
 
 #startup_wrap .startup_title {
-  padding: 100px 50px 103px;
-  width: 82%; max-width: 1550px;
+  padding: 100px 50px 10px;
+  width: 77%; max-width: 1550px;
   margin: 0 auto;
  }
 
@@ -171,88 +171,123 @@
 .desc {
   font-size: 1.125rem; color: #7d7d7d;
 }
-.slide_bg {
-  background-color: #f8f8f8;
-  width: 100%;
-} 
 
-.viewBox {
-  padding-top: 50px;
-  width: 82%; max-width: 1550px;
-  height: 100%; margin:0 auto;
-  box-sizing: border-box;
+/*/////////////////////////////////////////////////////////////////*/
+
+.startup_box{
   position: relative;
-}
-
-.slide_buttons {
-  position:absolute; z-index: 10;
-  top: 40%; left: 0;
-  width: 100%; height:auto;
-}
-
-.slide_buttons button {
-  width: 15px; height: 15px;
-  background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
-}
-
-.slide_buttons .prev {
-  float: left;
-  width: 30px; height: 30px;
-  
-}
-
-.slide_buttons .next {
-  float: right;
-  width: 30px; height: 30px;
-  background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
-}
-
-.view_area {
-  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  width: 1500px;
+  height: 500px;
+  margin-bottom: 100px;
   margin: 0 auto;
-}
+  overflow: hidden;
+} /*SPC startup 박스 -> startup 박스*/
 
-.view_area ul {
-  display: flex;
-  justify-content: center;
-  gap:20px;
-}
+.startup_card_box{
+  display: flex; justify-content: center;
+  width: 1440px;
+  height: 300px;
+  margin: 0 auto;
+} /*SPC startup 박스 -> startup 박스 -> startup 카드 박스*/
 
-.view_area ul li {
-  width: 250px; height:400px;
-}
-.view_area ul li a {
-  display: block;
-}
+.startup_arrow_box{
+  position: absolute; left: -30px; top: 50%;
+  transform: translateY(-50%);
+  display: flex; justify-content: space-between;
+  width: 1560px; height: 50px;
+  z-index: 10;
+} /*SPC startup 박스 -> startup 박스 -> 이전, 다음 버튼 영역 */
 
-.bg_img {
-  width: 230px; height: 230px;
+.startup_card_box .prev_button{
+  position: absolute; left: 1%; top: 55%;
+  transform: translateY(-50%);
+  width: 50px; height: 50px;
+  background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
+  z-index: 1;
+} /*SPC startup 박스 -> startup 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 */
+
+.startup_card_box .prev_button:hover{
+  background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=%2323afe3') no-repeat center center / contain;
+  cursor: pointer;
+} /*SPC startup 박스 -> startup 박스 -> 이전, 다음 버튼 영역 -> 이전 버튼 : 오버시*/
+
+.startup_card_box .next_button{
+  position: absolute; right: 1%; top: 55%;
+  transform: translateY(-50%);
+  width: 50px; height: 50px;
+  background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
+  z-index: 1;
+} /*SPC startup 박스 -> startup 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 */
+
+.startup_card_box .next_button:hover{
+  background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=%2323afe3') no-repeat center center / contain;
+  cursor: pointer;
+} /*SPC startup 박스 -> startup 박스 -> 이전, 다음 버튼 영역 -> 다음 버튼 : 오버시*/
+
+.startup_card_ul{
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%;
+  height: 300px;
+} /*SPC startup 박스 -> startup 카드 박스 ul*/
+
+.startup_card_li{
+  width: 250px; height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 13px #ccc;
+} /*SPC startup 박스 -> startup 카드 박스 li*/
+
+.startup_card_image{
+  width: 250px; height: 250px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 50%;
+} /*SPC startup 박스 -> startup 카드 이미지
+
+/* //////////////SPC STARTUP 박스 -> STARTUP 카드 이미지 경로 모음 ////////////// */
+.startup_card_image_01{
+  background-image: url("../../img/spc_startup_img/startup_image_01.png");
 }
 
-.more_txt {
-  width: 100%;
+.startup_card_image_02{
+  background-image: url("../../img/spc_startup_img/startup_image_02.png");
+}
+
+.startup_card_image_03{
+  background-image: url("../../img/spc_startup_img/startup_image_03.png");
+}
+
+.startup_card_image_04{
+  background-image: url("../../img/spc_startup_img/startup_image_04.png");
+}
+
+.startup_card_image_05{
+  background-image: url("../../img/spc_startup_img/startup_image_05.png");
+}
+
+.startup_card_image_06{
+  background-image: url("../../img/spc_startup_img/startup_image_06.png");
+}/* //////////////SPC STARTUP 박스 -> STARTUP 카드 이미지 경로 모음 ////////////// */
+
+
+.startup_link {
+  width: 250px;
   height: 65px;
   line-height: 65px;
   text-align: center;
-  background-color: #fff;
-  margin: 30px 0;
-  font-size: 15px;
   border-radius: 50px;
-  font-weight:bold;
-}
+  box-shadow: 0 0 13px #ccc;
+  margin: 50px 0;
+}/* //////////////SPC STARTUP 박스 -> STARTUP 카드 -> 창업정보 바로보기 버튼 ////////////// */
 
-.more_txt:hover {
-  background-color: #23b0e3;
-  color:#fff;
-  transition: all 0.5 ease-in;
-}
 
-.main_view_01 .bg_img {background-image: url(/img/spc_startup_img/01.png);}
-.main_view_02 .bg_img {background-image: url(/img/spc_startup_img/02.png);}
-.main_view_03 .bg_img {background-image: url(/img/spc_startup_img/03.png);}
-.main_view_04 .bg_img {background-image: url(/img/spc_startup_img/04.png);}
-.main_view_05 .bg_img {background-image: url(/img/spc_startup_img/05.png);}
+.startup_link:hover{
+  color: #ffffff;
+  background-color: #23afe3;
+}/* //////////////SPC STARTUP 박스 -> STARTUP 카드 -> 창업정보 바로보기 버튼 ////////////// */
+
+
+.startup_link a{
+  display: block;
+}/* //////////////SPC STARTUP 박스 -> STARTUP 카드 -> 창업정보 바로보기 버튼 ////////////// */
