@@ -98,4 +98,65 @@ CF 피그마 : https://www.figma.com/file/bhjYe8pwM6Ne5bphkmBymJ/spc_mediahub_cf
 
 HTML,CSS : 완료
 
-만든 모든 페이지 REACT로 옮기기 : 완료
+여태까지 만든 모든 페이지 REACT로 옮기기 : 완료
+
+<hr/>
+
+8월 12일
+
+서브페이지 -> CAREERS -> 인재채용 -> 인사제도
+
+인사제도 피그마 : https://www.figma.com/file/rO6IveLSrWN8JX40dTfSEf/spc_careers_system?node-id=0%3A1
+
+HTML,CSS : 완료
+
+<hr/>
+
+8월 19일 
+
+서브페이지 -> CAREERS -> 인재채용 -> 채용정보
+
+채용정보 피그마 : https://www.figma.com/file/Z9Cfeb4leHXVMo6xOfHlL7/spc_careers_information?node-id=0%3A1
+
+HTML,CSS : 완료
+
+<hr/>
+
+8월 26일 
+
+서브페이지 -> CAREERS -> 인재양성 -> SPC컬러너리아카데미
+
+SPC컬러너리아카데미 피그마 : https://www.figma.com/file/chei8ENTKE7m1sa1HyVb9h/spc_careers_academy?node-id=3%3A199
+
+HTML,CSS : 완료
+
+<hr/>
+
+9월 2일 
+
+서브페이지 -> CONTACT -> 창업정보
+
+창업정보 피그마 : 협업자에게 있음.
+
+HTML,CSS,JS : 완료
+
+<hr/>
+
+9월 9일
+
+서브페이지 -> CONTACT -> 오시는길 , 서브페이지 -> CAREERS -> 인재양성 -> SPC식품과학대학
+
+지도 API 넣기 완료
+
+<hr/>
+
+9월 17일 ~ 9월 26일
+
+모든 페이지 JS(슬라이드, 탭 메뉴 등등) 및 HTML,CSS 수정 완료
+
+<hr/>
+
+
+
+
+
