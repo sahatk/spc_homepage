@@ -40,13 +40,8 @@
     height: 50px;
 } /* header logo */
 
-#header_box .logo_img a {
-    display: block;
-    width: 150px;
-    height: 50px;
-} /* header logo 링크 */
-
 .logo_img {
+    display: block;
     width: 150px;
     height: 50px;
     background-image: url(../../img/main_img/header_box/gnb_logo_white.png);
