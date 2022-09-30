@@ -2431,15 +2431,11 @@
 .main_footer_logo h1 {
     width: 100px;
     height: 100px;
-    float: left;
-}
+} /* header logo */
 
-.main_footer_logo a {
-    width: 100px;
-    height: 100px;
-}
 
-.main_footer_logo .footer_logo {
+.footer_logo {
+    display: block;
     width: 100px;
     height: 100px;
     background-image: url(../../img/main_img/footer_box/footer_logo.png);
