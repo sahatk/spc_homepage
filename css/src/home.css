@@ -40,7 +40,8 @@
     height: 50px;
 } /* header logo */
 
-#header_box .container a {
+#header_box .logo_img a {
+    display: block;
     width: 150px;
     height: 50px;
 } /* header logo 링크 */
@@ -404,13 +405,15 @@
     height: 300px;
 }
 
-/* sns 네비게이션 h2 안보이게*/
-#section_box1 .navigation h2 {
-    width: 0;
-    height: 0;
-    overflow: hidden;
+#section_box1 .navigation li {
+    width: 70px;
+    height: 70px;
 }
 
+.sns_icon {
+    display: inline-block;
+    width: inherit; height: inherit;
+}
 
 #section_box1 .navigation .happy_icon {
     position: relative;
@@ -418,8 +421,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
-    width: 70px;
-    height: 70px;
 } /*happy-point_icon*/
 
 
