@@ -369,7 +369,9 @@ font-family: 'Pretendard', 'Gmarket Sans', 'sans-serif';
   font-weight: 700;
 }/*가장 작은 텍스트*/
 
-
+.uppercase{
+  text-transform: uppercase;
+}
 
 
 

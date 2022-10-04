@@ -1,8 +1,8 @@
-const mNav = document.querySelector("#m_nav");
-        const subMenu = document.querySelector(".sub_menu")
+{
+const ham = document.querySelector(".mobile_nav");
+const mobileMenu = document.querySelector(".mobile_hover_box");
 
-        console.log(mNav);
-
-        mNav.addEventListener("click",function(){
-
-        })
+    ham.addEventListener("mouseenter",function(){
+        mobileMenu.classList.toggle('block');
+    })
+}
