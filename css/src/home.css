@@ -60,13 +60,6 @@
     height: auto;
 } /* 내비게이션 바 전체 영역*/
 
-#header_box .header_nav h2 {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-}/* 내비게이션 바 소개 안보이게*/
-
-
 /*기본 header 영역*/
 #header_box .header_nav .main_menu {
 
@@ -2598,22 +2591,30 @@
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
 
-
+@media (max-width:1440px) {
+    #header_box .header_nav .main_menu{
+        gap: 100px;
+    }
+}
 
 @media (max-width:1290px) {
-
+    #header_box .header_nav .main_menu{
+        gap: 90px;
+    }
 }
 
-@media (max-width:1024px) {
-
+@media (max-width:1100px) {
+    #header_box .header_nav .main_menu{
+        gap: 70px;
+    }
 }
 
-@media (max-width:960px) {
-
+@media (max-width:999px) {
+    .header_nav {display: none;}
 }
 
 @media (max-width:768px) {
-
+    
 }
 
 @media (max-width:600px) {
@@ -2625,7 +2626,7 @@
 }
 
 @media (max-width:320px) {
-    
+
 }
 
 
