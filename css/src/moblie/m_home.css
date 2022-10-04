@@ -10,10 +10,10 @@
     align-items: center;
 }
 
-.mobile_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:0;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear;}
-
-
 .mobile_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:0;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 0;}
+
+
+.mobile_hover_box.block {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:300px;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 1;}
 
 .mobile_main_menu{display: flex; flex-direction: column; gap: 30px;}
 .mobile_main_li {display: flex; align-items: center; justify-content:center;}
