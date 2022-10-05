@@ -1,7 +1,10 @@
-/*header/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*header (position: fixed)/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* ///////////////////////////////////////////////////////////////// 기본 header 영역 /////////////////////////////////////////////////////////////////*/
 #header_box {
     display: flex; align-items: center;
-    position: fixed;    top: 0;
+    position: fixed;    
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -11,7 +14,6 @@
     padding: 10px;
     z-index: 1000;
     background-color: transparent;
-    /* background-color: #fda;  */
 } /* header 전체 박스*/
 
 #header_box:hover {
@@ -31,7 +33,6 @@
     height: 50px;
     margin: auto;
     background-color: transparent;
-    /* background-color:rgb(126, 199, 148);     */
 } /* header 위치 영역 박스 */
 
 
@@ -51,24 +52,21 @@
 
 #header_box:hover .logo_img{
     background-image: url(../../img/main_img/header_box/gnb_logo_gray.png);
-}
+} /* header logo 이미지 -> 오버시 회색 로고 */
 
-/*/////////////////////*/
-/*navigation*/
 #header_box .header_nav {
     width: auto;
     height: auto;
 } /* 내비게이션 바 전체 영역*/
 
-/*기본 header 영역*/
 #header_box .header_nav .main_menu {
-
     display: flex;
     gap: 140px;
     align-items: center;
     height: 100%;
     list-style-type: none;
-} /* 내비게이션 바 메인 메뉴 */
+    z-index: 1001;
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 */
 
 #header_box .header_nav .main_li {
     width: auto;
@@ -77,26 +75,26 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-} /* 내비게이션 바 메인 메뉴 li */
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li */
 
 .header_nav .main_li a:hover {
     color: #23afe3;
     cursor: pointer;
-} /* 내비게이션 바 메인 메뉴 li 링크 오버시 */
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> a -> 오버시 */
 
 #header_box .header_nav .main_li:last-child {
     position: relative;
     width: 30px;
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon_white.png) no-repeat center center / contain;
-} /* 내비게이션 바 메인 메뉴 global 로고 */
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> 흰색 global 로고 */
 
 #header_box .header_nav .main_li:last-child:hover {
     width: 30px;
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
     cursor: pointer;
-} /* 내비게이션 바 메인 메뉴 global 로고 오버시 */
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 오버시 -> 검은색 global 로고*/
 
 .global_logo{
     position: absolute;
@@ -104,7 +102,7 @@
     transform: translate(-50%, 0%);
     width: 60px; height: 140px;
     background-color: transparent;
-}
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 스크롤 언어 전체 영역*/
 
 #header_box .header_nav .scroll_language{
     display: none;
@@ -119,24 +117,24 @@
     color: #000000;
     z-index: 100;
     cursor: pointer;
-} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역*/
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 오버시 -> 스크롤 언어 위치 영역*/
 
 #header_box .header_nav .scroll_language_ul{
     display: flex; flex-direction: column; justify-content: space-between;
-}
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 오버시 -> 스크롤 언어 위치 영역 -> 세로 정렬*/
 
 #header_box .header_nav .scroll_language_block{
     display: block;
-} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 보이게 끔*/
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 오버시  -> 스크롤 언어 영역 보이게 끔*/
 
 #header_box .header_nav .scroll_language_li{
     padding: 5px;
-} /* 내비게이션 바 메인 메뉴 global 로고 오버시 -> 스크롤 언어 영역 -> li 요소 (KR,EN,CN)*/
+} /* 내비게이션 바 전체 영역 -> 내비게이션 바 메인 메뉴 ->  li -> global 로고 -> 오버시  -> 스크롤 언어 영역 보이게 끔 -> li 요소 (KR,EN,CN)*/
 
-/*기본 header 영역*/
+/* ///////////////////////////////////////////////////////////////// 기본 header 영역 /////////////////////////////////////////////////////////////////*/
 
 
-/* 오버시 header 영역*/
+/* /////////////////////////////////////////////////////////////// 오버시 header 영역 /////////////////////////////////////////////////////////////////*/
 #header_box .menu_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; height:0; border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0;}
 #header_box:hover .menu_hover_box {height:300px; opacity:1;}
 #header_box .sub_menu_box {background:transparent; height:0; bottom:-1px; transition:all .2s linear; -webkit-transition:all .2s linear; opacity:0; visibility:hidden}
@@ -152,9 +150,10 @@
     height: 30px;
     background: url(../../img/main_img/header_box/global_icon_black.png) no-repeat center center / contain;
     cursor: pointer;}
-/*navigation*/
+/* /////////////////////////////////////////////////////////////// 오버시 header 영역 /////////////////////////////////////////////////////////////////*/
 
-/*header/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*header (position: fixed)/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -181,15 +180,14 @@
     height: inherit;
     margin: auto;
     overflow: hidden;
-} /* SPC 소개글 위치 영역 박스 */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 */
 
-/*//////////////추가한 항목 슬라이드 2022-07-18 /////////////////*/
 #section_box1 .indicators{
     position: absolute; z-index: 100;
     left: 0; right: 0; margin:auto;
     bottom:1.5rem;
     width: 100%; height:auto;
-} /* 인디케이터 전체 영역 */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 인디케이터 전체 영역 */
 
 #section_box1 .indicators ul{
     width: auto; height: auto;
@@ -198,76 +196,72 @@
     justify-content: center;
     gap:20px;
     align-items: center;
-    /* background-color: #ddd; */
-} /* 인디케이터 ul */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 ->  인디케이터 전체 영역 -> 인디케이터 ul */
 
 #section_box1 .indicators li {
     width: 1.5rem; height: 1.5rem;
-} /* 인디케이터 li */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 ->  인디케이터 전체 영역 -> 인디케이터 li */
 
 #section_box1 .indicators li a{
     display: block;
     width: 100%; height: 100%;
-    /* border: 1px solid #555; */
     background-color: #fff;
     border-radius: 4rem;
-} /* 인디케이터 li a */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 ->  인디케이터 전체 영역 -> 인디케이터 li -> a */
 
 #section_box1 .indicators li.action a{
     background-color: #23afe3;
-} /* 인디케이터 li action a */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 ->  인디케이터 전체 영역 -> 인디케이터 li action -> a */
 
 #section_box1 .indicators li.action{
     width: 1.5rem;
-} /* 인디케이터 li action a */
-
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 ->  인디케이터 전체 영역 -> 인디케이터 li action a */
 
 #section_box1 .view_area{
     width: 100%; height: 100%;
     overflow: hidden;
-} /* 배경 슬라이드 전체 영역 */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스  -> 배경 슬라이드 전체 영역 */
 
 #section_box1 .view_area ul {
     position: relative; left:0; top:0;
     width: calc(100% * 5); height:100%; background-color: #ddd;
     margin-left: -100%;
     display: flex;
-} /* 배경 슬라이드 전체 영역 ul */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스  -> 배경 슬라이드 전체 영역 ->  ul */
 
 .view_area .transition_show{
     transition: all 500ms linear;
-} /* 배경 슬라이드 트랜지션*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스  -> 배경 슬라이드 전체 영역 -> 배경 슬라이드 트랜지션*/
 
 .view_area .transition_none{
     transition: none;
-} /* 배경 슬라이드 트랜지션 none*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스  -> 배경 슬라이드 전체 영역 -> 배경 슬라이드 트랜지션 none*/
 
 .view_area li{
     width: calc(100% / 5); height: 100%;
     text-align: center;
     line-height: 600px;
     font-size: 2rem; font-weight: 700;
-} /* 배경 이미지 li */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스  -> 배경 슬라이드 전체 영역 -> 배경 이미지 li */
 
+/* /////////////////////////////////////////////////////////배경 광고 이미지 경로 ///////////////////////////////////////////////////////// */
 .view_area li.main_view_01{background-image: url('../../img/main_img/section_box1/main_bg_wrap/main_slide_01.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
 .view_area li.main_view_02{background-image: url('../../img/main_img/section_box1/main_bg_wrap/main_slide_02.png'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
 .view_area li.main_view_03{background-image: url('../../img/main_img/section_box1/main_bg_wrap/main_slide_03.png'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
 .view_area li.main_view_04{background-image: url('../../img/main_img/section_box1/main_bg_wrap/main_slide_04.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
-
-/*//////////////추가한 항목 슬라이드 2022-07-18 /////////////////*/
+/* /////////////////////////////////////////////////////////배경 광고 이미지 경로 ///////////////////////////////////////////////////////// */
 
 #section_box1 .main_title_text {
-
     color: #fff;
     font-weight: 700;
-} /*제목 텍스트 */
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 제목 박스 (Happy Sincerity SPC그룹과 함께 ...) */
 
 
 #section_box1 .main_title_text p:first-child {
     float: left;
     font-size: var(--font-content_03);
     font-weight: 300;
-} /*Happy Sincerity*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 제목 박스 -> Happy Sincerity*/
 
 
 #section_box1 .main_title_text .solid {
@@ -275,7 +269,7 @@
     width: 50px;
     margin: 7px 0 0 10px;
     border-bottom: 2px solid #fff;
-} /* 화이트 라인*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 제목 박스 -> 화이트 라인*/
 
 
 #section_box1 .main_title_text p:nth-child(3) {
@@ -284,13 +278,14 @@
     font-size: var(--font-title_01);
 
     padding-top: 10px;
-} /*SPC그룹과 함께*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 제목 박스 -> SPC그룹과 함께*/
 
 
 #section_box1 .main_title_text p:nth-child(4) {
     font-size: var(--font-title_01);
-} /*세상은 더 행복해집니다.*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> 제목 박스 -> 세상은 더 행복해집니다.*/
 
+/* //////////////// prev_button ////////////////*/
 
 #section_box1 .prev_button_wrap {
     position: absolute; z-index: 100;
@@ -299,25 +294,7 @@
     transform: translate(50%, -50%);
     width: 80px;
     height: 40px;
-} /*prev_button*/
-
-#section_box1 .prev_button_wrap:hover p {
-    color: #000000;
-    cursor: pointer;
-} /*prev_button 오버시 text prev color : 검정*/
-
-#section_box1 .prev_button_wrap .prev_button {
-    vertical-align: center;
-    float: left;
-    width: 40px;
-    height: 40px;
-    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=white') no-repeat center center / contain;
-}
-
-#section_box1 .prev_button_wrap:hover .prev_button {
-    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
-    cursor: pointer;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> prev_button */
 
 #section_box1 .prev_button_wrap p {
     float: right;
@@ -328,14 +305,31 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 40px;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> prev_button -> prev 텍스트*/
+
+#section_box1 .prev_button_wrap:hover p {
+    color: #000000;
+    cursor: pointer;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> prev_button -> 오버시 -> prev_button -> prev 텍스트 -> color : 검정 */
+
+#section_box1 .prev_button_wrap .prev_button {
+    vertical-align: center;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg?color=white') no-repeat center center / contain;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> prev_button -> 오버시 -> prev_button -> 흰색 prev 화살표 */
+
+#section_box1 .prev_button_wrap:hover .prev_button {
+    background: url('https://api.iconify.design/ic/outline-navigate-before.svg') no-repeat center center / contain;
+    cursor: pointer;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> prev_button -> 오버시 -> prev_button -> 검은색 prev 화살표 */
+
+/* //////////////// prev_button ////////////////*/
 
 
+/* //////////////// next_button ////////////////*/
 
-/*prev_button*/
-
-
-/*next_button*/
 #section_box1 .next_button_wrap {
     position: absolute; z-index: 100;
     top: 50%;
@@ -343,26 +337,7 @@
     transform: translate(-50%, -50%);
     width: 80px;
     height: 40px;
-}
-
-#section_box1 .next_button_wrap:hover p {
-    color: #000000;
-    cursor: pointer;
-}
-
-#section_box1 .next_button_wrap .next_button {
-    vertical-align: center;
-    float: right;
-    width: 40px;
-    height: 40px;
-    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=white') no-repeat center center / contain;
-}
-
-#section_box1 .next_button_wrap:hover .next_button {
-    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
-    cursor: pointer;
-}
-
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> next_button */
 
 #section_box1 .next_button_wrap p {
     float: left;
@@ -373,15 +348,34 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 40px;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> next_button -> next 텍스트*/
 
-/*next_button*/
+#section_box1 .next_button_wrap:hover p {
+    color: #000000;
+    cursor: pointer;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> next_button -> 오버시 -> next_button -> next 텍스트 -> color : 검정 */
 
-/*sns wrap*/
+#section_box1 .next_button_wrap .next_button {
+    vertical-align: center;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg?color=white') no-repeat center center / contain;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> next_button -> 오버시 -> next_button -> 흰색 next 화살표 */
+
+#section_box1 .next_button_wrap:hover .next_button {
+    background: url('https://api.iconify.design/ic/outline-navigate-next.svg') no-repeat center center / contain;
+    cursor: pointer;
+} /* SPC 소개글과 배경 슬라이드 박스 -> SPC 소개글 위치 영역 박스 -> next_button -> 오버시 -> next_button -> 검은색 next 화살표 */
+
+/* //////////////// next_button ////////////////*/
+
+/* //////////////// sns wrap ////////////////*/
+
 #section_box1 .navigation {
     width: auto;
     height: auto;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 */
 
 #section_box1 .navigation ul {
     position: absolute;
@@ -391,17 +385,17 @@
     margin-bottom: 50px;
     width: 70px;
     height: 300px;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul */
 
 #section_box1 .navigation li {
     width: 70px;
     height: 70px;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li */
 
 .sns_icon {
     display: inline-block;
     width: inherit; height: inherit;
-}
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> sns_icon 링크 */
 
 #section_box1 .navigation .happy_icon {
     position: relative;
@@ -409,7 +403,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
-} /*happy-point_icon*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> happy_icon 이미지 */
 
 
 #section_box1 .navigation .instagram_icon {
@@ -420,7 +414,7 @@
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
-} /*instagram_icon*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> instagram_icon 이미지 */
 
 
 #section_box1 .navigation .facebook_icon {
@@ -431,7 +425,7 @@
     background-size: 30px 30px;
     width: 70px;
     height: 70px;
-} /*facebook_icon*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> facebook_icon 이미지 */
 
 
 #section_box1 .navigation .youtube_icon {
@@ -442,7 +436,7 @@
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
-} /*youtube_icon*/
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> youtube_icon 이미지 */
 
 #section_box1 .navigation li:hover::after {
     content: '';
@@ -453,7 +447,7 @@
     transition: 0.3s linear;
     border-radius: 50%;
     opacity: 0.2;
-} /* icon 오버시 효과
+} /* SPC 소개글과 배경 슬라이드 박스 -> SNS 내비게이션 -> ul -> li -> 아이콘 오버시 -> 밝기 조정 및 효과 */
 
 /*sns wrap*/
 
@@ -2584,60 +2578,6 @@
 
 
 
-
-
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
-
-@media (max-width:1440px) {
-    #header_box .header_nav .main_menu{
-        gap: 100px;
-    }
-}
-
-@media (max-width:1290px) {
-    #header_box .header_nav .main_menu{
-        gap: 90px;
-    }
-}
-
-@media (max-width:1100px) {
-    #header_box .header_nav .main_menu{
-        gap: 70px;
-    }
-}
-
-@media (max-width:1023px) {
-    #section_box1 {height: 600px;}
-    #header_box .container {justify-content: space-between;}
-    .header_nav {display: none;}
-    #section_box1 .main_title_text > p:nth-child(3){font-size:40px !important;}
-    #section_box1 .main_title_text > p:nth-child(4){font-size:40px !important;}
-
-    #section_box1 .navigation ul{display: flex; left:50%; transform: translate(-250%,0); height: 140px;}
-}
-
-@media (max-width:768px) {
-    #section_box1 .main_title_text > p:nth-child(3){font-size:25px !important;}
-    #section_box1 .main_title_text > p:nth-child(4){font-size:25px !important;}
-}
-
-@media (max-width:600px) {
-    #section_box1 .prev_button_wrap {left: -30px;}
-    #section_box1 .next_button_wrap {right: -30px;}
-    #section_box1 .main_title_text > p:nth-child(3){font-size:22px !important;}
-    #section_box1 .main_title_text > p:nth-child(4){font-size:22px !important;}
-}
-
-@media (max-width:480px) {
-
-}
-
-@media (max-width:320px) {
-
-}
 
 
 

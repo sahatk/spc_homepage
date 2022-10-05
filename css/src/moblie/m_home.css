@@ -3,40 +3,111 @@
     align-items: center;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
+
+@media (max-width:1440px) {
+    /* ////////////////////// header 부분 ////////////////////// */
+    #header_box .header_nav .main_menu{ gap: 100px; }
+    /* ////////////////////// header 부분 ////////////////////// */
+}
+
+@media (max-width:1290px) {
+    /* ////////////////////// header 부분 ////////////////////// */
+    #header_box .header_nav .main_menu{ gap: 90px; }
+    /* ////////////////////// header 부분 ////////////////////// */
+}
+
+@media (max-width:1100px) {
+    /* ////////////////////// header 부분 ////////////////////// */
+    #header_box .header_nav .main_menu{ gap: 70px; }
+    /* ////////////////////// header 부분 ////////////////////// */
+}
+
 @media (max-width:1023px) {
+    /* ////////////////////// header 부분 ////////////////////// */
+    #header_box .container {justify-content: space-between;}
+    .header_nav {display: none;}
+
     /* 모바일 내비게이션 */
-.mobile_nav {
-    display: flex;
-    align-items: center;
+    .mobile_nav {display: flex; align-items: center;}
+    
+    .mobile_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; display: none; align-items: center; justify-content: center; height:0;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 0;}
+    .mobile_hover_box.block {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:300px;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 1;}
+    
+    .mobile_main_menu{display: flex; flex-direction: column; gap: 30px;}
+    .mobile_main_li {display: flex; align-items: center; justify-content:center;}
+    .mobile_main_li > a {width: 200px; text-align: center;}
+    .mobile_sub_menu_box{width: 100%}
+    .mobile_sub_menu{display: flex; align-items: center; gap:10px;}
+    .mobile_sub_menu li{width: 80px; text-align: center;}
+    .ham {display: block; width: 40px; height: 10px; background-color: rgba(0,0,0,0);  padding: 15px 10px 10px 10px;}
+    .ham span {position:relative; display: block; width: 40px; height: 7px; background-color: #23afe3;}
+    .ham span:before{position: absolute; left: 0; bottom: -10px; content: ''; width: 40px; height: 7px; background-color: #23afe3; }
+    .ham span:after{content: ''; width: 40px; height: 7px; background-color: #23afe3; position: absolute; left: 0; top: -10px;}
+    /* 모바일 내비게이션 */
+
+    /* ////////////////////// header 부분 ////////////////////// */
+
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+    #section_box1 {height: 600px;}
+    
+    #section_box1 .main_title_text > p:nth-child(3){font-size:40px !important;}
+    #section_box1 .main_title_text > p:nth-child(4){font-size:40px !important;}
+
+    #section_box1 .navigation ul{display: flex; left:50%; transform: translate(-250%,0); height: 140px;}
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
 }
 
-.mobile_hover_box {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:0;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 0;}
+@media (max-width:768px) {
+    /* ////////////////////// header 부분 ////////////////////// */
+
+    /* 모바일 내비게이션 */
+    .mobile_hover_box.block {height: 500px;}
 
 
-.mobile_hover_box.block {position:absolute; left:0; right:0; background:#fff; top:80px; display: flex; align-items: center; justify-content: center; height:300px;  border-top:1px solid #dddddd; transition:all .2s linear; -webkit-transition:all .2s linear; opacity: 1;}
+    .mobile_main_li > a {width: 200px; }
+    .mobile_sub_menu_box{width: 200px;}
+    .mobile_sub_menu {flex-wrap: wrap;}
+    /* 모바일 내비게이션 */
+    
+    /* ////////////////////// header 부분 ////////////////////// */
 
-.mobile_main_menu{display: flex; flex-direction: column; gap: 30px;}
-.mobile_main_li {display: flex; align-items: center; justify-content:center;}
-.mobile_main_li > a {width: 200px; text-align: center;}
-.mobile_sub_menu_box{width: 100%}
-.mobile_sub_menu{display: flex; align-items: center; justify-content: center; gap: 30px;}
-.mobile_sub_menu li{width: 80px; text-align: center;}
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+    #section_box1 .main_title_text > p:nth-child(3){font-size:25px !important;}
+    #section_box1 .main_title_text > p:nth-child(4){font-size:25px !important;}
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
 
-.ham {display: block; width: 40px; height: 10px; background-color: rgba(0,0,0,0);  padding: 15px 10px 10px 10px;}
-.ham span {position:relative; display: block; width: 40px; height: 7px; background-color: #23afe3;}
-.ham span:before{
-    content: '';
-    width: 40px; height: 7px; background-color: #23afe3;
-    position: absolute; left: 0; bottom: -10px;
+
+    
 }
 
-.ham span:after{
-    content: '';
-    width: 40px; height: 7px; background-color: #23afe3;
-    position: absolute; left: 0; top: -10px;
+@media (max-width:600px) {
+
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+    #section_box1 .prev_button_wrap {left: -30px;}
+    #section_box1 .next_button_wrap {right: -30px;}
+    #section_box1 .main_title_text > p:nth-child(3){font-size:22px !important;}
+    #section_box1 .main_title_text > p:nth-child(4){font-size:22px !important;}
+    /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+    
 }
 
+@media (max-width:480px) {
+
 }
+
+@media (max-width:320px) {
+
+}
+
+/*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 
 
