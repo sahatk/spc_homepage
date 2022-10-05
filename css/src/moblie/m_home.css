@@ -18,6 +18,8 @@
     .main_group_card ul {justify-content: center; gap:50px;} /* SPC GROUP 카드 정렬 */
     /* ////////// section_box2 (SPC 그룹) ////////// */
 
+    .main_brand_text {float: none; width: 100%; text-align: center;} /* SPC BRAND 제목, 설명 */
+    .main_brand_tab {float: none; width: 100%; background-color:transparent;} /* SPC BRAND 탭 메뉴 정렬 */
 
 }
 
