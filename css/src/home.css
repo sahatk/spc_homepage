@@ -460,27 +460,24 @@
 #section_box2 {
     display: flex; align-items: center;
     width: 100%;
-    height: 900px;
-    margin: 0 auto;
+    height: auto;
+    margin: 50px auto;
     box-sizing: border-box;
-    padding: 10px;
-    background-color: #f8f8f8;
+    padding: 40px;
 }
 
 #section_box2 .container {
-    width: 1440px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 700px;
+    height: auto;
     margin: auto;
-    background-color: #f8f8f8;
 }
 
 /*SPC GROUP TEXT BOX*/
 .main_group_text {
     width: 100%;
     height: auto;
-    margin-top: 2rem;
 
     color: #000000;
     font-weight: 700;
@@ -529,10 +526,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 550px;
+    height: auto;
     /* background-color: #dff; */
     background-color: transparent;
-
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 
@@ -718,7 +715,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 900px;
+    height: auto;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #e2e2e8;
@@ -727,7 +724,7 @@
 #section_box3 .container {
     display: flex; align-items: center;
     position: relative;
-    width: 1440px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
     height: 800px;
@@ -793,6 +790,7 @@
     min-width: 300px;
     height: 700px;
     margin: auto;
+    overflow: hidden;
 }
 
 /*SPC BRAND 타이틀과 탭메뉴 wrap*/

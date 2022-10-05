@@ -12,6 +12,13 @@
     /* ////////////////////// header 부분 ////////////////////// */
     #header_box .header_nav .main_menu{ gap: 100px; }
     /* ////////////////////// header 부분 ////////////////////// */
+
+    /* ////////// section_box2 (SPC 그룹) ////////// */
+    .main_group_text {text-align: center;} /* SPC GROUP 제목, 설명 */
+    .main_group_card ul {justify-content: center; gap:50px;} /* SPC GROUP 카드 정렬 */
+    /* ////////// section_box2 (SPC 그룹) ////////// */
+
+
 }
 
 @media (max-width:1290px) {
