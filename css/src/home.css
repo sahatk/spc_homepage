@@ -710,14 +710,14 @@
 
 /*section_box3 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
 #section_box3 {
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 50px auto;
     box-sizing: border-box;
+    padding: 40px;
     background-color: #e2e2e8;
 }
 
@@ -727,7 +727,7 @@
     width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 800px;
+    height: auto;
     margin: auto;
     overflow: hidden;
     background-color: transparent;
@@ -785,11 +785,10 @@
 /*SPC BRAND next_button*/
 
 .main_brand_box{
-    width: 1440px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 700px;
-    margin: auto;
+    height: auto;
     overflow: hidden;
 }
 
@@ -812,8 +811,8 @@
     height: 300px;
     margin-top: 1rem;
     margin: 0 auto;
-    /* background-color: #b0acac; */
     background-color: transparent;
+    overflow: hidden;
 }
 
 /*view_all 버튼 wrap*/
@@ -822,9 +821,7 @@
     justify-content: center;
     /* width: 1300px; */
     width: 100%;
-    height: 100px;
-    margin-top: 1rem;
-    margin: 0 auto;
+    height: 150px;
     /* background-color: #fda; */
     background-color: transparent;
 
@@ -976,13 +973,14 @@
 /*SPC BRAND CARD*/
 
 .main_brand_card {
-    width: 1200px;
+    width: 1440px;
     height: 300px;
+    overflow: hidden;
 }
 
 .main_brand_card ul {
     display: flex;
-    width: 1200px;
+    width: 1440px;
     height: 300px;
     gap: 60px;
     align-items: center;
@@ -1108,19 +1106,19 @@
 
 #section_box5 {
     width: 100%;
-    height: 900px;
-    margin: 0 auto;
+    height: auto;
+    margin: 30px auto;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 40px;
     background-color: #f8f8f8;
 }
 
 #section_box5 .container {
     display: flex; align-items: center;
-    width: 1500px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 800px;
+    height: auto;
     margin: auto;
     overflow: hidden;
     background-color: transparent;
@@ -1128,11 +1126,10 @@
 }
 
 #section_box5 .main_happypoint_box{
-    width: 1500px;
-    /* width: 100%; */
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 700px;
+    height: auto;
 }
 
 /*SPC 해피포인트 타이틀과 VIEW ALL wrap*/
@@ -1140,8 +1137,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     /* background-color: #fff; */
@@ -1197,7 +1194,7 @@
 .main_happypoint_card {
     width: 100%;
     height: auto;
-    margin-top: 1rem;
+    margin: 30px auto;
     box-sizing: border-box;
 }
 
@@ -1205,8 +1202,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    height: 450px;
+    width: 100%;
+    height: auto;
     /* background-color: #dff; */
     background-color: transparent;
     flex-wrap: wrap;
@@ -1329,16 +1326,16 @@
 
 #section_box6 {
     width: 100%;
-    height: 850px;
-    margin: 0 auto;
+    height: auto;
+    margin: 30px auto;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 40px;
     background-color: #D1EBFA;
 }
 
 #section_box6 .container {
     display: flex; align-items: center;
-    width: 1500px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
     height: 800px;
@@ -1348,11 +1345,11 @@
 }
 
 #section_box6 .main_news_box{
-    width: 1500px;
+    width: 100%;
     /* width: 100%; */
     max-width: 1920px;
     min-width: 300px;
-    height: 700px;
+    height: auto;
 }
 
 /*SPC NEWS 타이틀과 VIEW ALL wrap*/
@@ -1361,7 +1358,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     /* background-color: #d1ebfa; */
@@ -1379,7 +1376,7 @@
 /*SPC NEWS TEXT BOX*/
 .main_news_wrap_01 .main_news_text {
     display: flex; flex-direction: column; justify-content: center;
-    width: 50%;
+    width: 30%;
     height: 150px;
     float: left;
 
@@ -1413,10 +1410,11 @@
 /*SPC NEWS VIEW_ALL BOX*/
 .main_news_wrap_01 .main_news_view {
     display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
     gap: 20px;
     margin-right: 40px;
+    flex-wrap: wrap;
 }
 
 .main_news_view .main_view_left {
@@ -1442,7 +1440,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 1460px;
     height: 500px;
     margin-top: 1rem;
     box-sizing: border-box;

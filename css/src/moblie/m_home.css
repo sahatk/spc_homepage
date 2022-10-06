@@ -18,21 +18,51 @@
     .main_group_card ul {justify-content: center; gap:50px;} /* SPC GROUP 카드 정렬 */
     /* ////////// section_box2 (SPC 그룹) ////////// */
 
+    /* ////////// section_box3 (SPC BRAND) /////////// */
     .main_brand_text {float: none; width: 100%; text-align: center;} /* SPC BRAND 제목, 설명 */
     .main_brand_tab {float: none; width: 100%; background-color:transparent;} /* SPC BRAND 탭 메뉴 정렬 */
+    /* ////////// section_box3 (SPC BRAND) /////////// */
 
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 250px;}
+    #section_box4 .banner_image {height: 250px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+
+    /* ///////// section_box5 (SPC 해피포인트) /////////// */
+    #section_box5 .main_happypoint_card ul {justify-content: center; gap: 50px;}
 }
 
 @media (max-width:1290px) {
     /* ////////////////////// header 부분 ////////////////////// */
     #header_box .header_nav .main_menu{ gap: 90px; }
     /* ////////////////////// header 부분 ////////////////////// */
+
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+    .main_brand_tab li{width: 200px;}
+    .main_brand_tab li button {width: 200px;}
+    .tab_card {width: 200px;}
+    .main_brand_tab .tab_icon_00 {width: 200px;}
+    .main_brand_tab .tab_icon_01 {width: 200px;}
+    .main_brand_tab .tab_icon_02 {width: 200px;}
+    .main_brand_tab .tab_icon_03 {width: 200px;}
+    .main_brand_tab li p{width: 200px;}
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 225px;}
+    #section_box4 .banner_image {height: 225px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
 }
 
 @media (max-width:1100px) {
     /* ////////////////////// header 부분 ////////////////////// */
     #header_box .header_nav .main_menu{ gap: 70px; }
     /* ////////////////////// header 부분 ////////////////////// */
+
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 200px;}
+    #section_box4 .banner_image {height: 200px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
 }
 
 @media (max-width:1023px) {
@@ -68,6 +98,24 @@
 
     #section_box1 .navigation ul{display: flex; left:50%; transform: translate(-250%,0); height: 140px;}
     /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 175px;}
+    #section_box4 .banner_image {height: 175px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+
+    /* ///////// section_box5 (SPC 해피포인트) /////// */
+    #section_box5 .main_happypoint_wrap_01 {justify-content: center; flex-direction: column;}
+    #section_box5 .main_happypoint_wrap_01 .main_happypoint_text {width:500px; text-align: center;}
+    #section_box5 .main_happypoint_wrap_01 .main_view_all {width: 250px; margin: 0;}
+    /* ///////// section_box5 (SPC 해피포인트) /////// */
+
+    #section_box6 .main_news_wrap_01 {justify-content: center; flex-direction: column; margin-bottom: -40px;}
+    #section_box6 .main_news_wrap_01 .main_news_text {width:500px; text-align: center;}
+    #section_box6 .main_news_wrap_01 .main_news_view {width: 250px; margin: 0;}
+    .main_news_view .main_view_right {order: 3;}
+    .main_news_view .main_view_left {order: 2;}
+    #section_box6 .main_news_wrap_01 .main_view_all {width: 250px; margin: 0; order: 1;}
 }
 
 @media (max-width:768px) {
@@ -89,6 +137,21 @@
     #section_box1 .main_title_text > p:nth-child(4){font-size:25px !important;}
     /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
 
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+    .main_brand_tab li{width: 150px;}
+    .main_brand_tab li button {width: 150px;}
+    .tab_card {width: 150px;}
+    .main_brand_tab .tab_icon_00 {width: 150px;}
+    .main_brand_tab .tab_icon_01 {width: 150px;}
+    .main_brand_tab .tab_icon_02 {width: 150px;}
+    .main_brand_tab .tab_icon_03 {width: 150px;}
+    .main_brand_tab li p{width: 150px;}
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 150px;}
+    #section_box4 .banner_image {height: 150px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
 
     
 }
@@ -101,6 +164,22 @@
     #section_box1 .main_title_text > p:nth-child(3){font-size:22px !important;}
     #section_box1 .main_title_text > p:nth-child(4){font-size:22px !important;}
     /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
+
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+    .main_brand_tab li{width: 100px;}
+    .main_brand_tab li button {width: 100px;}
+    .tab_card {width: 100px;}
+    .main_brand_tab .tab_icon_00 {width: 100px;}
+    .main_brand_tab .tab_icon_01 {width: 100px;}
+    .main_brand_tab .tab_icon_02 {width: 100px;}
+    .main_brand_tab .tab_icon_03 {width: 100px;}
+    .main_brand_tab li p{width: 100px;}
+    /* ////////// section_box3 (SPC BRAND) /////////// */
+
+    /* ///////// section_box4 (SPC BANNER) /////////// */
+    #section_box4 {height: 100px;}
+    #section_box4 .banner_image {height: 100px;}
+    /* ///////// section_box4 (SPC BANNER) /////////// */
     
 }
 
