@@ -16,6 +16,12 @@
 
 
 @media (max-width:1440px) {
+    /* ////////////////////// 슬라이드 부분 ///////////////////// */
+    .main_news_card ul {justify-content: space-around;}
+    .main_youtube_card ul {justify-content: space-around;}
+    .main_sns_card ul {justify-content: space-around;}
+    /* ////////////////////// 슬라이드 부분 ///////////////////// */
+
     /* ////////////////////// header 부분 ////////////////////// */
     #header_box .header_nav .main_menu{ gap: 100px; }
     /* ////////////////////// header 부분 ////////////////////// */
@@ -132,12 +138,19 @@
      #section_box7 .main_magazine_wrap_02 .main_magazine_card {margin-top: 6rem;}
      /* ///////// section_box7 (SPC MAGAZINE) /////// */
 
-     /* ///////// section_box6 (SPC YOUTUBE) /////// */
+     /* ///////// section_box8 (SPC YOUTUBE) /////// */
     #section_box8 .main_youtube_wrap_01 {justify-content: center; flex-direction: column;}
     #section_box8 .main_youtube_wrap_01 .main_youtube_text {width:500px; text-align: center;}
     #section_box8 .main_youtube_wrap_01 .main_youtube_view {width: 250px; margin: 0;}
     #section_box8 .main_youtube_wrap_01 .main_view_all {width: 250px; margin: 0; }
-    /* ///////// section_box6 (SPC YOUTUBE) /////// */
+    /* ///////// section_box8 (SPC YOUTUBE) /////// */
+
+     /* ///////// section_box9 (SPC SNS) /////// */
+     #section_box9 .main_sns_wrap_01 {justify-content: center; flex-direction: column;}
+     #section_box9 .main_sns_wrap_01 .main_sns_text {width:500px; text-align: center;}
+     #section_box9 .main_sns_wrap_01 .main_sns_view {width: 250px; margin: 0;}
+     #section_box9 .main_sns_wrap_01 .main_view_all {width: 250px; margin: 0; }
+     /* ///////// section_box9 (SPC SNS) /////// */
 }
 
 @media (max-width:768px) {
@@ -153,6 +166,16 @@
     /* 모바일 내비게이션 */
     
     /* ////////////////////// header 부분 ////////////////////// */
+
+    /* padding 초기화 */
+    #section_box2 {padding: 50px 0;}
+    #section_box3 {padding: 50px 0;}
+    #section_box5 {padding: 50px 0;}
+    #section_box6 {padding: 50px 0;}
+    #section_box7 {padding: 50px 0;}
+    #section_box8 .container {padding: 50px 0;}
+    #section_box9 {padding: 50px 0;}
+    /* padding 초기화 */
 
     /* ////////// section_box1 (배경 이미지와 소개 ) ////////// */
     #section_box1 .main_title_text > p:nth-child(3){font-size:25px !important;}

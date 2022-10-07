@@ -5,10 +5,12 @@ const youtubeSwiper = new Swiper('.swiper-container-youtube', {
     spaceBetween:40,
     speed:500,
     loop: true,
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction : false,
-    // },
+    breakpoints: {
+        // 화면의 넓이가 320px 이상일 때
+        320: {
+            slidesPerView: 1,
+        },
+    },
     navigation: {
         nextEl: '.swiper-button-next-youtube',
         prevEl: '.swiper-button-prev-youtube',
@@ -23,7 +25,13 @@ const snsSwiper = new Swiper('.swiper-container-sns', {
     loop: true,
     autoplay: {
         delay: 2000,
-        disableOnInteraction : false,
+        disableOnInteraction : true,
+    },
+    breakpoints: {
+        // 화면의 넓이가 320px 이상일 때
+        320: {
+            slidesPerView: 1,
+        },
     },
     navigation: {
         nextEl: '.swiper-button-next-sns',
