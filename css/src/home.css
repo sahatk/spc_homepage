@@ -1338,7 +1338,7 @@
     width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 800px;
+    height: auto;
     margin: auto;
     overflow: hidden;
     background-color: transparent;
@@ -1359,27 +1359,25 @@
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     /* background-color: #d1ebfa; */
     background-color: transparent;
+    margin: 2rem auto;
 }
 
 /*SPC NEWS 카드 wrap*/
-/* .main_news_wrap_02 {
-    display: flex;
-    justify-content: center;
+.main_news_wrap_02 {
     width: 100%;
     margin: 0 auto;
-} */
+}
 
 /*SPC NEWS TEXT BOX*/
 .main_news_wrap_01 .main_news_text {
-    display: flex; flex-direction: column; justify-content: center;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
     height: 150px;
     float: left;
-
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
@@ -1413,7 +1411,6 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-right: 40px;
     flex-wrap: wrap;
 }
 
@@ -1440,11 +1437,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1460px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     margin-top: 1rem;
     box-sizing: border-box;
-
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .main_news_card ul {
@@ -1452,7 +1450,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: auto;
     /* background-color: #dff; */
     background-color: transparent;
 
@@ -1594,29 +1592,29 @@
 
 #section_box7 {
     width: 100%;
-    height: 800px;
-    margin: 0 auto;
+    height: auto;
+    margin: 30px auto;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 40px;
     background-color: #e7e7e7;
 }
 
 #section_box7 .container {
     display: flex; align-items: center;
-    width: 1440px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 750px;
+    height: auto;
     margin: auto;
     overflow: hidden;
     background-color: transparent;
 }
 
 #section_box7 .main_magazine_box{
-    width: 1440px;
+    width: 100%;
     max-width: 1920px;
     min-width: 300px;
-    height: 650px;
+    height: auto;
 }
 
 /*SPC MAGAZINE 타이틀과 VIEW ALL wrap*/
@@ -1625,20 +1623,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /* background-color: #fff; */
+    /* background-color: #d1ebfa; */
     background-color: transparent;
-
-
 }
 
 /*main_magazine_wrap_02*/
 .main_magazine_wrap_02 {
-    width: 1440px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     /* background-color: #fff; */
     background-color: transparent;
 
@@ -1648,7 +1644,7 @@
 
 /*SPC MAGAZINE TEXT BOX*/
 .main_magazine_wrap_01 .main_magazine_text {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
@@ -1658,7 +1654,6 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-
 }
 
 .main_magazine_wrap_01 .main_magazine_text h2 {
@@ -1686,14 +1681,19 @@
 
 /*SPC MAGAZINE VIEW_ALL BOX*/
 .main_magazine_wrap_01 .main_view_all {
-    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 40px;
+    flex-wrap: wrap;
 }
 
 /*SPC MAGAZINE 타이틀과 VIEW ALL wrap*/
 
 /* SPC MAGAZINE CARD 박스 크기 및 위치 설정 */
 .main_magazine_card {
-    width: 1438px;
+    width: 100%;
     height: auto;
     margin-top: 1rem;
     box-sizing: border-box;
@@ -1701,10 +1701,11 @@
 }
 
 .main_magazine_card ul {
-    width: 1438px;
-    height: 350px;
-    background-color: #fff;
-    /* background-color: transparent; */
+    display: flex; justify-content: center;
+    width: 100%;
+    height: auto;
+    /* background-color: #fff; */
+    background-color: transparent;
 
     flex-wrap: wrap;
 }

@@ -7,6 +7,13 @@
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
+@media (max-width:1540px) {
+    /* ////////// section_box7 (SPC MAGAZINE) ////////// */
+    #section_box7 .card_line_right {display: none;}
+    #section_box7 .card_line_left {display: none;}
+    /* ////////// section_box7 (SPC MAGAZINE) ////////// */
+}
+
 
 @media (max-width:1440px) {
     /* ////////////////////// header 부분 ////////////////////// */
@@ -110,12 +117,20 @@
     #section_box5 .main_happypoint_wrap_01 .main_view_all {width: 250px; margin: 0;}
     /* ///////// section_box5 (SPC 해피포인트) /////// */
 
-    #section_box6 .main_news_wrap_01 {justify-content: center; flex-direction: column; margin-bottom: -40px;}
+    /* ///////// section_box6 (SPC NEWS) /////// */
+    #section_box6 .main_news_wrap_01 {justify-content: center; flex-direction: column;}
     #section_box6 .main_news_wrap_01 .main_news_text {width:500px; text-align: center;}
     #section_box6 .main_news_wrap_01 .main_news_view {width: 250px; margin: 0;}
-    /* .main_news_view .main_view_right {order: 3;}
-    .main_news_view .main_view_left {order: 2;} */
     #section_box6 .main_news_wrap_01 .main_view_all {width: 250px; margin: 0; }
+    /* ///////// section_box6 (SPC NEWS) /////// */
+
+     /* ///////// section_box6 (SPC NEWS) /////// */
+     #section_box7 .main_magazine_wrap_01 {justify-content: center; flex-direction: column; margin-bottom: -40px;}
+     #section_box7 .main_magazine_wrap_01 .main_magazine_text {width:500px; text-align: center;}
+     #section_box7 .main_magazine_wrap_01 .main_magazine_view {width: 250px; margin: 0;}
+     #section_box7 .main_magazine_wrap_01 .main_view_all {width: 250px; margin: 0; }
+     #section_box7 .main_magazine_wrap_02 .main_magazine_card {margin-top: 6rem;}
+     /* ///////// section_box6 (SPC NEWS) /////// */
 }
 
 @media (max-width:768px) {
