@@ -2,14 +2,16 @@
 
 /* ///////////////////////////////////////////////////////////////// 기본 header 영역 /////////////////////////////////////////////////////////////////*/
 #header_box {
-    display: flex; align-items: center;
-    position: fixed;    
+    display: flex;
+    align-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+    max-width: 1920px;
+    min-width: 320px;
     height: 80px;
-    margin: auto;
     box-sizing: border-box;
     padding: 10px;
     z-index: 1000;
