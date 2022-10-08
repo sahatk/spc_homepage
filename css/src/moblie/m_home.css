@@ -166,6 +166,12 @@
 @media (max-width:768px) {
     /* ////////////////////// header 부분 ////////////////////// */
 
+    /* 모바일 헤더 */
+    #header_box {
+        position: sticky;
+    }
+    /* 모바일 헤더 */
+
     /* 모바일 내비게이션 */
     .mobile_hover_box.block {height: 500px;}
 
@@ -241,15 +247,11 @@
 }
 
 @media (max-width:480px) {
-    #header_box {
-        max-width: 100%; min-width: 320px;
-    }
+    
 }
 
 @media (max-width:320px) {
-    #header_box {
-        max-width: 320px;
-    }
+    
 }
 
 /*//////////////////////////////////////////////////////////미디어 쿼리 부분///////////////////////////////////////////////////////////////////*/
